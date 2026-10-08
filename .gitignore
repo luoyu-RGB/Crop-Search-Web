@@ -1,0 +1,22 @@
+# Java / Maven / Gradle
+target/
+build/
+out/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Local configuration and uploaded files
+application-local.properties
+uploads/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
