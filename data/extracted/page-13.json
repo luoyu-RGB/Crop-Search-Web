@@ -1,0 +1,183 @@
+{
+  "page": 13,
+  "printedPage": "23",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "赤松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus densiflora Sieb.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝淡黄色或红黄色，微被白粉，无毛；冬芽矩圆状卵圆形，暗红褐色，微具树脂，芽鳞条状披针形，先端微反卷。针叶2针一束，先端微尖，两面有气孔线，边缘有细锯齿；横切面半圆形，皮下层细胞1层，稀角上2~3层，树脂道4~6个，边生。雄球花淡红黄色，圆筒形；雌球花淡红紫色，单生或2~3个聚生，一年生小球果的种鳞先端有短刺。球果成熟时暗黄褐色或淡褐黄色，种鳞张开，不久即脱落，卵圆形或卵状圆锥形，有短梗；种鳞薄，鳞盾扁菱形，通常扁平，稀具微隆起的横脊，鳞脐平或微凸起有短刺，稀无刺。种子倒卵状椭圆形或卵圆形，连翅长1.5~2 cm；种翅宽5~7 mm。花期4月；果期翌年9~10月。",
+      "distribution": "生于海拔0~920 m的山区。产于江苏、山东及东北地区。朝鲜、日本、俄罗斯也有分布。",
+      "cultivation": "喜光，耐贫瘠，耐寒，耐干旱，不耐盐碱，抗风力强。可采用播种繁殖。",
+      "uses": "种子榨油，可供食用及工业用；针叶提取芳香油；树干可割取树脂，提取松香及松节油。木材纹理直，质坚硬，耐腐力强，可供建筑、电杆、枕木、家具、木纤维工业原料等用。可作庭园树种。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-13/fig-01.png",
+          "description": "针叶与红色幼球果（雄球花）特写",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-13/fig-02.png",
+          "description": "枝、针叶与幼球果",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-13/fig-03.png",
+          "description": "针叶与红色雄球花簇",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-13/fig-04.png",
+          "description": "植株全形（树冠）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "黑龙江哈尔滨",
+          "oilContent": 32.7,
+          "iodineValue": 160.4,
+          "acidValue": null,
+          "saponificationValue": 189.8,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 4.3,
+            "C16:1": null,
+            "C18:0": 1.6,
+            "C18:1": 22.0,
+            "C18:2": 47.0,
+            "C18:3": 18.0,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "湿地松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus elliottii Engelm.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。树皮灰褐色或暗红褐色，纵裂成鳞状块片剥落；枝条每年生长3~4轮，春季生长的节间较长，夏、秋季生长的节间较短，小枝粗壮，橙褐色，后变为褐色至灰褐色，鳞叶上部披针形，淡褐色，边缘有睫毛，干枯后宿存数年不落，故小枝粗糙；冬芽圆柱形，上部渐窄，无树脂，芽鳞淡灰色。针叶2~3针一束并存，刚硬，深绿色，有气孔线，边缘有锯齿，树脂道2~9个，多内生。球果圆锥形或窄卵圆形，有梗，种鳞张开后径5~7 cm，成熟后至第二年夏季脱落；种鳞的鳞盾近斜方形，肥厚，有锐横脊，鳞脐瘤状。种子卵圆形，黑色，有灰色斑点，易脱落。花期3月；果期翌年9月。",
+      "distribution": "江西：石城县赣江源，26°11′36″N，116°23′16″E，547 m，2012-11-12，凡强、潘云云4001416090。原产美国。中国广东、广西、湖南、江西、福建、台湾、浙江、江苏、安徽、湖北、云南有栽培。",
+      "cultivation": "适应性强，喜温暖潮湿、夏季炎热多雨、春季温暖干燥、冬季温和而潮湿的地区。可采用播种繁殖。播种：在10月份采收，放在干燥的地方贮藏，待翌年2月底至3月初进行播种。种子刚出苗时，使用托布津喷洒苗床预防猝倒病。",
+      "uses": "种子含脂肪油可食用，亦可供药用；球果未成熟前，含挥发油，可提制松节油；蒸油后还可提炼栲胶；成熟球果制活性炭；松针含芳香油，是医药及化工、橡胶、造纸工业的原料。木材纹理直，供建筑、家具、造纸和木纤维工业原料用；林龄达20年左右的树干，适宜采割松脂，供提取松节油和松香，为工业和医药原料；树根挖取干馏，可提取松根原油；萃取可直接得松香、松节油。",
+      "distributionPoints": [
+        {
+          "province": "江西",
+          "locality": "石城县赣江源",
+          "latitude": "26°11′36″N",
+          "longitude": "116°23′16″E",
+          "altitude": "547 m",
+          "date": "2012-11-12",
+          "collectors": "凡强、潘云云",
+          "collectionNo": "4001416090"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-13/fig-05.png",
+          "description": "针叶与红色雄球花（小孢子叶球）特写",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-13/fig-06.png",
+          "description": "植株全形与生境",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-13/fig-07.png",
+          "description": "种子（黑色，散放）",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-13/fig-08.png",
+          "description": "球果与针叶枝",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SYSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "江西石城",
+          "oilContent": 12.77,
+          "iodineValue": 84.04,
+          "acidValue": 3.58,
+          "saponificationValue": 167.12,
+          "fattyAcids": {
+            "C12:0": 0.17,
+            "C14:0": 0.16,
+            "C16:0": 7.32,
+            "C16:1": null,
+            "C18:0": 2.33,
+            "C18:1": 18.55,
+            "C18:2": 32.48,
+            "C18:3": 9.06,
+            "C20:0": 0.79,
+            "C20:1": 0.28
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "广东广州",
+          "oilContent": 22.5,
+          "iodineValue": 156.1,
+          "acidValue": null,
+          "saponificationValue": 188.4,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 6.9,
+            "C16:1": null,
+            "C18:0": 2.1,
+            "C18:1": 27.4,
+            "C18:2": 41.1,
+            "C18:3": 17.0,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 8,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-13/fig-01.png",
+    "page-13/fig-02.png",
+    "page-13/fig-03.png",
+    "page-13/fig-04.png",
+    "page-13/fig-05.png",
+    "page-13/fig-06.png",
+    "page-13/fig-07.png",
+    "page-13/fig-08.png"
+  ]
+}

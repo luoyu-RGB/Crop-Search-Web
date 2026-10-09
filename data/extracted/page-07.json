@@ -1,0 +1,194 @@
+{
+  "page": 7,
+  "printedPage": "17",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "油杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Keteleeria fortunei (A. Murray bis) Carrière",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "油杉属",
+      "features": "乔木。一年生枝干后呈橘红色或淡粉红色；二、三年生时呈淡黄灰色，常不开裂。叶条形，在侧枝上排成两列，长1.2~3 cm，宽2~4 mm，先端圆或钝，基部渐窄，上面光绿色，无气孔线，下面淡绿色，沿中脉每边有气孔线12~17条。球果圆柱形，成熟前绿色或淡绿色，微有白粉，成熟时淡褐色或淡栗色；中部的种鳞宽圆形或上部宽圆下部宽楔形，上部宽圆或近平截，稀中央微凹，边缘向内反曲，鳞背露出部分无毛；鳞苞中部窄，下部稍宽，上部卵圆形，先端3裂，中裂窄长，侧裂稍圆，有钝尖头；种翅中上部较宽，下部渐窄。花期3~4月；果期10月。",
+      "distribution": "生于海拔400~1200 m的气候温暖、雨量多及酸性红壤或黄壤的地带。产于广东、广西、福建、浙江。",
+      "cultivation": "适应性强，喜光，耐干旱瘠薄。可采用播种繁殖。种子可随采随播，亦可用湿沙层积贮藏至翌年2月春播，苗期喜光，但在7、8月间需短期遮阴。",
+      "uses": "种子油为不干性油，可制肥皂和润滑油。木材坚实耐用，供建筑、家具等用材。可作园林树种。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-07/fig-01.png",
+          "description": "枝叶与幼球果（红色）",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-07/fig-02.png",
+          "description": "球果（被白粉）特写",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "广东广州",
+          "oilContent": 48.4,
+          "iodineValue": 154.4,
+          "acidValue": null,
+          "saponificationValue": 164.3,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 4.7,
+            "C16:1": null,
+            "C18:0": 1.6,
+            "C18:1": 51.5,
+            "C18:2": 39.2,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "落叶松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Larix gmelinii (Rupr.) Kuzen.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "落叶松属",
+      "features": "乔木。一年生长枝较细，淡黄褐色或淡褐黄色，二、三年生枝褐色、灰褐色或灰色，短枝直径2~3 mm，顶端叶枕之间有黄白色长柔毛；冬芽近圆球形，芽鳞暗褐色，边缘具睫毛，基部芽鳞的先端具长尖头。球果幼时紫红色，成熟前卵圆形或椭圆形，成熟时上部的种鳞张开，黄褐色、褐色或紫褐色，种鳞14~30枚；中部种鳞五角状卵形，先端截形、圆截形或微凹，鳞背无毛，有光泽；苞鳞较短，近三角状长卵形或卵状披针形，先端具中肋延长的急尖头。种子斜卵圆形，灰白色，具淡褐色斑纹；种翅中下部宽，上部斜三角形，先端钝圆。花期5~6月；果期9月。",
+      "distribution": "黑龙江：北极村，53°28′10″N，122°24′7″E，174 m，2011-09-08，贾海伦400351107；大兴安岭塔河，52°20′07″N，124°42′31″E，410 m，2010-10-04，郑宝江、陶林40034016。生于海拔300~2800 m的山麓、沼泽、草甸、河谷。产于河南、河北、陕西、内蒙古、吉林、黑龙江。朝鲜、蒙古、俄罗斯也有分布。",
+      "cultivation": "适应性强，喜光，喜冷凉气候，耐寒，耐干旱瘠薄，有一定的耐水湿能力。可采用播种繁殖。",
+      "uses": "树干可提取树脂；树皮可提取栲胶。木材耐久用，可供土木工程、器具、枕木、电杆、造纸等用。树干通直挺拔，树姿优美，为珍贵的园林树和庭园观赏树种。",
+      "distributionPoints": [
+        {
+          "province": "黑龙江",
+          "locality": "北极村",
+          "latitude": "53°28′10″N",
+          "longitude": "122°24′7″E",
+          "altitude": "174 m",
+          "date": "2011-09-08",
+          "collectors": "贾海伦",
+          "collectionNo": "400351107"
+        },
+        {
+          "province": "黑龙江",
+          "locality": "大兴安岭塔河",
+          "latitude": "52°20′07″N",
+          "longitude": "124°42′31″E",
+          "altitude": "410 m",
+          "date": "2010-10-04",
+          "collectors": "郑宝江、陶林",
+          "collectionNo": "40034016"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-07/fig-03.png",
+          "description": "枝叶与幼球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-07/fig-04.png",
+          "description": "成熟球果（褐色，种鳞张开）",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-07/fig-05.png",
+          "description": "针叶特写",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江北极村",
+          "oilContent": 46.21,
+          "iodineValue": 14.19,
+          "acidValue": 1.49,
+          "saponificationValue": 223.4,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 71.2,
+            "C16:0": 3.87,
+            "C16:1": null,
+            "C18:0": 3.52,
+            "C18:1": 13.43,
+            "C18:2": 20.46,
+            "C18:3": 2.68,
+            "C20:0": 0.2,
+            "C20:1": 0
+          }
+        },
+        {
+          "collectionUnit": "NEFU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江大兴安岭",
+          "oilContent": 23.15,
+          "iodineValue": 20.51,
+          "acidValue": 9.2,
+          "saponificationValue": 102.15,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "黑龙江带岭",
+          "oilContent": 18.3,
+          "iodineValue": 170.2,
+          "acidValue": null,
+          "saponificationValue": 192.0,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.2,
+            "C16:1": null,
+            "C18:0": 1.4,
+            "C18:1": 20.9,
+            "C18:2": 45.5,
+            "C18:3": 25.6,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-07/fig-01.png",
+    "page-07/fig-02.png",
+    "page-07/fig-03.png",
+    "page-07/fig-04.png",
+    "page-07/fig-05.png"
+  ]
+}

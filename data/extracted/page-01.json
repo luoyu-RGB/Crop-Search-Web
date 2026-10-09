@@ -1,0 +1,183 @@
+{
+  "page": 1,
+  "printedPage": "11",
+  "section": "苏铁科 CYCADACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "苏铁",
+      "aliasText": "铁树",
+      "englishName": null,
+      "latinName": "Cycas revoluta Thunb.",
+      "family": "苏铁科",
+      "familyLatin": "CYCADACEAE",
+      "genus": "苏铁属",
+      "features": "棕榈状常绿木本。树干高约2 m。羽状叶从茎的顶部生出，羽状叶呈倒卵状狭披针形，叶轴横切面四方状圆形，两侧有齿状刺；羽状裂片达100对以上，条形，厚革质，坚硬，向上斜展微成“V”形，边缘向下反卷，先端有刺状尖头。雄球花圆柱形，长30~70 cm，径8~15 cm，有短梗，小孢子叶窄楔形，长3.5~6 cm，顶端宽平，其两角近圆形，宽1.7~2.5 cm，有急尖头，尖头长约5 mm，直立；花药通常3个聚生；大孢子叶长14~22 cm，密生淡黄色或淡灰黄色绒毛，上部的顶片卵形至长卵形，边缘羽状分裂，裂片12~18对，胚珠2~6枚，生于大孢子叶柄的两侧，有绒毛。种子红褐色或橘红色，倒卵圆形或卵圆形，稍扁，密生灰黄色短绒毛。花期5~6月；果期9~10月。",
+      "distribution": "广西：桂林市广西植物研究所，25°04′58″N，110°17′58″E，159 m，2010-11-09，吴磊、吴望辉、农冬新4001101117。湖南：吉首大学，28°17′21″N，109°43′12″E，222 m，2011-09-03，徐亮、覃三立40019101170。四川：西昌川兴乡，27°52′30″N，102°19′28″E，2010-10-12，崔龙、李志强400211059。湖北：兴山县南阳镇，31°18′18″N，110°40′49″E，256 m，2012-08-29，危文亮，赵永国等400151177。生于海拔100~1000 m。产于福建、台湾、广东。日本也有分布。",
+      "cultivation": "喜暖热湿润，不耐寒冷，生长甚慢。可采用种子繁殖、分蘖繁殖、切干繁殖和嫁接繁殖。种子繁殖：11~12月采集成熟种子，宜现采现播，初春播种，幼苗期应搭设遮阴棚，同时要防蚂蚁、甲虫危害。分蘖：采用植株中、下部萌生的吸芽为繁殖材料。切干：剪去叶片，将茎的中部横切成两段，置于阴凉处8~12 h，再栽入砂质土中。嫁接：用3~4年生以上的实生苗作砧木，用观赏价值极高的优良苏铁芽孢作接穗，砧木与接穗的直径相近，嫁接时间5~6月，解膜时间应推迟到翌年春、夏季。",
+      "uses": "种子含油，茎含丰富的淀粉，微有毒，可供食用和药用，药用有治痢疾、止咳和止血之效；茎含淀粉，可供食用。树形优美，为优美的庭园观赏树种。",
+      "distributionPoints": [
+        {
+          "province": "广西",
+          "locality": "桂林市广西植物研究所",
+          "latitude": "25°04′58″N",
+          "longitude": "110°17′58″E",
+          "altitude": "159 m",
+          "date": "2010-11-09",
+          "collectors": "吴磊、吴望辉、农冬新",
+          "collectionNo": "4001101117"
+        },
+        {
+          "province": "湖南",
+          "locality": "吉首大学",
+          "latitude": "28°17′21″N",
+          "longitude": "109°43′12″E",
+          "altitude": "222 m",
+          "date": "2011-09-03",
+          "collectors": "徐亮、覃三立",
+          "collectionNo": "40019101170"
+        },
+        {
+          "province": "四川",
+          "locality": "西昌川兴乡",
+          "latitude": "27°52′30″N",
+          "longitude": "102°19′28″E",
+          "altitude": null,
+          "date": "2010-10-12",
+          "collectors": "崔龙、李志强",
+          "collectionNo": "400211059"
+        },
+        {
+          "province": "湖北",
+          "locality": "兴山县南阳镇",
+          "latitude": "31°18′18″N",
+          "longitude": "110°40′49″E",
+          "altitude": "256 m",
+          "date": "2012-08-29",
+          "collectors": "危文亮，赵永国等",
+          "collectionNo": "400151177"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "description": "雄球花（小孢子叶）特写",
+          "isCover": false,
+          "file": "page-01/fig-01.png"
+        },
+        {
+          "order": 2,
+          "description": "种子（红褐色）",
+          "isCover": false,
+          "file": "page-01/fig-02.png"
+        },
+        {
+          "order": 3,
+          "description": "植株全形与雄球花（花序）",
+          "isCover": true,
+          "file": "page-01/fig-03.png"
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "GXIB",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "广西桂林",
+          "oilContent": 10.65,
+          "iodineValue": 71.29,
+          "acidValue": 1.25,
+          "saponificationValue": 234.13,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.26,
+            "C16:0": 5.38,
+            "C16:1": 0.12,
+            "C18:0": 2.45,
+            "C18:1": 30.36,
+            "C18:2": 50.55,
+            "C18:3": 4.03,
+            "C20:0": 2.31,
+            "C20:1": 0.22
+          }
+        },
+        {
+          "collectionUnit": "JSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖南吉首",
+          "oilContent": 6.15,
+          "iodineValue": 101.14,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.1,
+            "C16:0": 6.14,
+            "C16:1": 0.12,
+            "C18:0": 2.46,
+            "C18:1": 46.54,
+            "C18:2": 41.67,
+            "C18:3": 0.83,
+            "C20:0": 0.27,
+            "C20:1": 0.21
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川西昌",
+          "oilContent": 25.32,
+          "iodineValue": 105.9,
+          "acidValue": 3.1,
+          "saponificationValue": 165.9,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 12.41,
+            "C16:1": null,
+            "C18:0": 3.73,
+            "C18:1": 22.35,
+            "C18:2": 39.94,
+            "C18:3": 21.6,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "ICS",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北兴山",
+          "oilContent": 7.12,
+          "iodineValue": 66.68,
+          "acidValue": 11.38,
+          "saponificationValue": 310.83,
+          "fattyAcids": {
+            "C12:0": 0.39,
+            "C14:0": 0,
+            "C16:0": 5.89,
+            "C16:1": 2.99,
+            "C18:0": 2.8,
+            "C18:1": 21.01,
+            "C18:2": 55.05,
+            "C18:3": 1.04,
+            "C20:0": 28.01,
+            "C20:1": 0.44
+          }
+        }
+      ],
+      "uncertain": [
+        "chemistry[3].C20:0（原书第4行印为28.01，该行10种脂肪酸合计117.62>100，疑原书印刷异常，已照抄）"
+      ]
+    }
+  ],
+  "imagesExtracted": 3,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-01/fig-01.png",
+    "page-01/fig-02.png",
+    "page-01/fig-03.png"
+  ]
+}

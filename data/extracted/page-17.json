@@ -1,0 +1,281 @@
+{
+  "page": 17,
+  "printedPage": "27",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "樟子松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus sylvestris var. mongolica Litv.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝淡黄褐色，无毛，二、三年生枝呈灰褐色；冬芽褐色或淡黄褐色，长卵圆形，有树脂。针叶2针一束，硬直，常扭曲，长4~9 cm，很少达12 cm，径1.5~2 mm，先端尖，边缘有细锯齿，两面均有气孔线，横切面半圆形，微扁，维管束鞘呈横茧状，2维管束距离较远，树脂道6~11个，边生；叶鞘基部宿存，黑褐色。雄球花圆柱状卵圆形，长5~10 mm，聚生新枝下部，长3~6 cm；雌球花有短梗，淡紫褐色。球果卵圆形或长卵圆形，长3~6 cm，径2~3 cm，成熟前绿色，熟时淡褐灰色；中部种鳞的鳞盾多呈斜方形，纵脊横脊显著，肥厚隆起，多反曲；鳞脐呈瘤状凸起，有易脱落的短刺。种子黑褐色，长卵圆形或倒卵圆形，微扁。花期5~6月；果期翌年9~10月。",
+      "distribution": "内蒙古：额尔古纳，51°39′39″N，120°39′10″E，2012-10，郑宝江等400341225。黑龙江：塔河，52°20′50″N，124°42′09″E，2012-10，郑宝江等400341223；桦川县申家店，46°35′36″N，130°39′13″E，650 m，2010-08-13，陈连江、卞勇、贾海伦400351023。生于海拔400~1100 m的砂质山地。产于内蒙古、黑龙江。蒙古、俄罗斯也有其分布。",
+      "cultivation": "适应性强、抗逆性强、耐寒性强、喜光。可采用播种繁殖。春播前用50~60℃温水浸种催芽。一般在4月中、下旬，播种前苗床表土要保持适度温润，如干燥应少量浇水，播后及时填压，以防芽干。",
+      "uses": "树干可割树脂，提取松梨及松节油；树皮可提取栲胶。木材纹理直，可供建筑、家具等用材。可作庭园观赏和绿化树种，也是沙荒地带重要的固沙造林的优良树种。",
+      "distributionPoints": [
+        {
+          "province": "内蒙古",
+          "locality": "额尔古纳",
+          "latitude": "51°39′39″N",
+          "longitude": "120°39′10″E",
+          "altitude": null,
+          "date": "2012-10",
+          "collectors": "郑宝江等",
+          "collectionNo": "400341225"
+        },
+        {
+          "province": "黑龙江",
+          "locality": "塔河",
+          "latitude": "52°20′50″N",
+          "longitude": "124°42′09″E",
+          "altitude": null,
+          "date": "2012-10",
+          "collectors": "郑宝江等",
+          "collectionNo": "400341223"
+        },
+        {
+          "province": "黑龙江",
+          "locality": "桦川县申家店",
+          "latitude": "46°35′36″N",
+          "longitude": "130°39′13″E",
+          "altitude": "650 m",
+          "date": "2010-08-13",
+          "collectors": "陈连江、卞勇、贾海伦",
+          "collectionNo": "400351023"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-17/fig-01.png",
+          "description": "针叶与幼球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-17/fig-02.png",
+          "description": "成熟球果特写",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-17/fig-03.png",
+          "description": "植株全形",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "NEFU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "内蒙古额尔古纳",
+          "oilContent": 21.03,
+          "iodineValue": 70.76,
+          "acidValue": 5.87,
+          "saponificationValue": 186.36,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "NEFU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江塔河",
+          "oilContent": 36.7,
+          "iodineValue": 4.46,
+          "acidValue": 9.73,
+          "saponificationValue": 132.92,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.058,
+            "C16:0": 8.47,
+            "C16:1": 0.05,
+            "C18:0": 1.39,
+            "C18:1": 48.49,
+            "C18:2": 38.05,
+            "C18:3": 0.35,
+            "C20:0": 0.58,
+            "C20:1": 2.57
+          }
+        },
+        {
+          "collectionUnit": "SBRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江桦川",
+          "oilContent": 43.5,
+          "iodineValue": 9.33,
+          "acidValue": 8.12,
+          "saponificationValue": 90.79,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "辽宁樟武",
+          "oilContent": 28.1,
+          "iodineValue": 164.5,
+          "acidValue": null,
+          "saponificationValue": 164.5,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 2.8,
+            "C16:1": null,
+            "C18:0": 1.5,
+            "C18:1": 17.6,
+            "C18:2": 49.5,
+            "C18:3": 19.8,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ]
+    },
+    {
+      "chineseName": "油松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus tabuliformis Carr. [Pinus tabuliformis var. tabuliformis]",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。小枝较粗，褐黄色，无毛；冬芽矩圆形，顶端尖，微具树脂，芽鳞红褐色，边缘有丝状缺裂。针叶2针一束，深绿色，粗硬，边缘有细锯齿，两面具气孔线，横切面半圆形，树脂道5~8个或更多，边生，多数生于背面，腹面有1~2个；叶鞘初呈淡褐色，后呈淡黑褐色。雄球花圆柱形，在新枝下部聚生成穗状。球果卵形或圆卵形，有短梗，向下弯垂，成熟前绿色，熟时淡黄色或淡褐黄色，常宿存树上近数年之久；中部种鳞近矩圆状倒卵形；鳞盾肥厚、隆起或微隆起，扁菱形或菱状多角形，横脊显著；鳞脐凸起有尖刺。种子卵圆形或长卵圆形，淡褐色有斑纹。花期4~5月；果期翌年10月。",
+      "distribution": "四川：若尔盖县巴西乡林场，33°41′17″N，103°22′17″E，2714 m，2009-07-23，干友民400241027。河北：昌黎，39°57′55″N，119°15′45″E，131 m，2010-10-03，徐兴友、韩宝强400313074。生于海拔100~2600 m的山地。产于山东、河南、四川、青海、甘肃、宁夏、陕西、山西、河北、内蒙古、辽宁、吉林。",
+      "cultivation": "适应性强，喜光、耐瘠薄、抗寒、抗风。可采用播种繁殖。播种前应当用福尔马林或高锰酸钾对种子进行消毒。幼苗主要要防止冻害，有覆土、覆草、冬灌及覆盖塑料薄膜防寒等方法。",
+      "uses": "树干可割取松脂，提取松节油。树皮可提取栲胶，松节、针叶及花粉可入药。木材富含松脂，耐腐，供作建筑、家具、枕木、矿柱、电杆、人造纤维等用材，亦可采松脂供工业用。树形美观，茎干苍劲有力，可作园林树种。",
+      "distributionPoints": [
+        {
+          "province": "四川",
+          "locality": "若尔盖县巴西乡林场",
+          "latitude": "33°41′17″N",
+          "longitude": "103°22′17″E",
+          "altitude": "2714 m",
+          "date": "2009-07-23",
+          "collectors": "干友民",
+          "collectionNo": "400241027"
+        },
+        {
+          "province": "河北",
+          "locality": "昌黎",
+          "latitude": "39°57′55″N",
+          "longitude": "119°15′45″E",
+          "altitude": "131 m",
+          "date": "2010-10-03",
+          "collectors": "徐兴友、韩宝强",
+          "collectionNo": "400313074"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-17/fig-04.png",
+          "description": "球果与针叶",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-17/fig-05.png",
+          "description": "树干与树皮",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-17/fig-06.png",
+          "description": "松林景观",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-17/fig-07.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "四川若尔盖",
+          "oilContent": 7.38,
+          "iodineValue": 3.54,
+          "acidValue": 12.67,
+          "saponificationValue": 137.66,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.046,
+            "C16:0": 6.56,
+            "C16:1": 0.056,
+            "C18:0": 1.93,
+            "C18:1": 15.97,
+            "C18:2": 13.31,
+            "C18:3": 56.9,
+            "C20:0": 0.32,
+            "C20:1": 0.16
+          }
+        },
+        {
+          "collectionUnit": "HNUST",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "河北昌黎",
+          "oilContent": 31.06,
+          "iodineValue": 77.52,
+          "acidValue": 6.26,
+          "saponificationValue": 204.64,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.05,
+            "C16:0": 4.98,
+            "C16:1": 0.15,
+            "C18:0": 2.07,
+            "C18:1": 20.18,
+            "C18:2": 43.49,
+            "C18:3": 17.69,
+            "C20:0": 0.25,
+            "C20:1": 0.73
+          }
+        }
+      ]
+    }
+  ],
+  "imagesExtracted": 7,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-17/fig-01.png",
+    "page-17/fig-02.png",
+    "page-17/fig-03.png",
+    "page-17/fig-04.png",
+    "page-17/fig-05.png",
+    "page-17/fig-06.png",
+    "page-17/fig-07.png"
+  ]
+}

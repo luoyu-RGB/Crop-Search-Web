@@ -1,0 +1,949 @@
+{
+  "page-01": [
+    {
+      "file": "page-01/fig-01.png",
+      "x": 1088,
+      "y": 372,
+      "width": 704,
+      "height": 460,
+      "yRatio": 0.146,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-01/fig-02.png",
+      "x": 1088,
+      "y": 848,
+      "width": 708,
+      "height": 320,
+      "yRatio": 0.333,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-01/fig-03.png",
+      "x": 44,
+      "y": 1184,
+      "width": 1756,
+      "height": 980,
+      "yRatio": 0.466,
+      "xRatio": 0.024
+    }
+  ],
+  "page-02": [
+    {
+      "file": "page-02/fig-01.png",
+      "x": 1096,
+      "y": 300,
+      "width": 700,
+      "height": 936,
+      "yRatio": 0.118,
+      "xRatio": 0.593
+    },
+    {
+      "file": "page-02/fig-02.png",
+      "x": 1100,
+      "y": 1248,
+      "width": 696,
+      "height": 1004,
+      "yRatio": 0.491,
+      "xRatio": 0.595
+    },
+    {
+      "file": "page-02/fig-03.png",
+      "x": 48,
+      "y": 1644,
+      "width": 1012,
+      "height": 608,
+      "yRatio": 0.647,
+      "xRatio": 0.026
+    }
+  ],
+  "page-03": [
+    {
+      "file": "page-03/fig-01.png",
+      "x": 28,
+      "y": 108,
+      "width": 860,
+      "height": 516,
+      "yRatio": 0.042,
+      "xRatio": 0.015
+    },
+    {
+      "file": "page-03/fig-02.png",
+      "x": 896,
+      "y": 108,
+      "width": 884,
+      "height": 516,
+      "yRatio": 0.042,
+      "xRatio": 0.485
+    },
+    {
+      "file": "page-03/fig-03.png",
+      "x": 1076,
+      "y": 1240,
+      "width": 708,
+      "height": 480,
+      "yRatio": 0.488,
+      "xRatio": 0.582
+    },
+    {
+      "file": "page-03/fig-04.png",
+      "x": 1084,
+      "y": 1732,
+      "width": 704,
+      "height": 520,
+      "yRatio": 0.681,
+      "xRatio": 0.586
+    }
+  ],
+  "page-04": [
+    {
+      "file": "page-04/fig-01.png",
+      "x": 1080,
+      "y": 108,
+      "width": 692,
+      "height": 392,
+      "yRatio": 0.042,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-04/fig-02.png",
+      "x": 1080,
+      "y": 512,
+      "width": 340,
+      "height": 468,
+      "yRatio": 0.201,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-04/fig-03.png",
+      "x": 1432,
+      "y": 512,
+      "width": 344,
+      "height": 468,
+      "yRatio": 0.201,
+      "xRatio": 0.774
+    },
+    {
+      "file": "page-04/fig-04.png",
+      "x": 1084,
+      "y": 1284,
+      "width": 696,
+      "height": 384,
+      "yRatio": 0.505,
+      "xRatio": 0.586
+    },
+    {
+      "file": "page-04/fig-05.png",
+      "x": 1084,
+      "y": 1728,
+      "width": 696,
+      "height": 524,
+      "yRatio": 0.68,
+      "xRatio": 0.586
+    }
+  ],
+  "page-05": [
+    {
+      "file": "page-05/fig-01.png",
+      "x": 1088,
+      "y": 104,
+      "width": 708,
+      "height": 452,
+      "yRatio": 0.041,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-05/fig-02.png",
+      "x": 1092,
+      "y": 572,
+      "width": 632,
+      "height": 424,
+      "yRatio": 0.225,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-05/fig-03.png",
+      "x": 1096,
+      "y": 1644,
+      "width": 708,
+      "height": 608,
+      "yRatio": 0.646,
+      "xRatio": 0.593
+    },
+    {
+      "file": "page-05/fig-04.png",
+      "x": 52,
+      "y": 1844,
+      "width": 496,
+      "height": 408,
+      "yRatio": 0.725,
+      "xRatio": 0.028
+    },
+    {
+      "file": "page-05/fig-05.png",
+      "x": 556,
+      "y": 1844,
+      "width": 504,
+      "height": 408,
+      "yRatio": 0.725,
+      "xRatio": 0.301
+    }
+  ],
+  "page-06": [
+    {
+      "file": "page-06/fig-01.png",
+      "x": 40,
+      "y": 412,
+      "width": 516,
+      "height": 752,
+      "yRatio": 0.162,
+      "xRatio": 0.022
+    },
+    {
+      "file": "page-06/fig-02.png",
+      "x": 564,
+      "y": 412,
+      "width": 492,
+      "height": 752,
+      "yRatio": 0.162,
+      "xRatio": 0.305
+    },
+    {
+      "file": "page-06/fig-03.png",
+      "x": 1092,
+      "y": 656,
+      "width": 696,
+      "height": 508,
+      "yRatio": 0.258,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-06/fig-04.png",
+      "x": 1092,
+      "y": 1396,
+      "width": 368,
+      "height": 436,
+      "yRatio": 0.549,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-06/fig-05.png",
+      "x": 1468,
+      "y": 1396,
+      "width": 320,
+      "height": 436,
+      "yRatio": 0.549,
+      "xRatio": 0.794
+    },
+    {
+      "file": "page-06/fig-06.png",
+      "x": 1136,
+      "y": 1852,
+      "width": 656,
+      "height": 400,
+      "yRatio": 0.729,
+      "xRatio": 0.614
+    }
+  ],
+  "page-07": [
+    {
+      "file": "page-07/fig-01.png",
+      "x": 52,
+      "y": 548,
+      "width": 1012,
+      "height": 620,
+      "yRatio": 0.215,
+      "xRatio": 0.028
+    },
+    {
+      "file": "page-07/fig-02.png",
+      "x": 1100,
+      "y": 548,
+      "width": 708,
+      "height": 620,
+      "yRatio": 0.215,
+      "xRatio": 0.595
+    },
+    {
+      "file": "page-07/fig-03.png",
+      "x": 1104,
+      "y": 1580,
+      "width": 704,
+      "height": 356,
+      "yRatio": 0.621,
+      "xRatio": 0.597
+    },
+    {
+      "file": "page-07/fig-04.png",
+      "x": 1104,
+      "y": 1948,
+      "width": 356,
+      "height": 244,
+      "yRatio": 0.766,
+      "xRatio": 0.597
+    },
+    {
+      "file": "page-07/fig-05.png",
+      "x": 1472,
+      "y": 1948,
+      "width": 340,
+      "height": 244,
+      "yRatio": 0.766,
+      "xRatio": 0.796
+    }
+  ],
+  "page-08": [
+    {
+      "file": "page-08/fig-01.png",
+      "x": 1120,
+      "y": 104,
+      "width": 696,
+      "height": 404,
+      "yRatio": 0.041,
+      "xRatio": 0.606
+    },
+    {
+      "file": "page-08/fig-02.png",
+      "x": 1124,
+      "y": 520,
+      "width": 288,
+      "height": 416,
+      "yRatio": 0.205,
+      "xRatio": 0.608
+    },
+    {
+      "file": "page-08/fig-03.png",
+      "x": 1424,
+      "y": 520,
+      "width": 164,
+      "height": 416,
+      "yRatio": 0.205,
+      "xRatio": 0.77
+    },
+    {
+      "file": "page-08/fig-04.png",
+      "x": 1600,
+      "y": 520,
+      "width": 216,
+      "height": 416,
+      "yRatio": 0.205,
+      "xRatio": 0.865
+    },
+    {
+      "file": "page-08/fig-05.png",
+      "x": 1128,
+      "y": 1168,
+      "width": 352,
+      "height": 528,
+      "yRatio": 0.459,
+      "xRatio": 0.61
+    },
+    {
+      "file": "page-08/fig-06.png",
+      "x": 1492,
+      "y": 1184,
+      "width": 328,
+      "height": 512,
+      "yRatio": 0.466,
+      "xRatio": 0.807
+    },
+    {
+      "file": "page-08/fig-07.png",
+      "x": 1132,
+      "y": 1708,
+      "width": 692,
+      "height": 460,
+      "yRatio": 0.672,
+      "xRatio": 0.612
+    }
+  ],
+  "page-09": [
+    {
+      "file": "page-09/fig-01.png",
+      "x": 52,
+      "y": 460,
+      "width": 528,
+      "height": 484,
+      "yRatio": 0.181,
+      "xRatio": 0.028
+    },
+    {
+      "file": "page-09/fig-02.png",
+      "x": 592,
+      "y": 460,
+      "width": 468,
+      "height": 484,
+      "yRatio": 0.181,
+      "xRatio": 0.32
+    },
+    {
+      "file": "page-09/fig-03.png",
+      "x": 52,
+      "y": 1536,
+      "width": 532,
+      "height": 704,
+      "yRatio": 0.604,
+      "xRatio": 0.028
+    },
+    {
+      "file": "page-09/fig-04.png",
+      "x": 596,
+      "y": 1536,
+      "width": 468,
+      "height": 704,
+      "yRatio": 0.604,
+      "xRatio": 0.322
+    },
+    {
+      "file": "page-09/fig-05.png",
+      "x": 1104,
+      "y": 1836,
+      "width": 704,
+      "height": 404,
+      "yRatio": 0.722,
+      "xRatio": 0.597
+    }
+  ],
+  "page-10": [
+    {
+      "file": "page-10/fig-01.png",
+      "x": 1112,
+      "y": 104,
+      "width": 344,
+      "height": 332,
+      "yRatio": 0.041,
+      "xRatio": 0.601
+    },
+    {
+      "file": "page-10/fig-02.png",
+      "x": 1468,
+      "y": 104,
+      "width": 336,
+      "height": 332,
+      "yRatio": 0.041,
+      "xRatio": 0.794
+    },
+    {
+      "file": "page-10/fig-03.png",
+      "x": 1112,
+      "y": 448,
+      "width": 696,
+      "height": 516,
+      "yRatio": 0.176,
+      "xRatio": 0.601
+    },
+    {
+      "file": "page-10/fig-04.png",
+      "x": 1116,
+      "y": 1244,
+      "width": 696,
+      "height": 476,
+      "yRatio": 0.489,
+      "xRatio": 0.604
+    },
+    {
+      "file": "page-10/fig-05.png",
+      "x": 1116,
+      "y": 1732,
+      "width": 300,
+      "height": 504,
+      "yRatio": 0.681,
+      "xRatio": 0.604
+    },
+    {
+      "file": "page-10/fig-06.png",
+      "x": 1424,
+      "y": 1732,
+      "width": 388,
+      "height": 508,
+      "yRatio": 0.681,
+      "xRatio": 0.77
+    }
+  ],
+  "page-11": [
+    {
+      "file": "page-11/fig-01.png",
+      "x": 1092,
+      "y": 108,
+      "width": 708,
+      "height": 848,
+      "yRatio": 0.042,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-11/fig-02.png",
+      "x": 1092,
+      "y": 964,
+      "width": 708,
+      "height": 388,
+      "yRatio": 0.379,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-11/fig-03.png",
+      "x": 1096,
+      "y": 1364,
+      "width": 704,
+      "height": 416,
+      "yRatio": 0.536,
+      "xRatio": 0.593
+    }
+  ],
+  "page-12": [
+    {
+      "file": "page-12/fig-01.png",
+      "x": 1108,
+      "y": 368,
+      "width": 696,
+      "height": 896,
+      "yRatio": 0.145,
+      "xRatio": 0.599
+    },
+    {
+      "file": "page-12/fig-02.png",
+      "x": 56,
+      "y": 708,
+      "width": 1016,
+      "height": 556,
+      "yRatio": 0.279,
+      "xRatio": 0.03
+    },
+    {
+      "file": "page-12/fig-03.png",
+      "x": 1112,
+      "y": 1500,
+      "width": 328,
+      "height": 248,
+      "yRatio": 0.59,
+      "xRatio": 0.601
+    },
+    {
+      "file": "page-12/fig-04.png",
+      "x": 1452,
+      "y": 1500,
+      "width": 352,
+      "height": 248,
+      "yRatio": 0.59,
+      "xRatio": 0.785
+    },
+    {
+      "file": "page-12/fig-05.png",
+      "x": 1112,
+      "y": 1760,
+      "width": 692,
+      "height": 488,
+      "yRatio": 0.692,
+      "xRatio": 0.601
+    }
+  ],
+  "page-13": [
+    {
+      "file": "page-13/fig-01.png",
+      "x": 1084,
+      "y": 104,
+      "width": 708,
+      "height": 432,
+      "yRatio": 0.041,
+      "xRatio": 0.586
+    },
+    {
+      "file": "page-13/fig-02.png",
+      "x": 1088,
+      "y": 548,
+      "width": 356,
+      "height": 236,
+      "yRatio": 0.215,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-13/fig-03.png",
+      "x": 1456,
+      "y": 548,
+      "width": 340,
+      "height": 492,
+      "yRatio": 0.215,
+      "xRatio": 0.787
+    },
+    {
+      "file": "page-13/fig-04.png",
+      "x": 1088,
+      "y": 796,
+      "width": 356,
+      "height": 244,
+      "yRatio": 0.313,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-13/fig-05.png",
+      "x": 1448,
+      "y": 1828,
+      "width": 352,
+      "height": 424,
+      "yRatio": 0.719,
+      "xRatio": 0.783
+    },
+    {
+      "file": "page-13/fig-06.png",
+      "x": 1092,
+      "y": 1868,
+      "width": 344,
+      "height": 384,
+      "yRatio": 0.735,
+      "xRatio": 0.591
+    },
+    {
+      "file": "page-13/fig-07.png",
+      "x": 44,
+      "y": 1916,
+      "width": 500,
+      "height": 336,
+      "yRatio": 0.753,
+      "xRatio": 0.024
+    },
+    {
+      "file": "page-13/fig-08.png",
+      "x": 556,
+      "y": 1924,
+      "width": 500,
+      "height": 328,
+      "yRatio": 0.757,
+      "xRatio": 0.301
+    }
+  ],
+  "page-14": [
+    {
+      "file": "page-14/fig-01.png",
+      "x": 1128,
+      "y": 104,
+      "width": 324,
+      "height": 240,
+      "yRatio": 0.041,
+      "xRatio": 0.61
+    },
+    {
+      "file": "page-14/fig-02.png",
+      "x": 1464,
+      "y": 104,
+      "width": 360,
+      "height": 240,
+      "yRatio": 0.041,
+      "xRatio": 0.792
+    },
+    {
+      "file": "page-14/fig-03.png",
+      "x": 1128,
+      "y": 356,
+      "width": 324,
+      "height": 248,
+      "yRatio": 0.14,
+      "xRatio": 0.61
+    },
+    {
+      "file": "page-14/fig-04.png",
+      "x": 1464,
+      "y": 356,
+      "width": 360,
+      "height": 248,
+      "yRatio": 0.14,
+      "xRatio": 0.792
+    },
+    {
+      "file": "page-14/fig-05.png",
+      "x": 1132,
+      "y": 616,
+      "width": 692,
+      "height": 432,
+      "yRatio": 0.242,
+      "xRatio": 0.612
+    },
+    {
+      "file": "page-14/fig-06.png",
+      "x": 1132,
+      "y": 1348,
+      "width": 696,
+      "height": 472,
+      "yRatio": 0.53,
+      "xRatio": 0.612
+    },
+    {
+      "file": "page-14/fig-07.png",
+      "x": 1136,
+      "y": 1868,
+      "width": 692,
+      "height": 324,
+      "yRatio": 0.735,
+      "xRatio": 0.614
+    }
+  ],
+  "page-15": [
+    {
+      "file": "page-15/fig-01.png",
+      "x": 1080,
+      "y": 380,
+      "width": 708,
+      "height": 444,
+      "yRatio": 0.149,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-15/fig-02.png",
+      "x": 1080,
+      "y": 836,
+      "width": 708,
+      "height": 464,
+      "yRatio": 0.329,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-15/fig-03.png",
+      "x": 1432,
+      "y": 1316,
+      "width": 360,
+      "height": 256,
+      "yRatio": 0.517,
+      "xRatio": 0.774
+    },
+    {
+      "file": "page-15/fig-04.png",
+      "x": 1104,
+      "y": 1324,
+      "width": 312,
+      "height": 244,
+      "yRatio": 0.521,
+      "xRatio": 0.597
+    },
+    {
+      "file": "page-15/fig-05.png",
+      "x": 36,
+      "y": 1400,
+      "width": 1012,
+      "height": 672,
+      "yRatio": 0.551,
+      "xRatio": 0.019
+    },
+    {
+      "file": "page-15/fig-06.png",
+      "x": 1088,
+      "y": 1584,
+      "width": 704,
+      "height": 488,
+      "yRatio": 0.623,
+      "xRatio": 0.588
+    }
+  ],
+  "page-16": [
+    {
+      "file": "page-16/fig-01.png",
+      "x": 1116,
+      "y": 104,
+      "width": 332,
+      "height": 400,
+      "yRatio": 0.041,
+      "xRatio": 0.604
+    },
+    {
+      "file": "page-16/fig-02.png",
+      "x": 1460,
+      "y": 104,
+      "width": 352,
+      "height": 400,
+      "yRatio": 0.041,
+      "xRatio": 0.79
+    },
+    {
+      "file": "page-16/fig-03.png",
+      "x": 1116,
+      "y": 520,
+      "width": 696,
+      "height": 588,
+      "yRatio": 0.205,
+      "xRatio": 0.604
+    },
+    {
+      "file": "page-16/fig-04.png",
+      "x": 1120,
+      "y": 1416,
+      "width": 352,
+      "height": 220,
+      "yRatio": 0.557,
+      "xRatio": 0.606
+    },
+    {
+      "file": "page-16/fig-05.png",
+      "x": 1484,
+      "y": 1416,
+      "width": 328,
+      "height": 464,
+      "yRatio": 0.557,
+      "xRatio": 0.803
+    },
+    {
+      "file": "page-16/fig-06.png",
+      "x": 1120,
+      "y": 1648,
+      "width": 352,
+      "height": 232,
+      "yRatio": 0.648,
+      "xRatio": 0.606
+    },
+    {
+      "file": "page-16/fig-07.png",
+      "x": 1124,
+      "y": 1892,
+      "width": 692,
+      "height": 360,
+      "yRatio": 0.744,
+      "xRatio": 0.608
+    }
+  ],
+  "page-17": [
+    {
+      "file": "page-17/fig-01.png",
+      "x": 1080,
+      "y": 100,
+      "width": 708,
+      "height": 528,
+      "yRatio": 0.039,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-17/fig-02.png",
+      "x": 1084,
+      "y": 640,
+      "width": 340,
+      "height": 236,
+      "yRatio": 0.252,
+      "xRatio": 0.586
+    },
+    {
+      "file": "page-17/fig-03.png",
+      "x": 1436,
+      "y": 640,
+      "width": 356,
+      "height": 480,
+      "yRatio": 0.252,
+      "xRatio": 0.777
+    },
+    {
+      "file": "page-17/fig-04.png",
+      "x": 1088,
+      "y": 888,
+      "width": 340,
+      "height": 232,
+      "yRatio": 0.349,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-17/fig-05.png",
+      "x": 1088,
+      "y": 1732,
+      "width": 332,
+      "height": 248,
+      "yRatio": 0.681,
+      "xRatio": 0.588
+    },
+    {
+      "file": "page-17/fig-06.png",
+      "x": 1432,
+      "y": 1732,
+      "width": 364,
+      "height": 248,
+      "yRatio": 0.681,
+      "xRatio": 0.774
+    },
+    {
+      "file": "page-17/fig-07.png",
+      "x": 1088,
+      "y": 2032,
+      "width": 708,
+      "height": 208,
+      "yRatio": 0.799,
+      "xRatio": 0.588
+    }
+  ],
+  "page-18": [
+    {
+      "file": "page-18/fig-01.png",
+      "x": 1120,
+      "y": 108,
+      "width": 692,
+      "height": 388,
+      "yRatio": 0.042,
+      "xRatio": 0.606
+    },
+    {
+      "file": "page-18/fig-02.png",
+      "x": 1120,
+      "y": 508,
+      "width": 696,
+      "height": 444,
+      "yRatio": 0.2,
+      "xRatio": 0.606
+    },
+    {
+      "file": "page-18/fig-03.png",
+      "x": 1124,
+      "y": 1328,
+      "width": 300,
+      "height": 400,
+      "yRatio": 0.522,
+      "xRatio": 0.608
+    },
+    {
+      "file": "page-18/fig-04.png",
+      "x": 1432,
+      "y": 1328,
+      "width": 384,
+      "height": 400,
+      "yRatio": 0.522,
+      "xRatio": 0.774
+    },
+    {
+      "file": "page-18/fig-05.png",
+      "x": 1124,
+      "y": 1736,
+      "width": 696,
+      "height": 456,
+      "yRatio": 0.683,
+      "xRatio": 0.608
+    }
+  ],
+  "page-19": [
+    {
+      "file": "page-19/fig-01.png",
+      "x": 1072,
+      "y": 100,
+      "width": 708,
+      "height": 352,
+      "yRatio": 0.039,
+      "xRatio": 0.58
+    },
+    {
+      "file": "page-19/fig-02.png",
+      "x": 1076,
+      "y": 464,
+      "width": 704,
+      "height": 560,
+      "yRatio": 0.182,
+      "xRatio": 0.582
+    },
+    {
+      "file": "page-19/fig-03.png",
+      "x": 1080,
+      "y": 1792,
+      "width": 376,
+      "height": 232,
+      "yRatio": 0.705,
+      "xRatio": 0.584
+    },
+    {
+      "file": "page-19/fig-04.png",
+      "x": 1468,
+      "y": 1792,
+      "width": 316,
+      "height": 232,
+      "yRatio": 0.705,
+      "xRatio": 0.794
+    }
+  ]
+}

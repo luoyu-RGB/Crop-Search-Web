@@ -1,0 +1,204 @@
+{
+  "page": 4,
+  "printedPage": "14",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "巴山冷杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Abies fargesii Franch.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "冷杉属",
+      "features": "乔木。冬芽卵圆形或近圆形，有树脂。叶在枝条下面排成两列，上面之叶斜展或直立，稀上面中央之叶向后反曲，条形，上部较下部宽，长1~3 cm，宽1.5~4 mm，直或微曲，先端钝有凹缺，稀尖，上面深绿色，有光泽，无气孔线，下面沿中脉两侧有2条粉白色气孔带；横切面上面至下面两侧边缘有1层连续排列的皮下细胞，稀两端角部2层，下面中部1层，树脂道2个中生。球果柱状矩圆形或圆柱形，成熟时淡紫色、紫黑色或红褐色；中部种鳞肾形或扇状肾形，上部宽厚，边缘内曲；苞鳞倒卵状楔形，上部圆，边缘有细缺齿，先端有急尖的短尖头，尖头露出或微露出。种子倒三角状卵圆形，种翅楔形。花期4~5月；果期9月。",
+      "distribution": "湖北：神农架小龙潭，31°28′51″N，110°18′09″E，2179 m，2010-02-10，李晓东、昝艳燕400121162。陕西：眉县营头乡大殿，34°01′51″N，107°25′14″E，2273 m，2009-08-07，薛帅400321031；安康市千家坪，32°00′08″N，109°12′10″E，2200 m，2012-10-12，秦烁、郭利磊400328032。生于海拔1500~3900 m的山地、河床。产湖北、河南、四川、甘肃、陕西。",
+      "cultivation": "喜气候温凉湿润及石英岩等母质发育的酸性棕色森林土或山地棕色森林土，耐阴性强。可采用播种方法。",
+      "uses": "可为更新造林树种。",
+      "distributionPoints": [
+        {
+          "province": "湖北",
+          "locality": "神农架小龙潭",
+          "latitude": "31°28′51″N",
+          "longitude": "110°18′09″E",
+          "altitude": "2179 m",
+          "date": "2010-02-10",
+          "collectors": "李晓东、昝艳燕",
+          "collectionNo": "400121162"
+        },
+        {
+          "province": "陕西",
+          "locality": "眉县营头乡大殿",
+          "latitude": "34°01′51″N",
+          "longitude": "107°25′14″E",
+          "altitude": "2273 m",
+          "date": "2009-08-07",
+          "collectors": "薛帅",
+          "collectionNo": "400321031"
+        },
+        {
+          "province": "陕西",
+          "locality": "安康市千家坪",
+          "latitude": "32°00′08″N",
+          "longitude": "109°12′10″E",
+          "altitude": "2200 m",
+          "date": "2012-10-12",
+          "collectors": "秦烁、郭利磊",
+          "collectionNo": "400328032"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "description": "枝叶与球果（紫黑色）",
+          "isCover": true,
+          "file": "page-04/fig-01.png"
+        },
+        {
+          "order": 2,
+          "description": "树干（树皮）",
+          "isCover": false,
+          "file": "page-04/fig-02.png"
+        },
+        {
+          "order": 3,
+          "description": "植株（大树）",
+          "isCover": false,
+          "file": "page-04/fig-03.png"
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 4.12,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.9,
+            "C16:1": null,
+            "C18:0": 1.8,
+            "C18:1": 31.4,
+            "C18:2": 43.1,
+            "C18:3": 12.6,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "ICS",
+          "testUnit": "CAU",
+          "testPart": "种仁",
+          "origin": "陕西眉县",
+          "oilContent": 28.3,
+          "iodineValue": 82.04,
+          "acidValue": 46.5,
+          "saponificationValue": 175.7,
+          "fattyAcids": {
+            "C12:0": 0.35,
+            "C14:0": 0.13,
+            "C16:0": 7.18,
+            "C16:1": 0.11,
+            "C18:0": 3.32,
+            "C18:1": 53.29,
+            "C18:2": 32.56,
+            "C18:3": 0.51,
+            "C20:0": 1.34,
+            "C20:1": 1.21
+          }
+        },
+        {
+          "collectionUnit": "ICS",
+          "testUnit": "CAU",
+          "testPart": "种仁",
+          "origin": "陕西安康",
+          "oilContent": 3.85,
+          "iodineValue": null,
+          "acidValue": 79.71,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": 0.14,
+            "C14:0": null,
+            "C16:0": 3.59,
+            "C16:1": null,
+            "C18:0": 1.86,
+            "C18:1": 19.11,
+            "C18:2": 15.85,
+            "C18:3": 4.23,
+            "C20:0": 0.79,
+            "C20:1": 3.41
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "杉松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Abies holophylla Maxim. [Abies yoneyamae K. Satô]",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "冷杉属",
+      "features": "乔木。幼树树皮淡褐色，不开裂，老则浅纵裂，灰褐色；枝条平展；冬芽卵圆形，有树脂。叶条形，直伸或成弯镰状，长2~4 cm，宽1.5~2.5 mm，先端急尖或渐尖，上面深绿色，有光泽，下面沿中脉两侧各有1条白色气孔带。球果圆柱形，近无梗，熟时淡黄褐色或淡褐色；中部种鳞近扇状四边形或倒三角状扇形，上部宽圆、微厚，鳞背露出部分被密生短毛；苞鳞短，长不及种鳞的一半，不露出，先端有急尖的刺状尖头，背部有纵脊；种子倒三角状，种翅宽大，淡褐色，长方状楔形，边缘有细波状缺刻，连同种子长约2.4 cm。花期4~5月；果期10月。",
+      "distribution": "生于海拔500~1200 m的土层肥厚弱灰化棕色森林土地带。产东北地区山区。朝鲜、俄罗斯也有分布。",
+      "cultivation": "喜冷湿气候，喜深厚、湿润、排水良好的酸性土，耐寒、耐阴。可采用播种、扦插繁殖。播种：采用新鲜的种子沙藏1~3个月后播种，幼苗需遮阴。扦插：宜冬季经生长激素处理，生根良好。宜定植于建筑物的背阴面。",
+      "uses": "树皮可提栲胶。木材纹理直，耐腐力较强，可供建筑、电杆及木纤维工业原料等用材。可在建筑物北侧或其他树冠庇荫下栽植，也可在草坪上丛植成景。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "description": "植株（幼树）",
+          "isCover": false,
+          "file": "page-04/fig-04.png"
+        },
+        {
+          "order": 2,
+          "description": "植株（大树）",
+          "isCover": true,
+          "file": "page-04/fig-05.png"
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "辽宁盖县",
+          "oilContent": 26.4,
+          "iodineValue": 157.7,
+          "acidValue": null,
+          "saponificationValue": 154.4,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.6,
+            "C16:1": null,
+            "C18:0": 1.6,
+            "C18:1": 30.2,
+            "C18:2": 44,
+            "C18:3": 0.3,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-04/fig-01.png",
+    "page-04/fig-02.png",
+    "page-04/fig-03.png",
+    "page-04/fig-04.png",
+    "page-04/fig-05.png"
+  ]
+}

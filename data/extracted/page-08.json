@@ -1,0 +1,240 @@
+{
+  "page": 8,
+  "printedPage": "18",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "黄花落叶松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Larix olgensis A. Henry",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "落叶松属",
+      "features": "乔木。枝平展或斜展，树冠塔形；冬芽淡紫褐色，顶芽卵圆形或微成圆锥状，芽鳞膜质，边缘具睫毛，基部芽鳞三角状卵形，先端有长尖头。叶倒披针状条形，长1.5~2.5 cm，宽约1 mm，先端钝或微尖，上面中脉平，种鳞16~40枚，背面及上部边缘有或密或疏的细小瘤状凸起，间或在近中部杂有短毛，稀近于光滑；中部种鳞广卵形常成四方状，或近方圆形，基部稍宽，先端圆或圆截形微凹，干后边缘常反曲；苞鳞暗紫褐色，矩圆状卵形或卵状椭圆形，中部稍收缩，先端圆截形或微凹，中肋延长成尾状尖头。种子近倒卵圆形，淡黄白色或白色；种翅先端钝尖。花期5月；果期9~10月。",
+      "distribution": "生于海拔500~1800 m的湿润山坡及沼泽地区。产于山西、辽宁、黑龙江。",
+      "cultivation": "适应性强，对土壤和水、肥条件要求不高，喜光，耐严寒，喜湿润，有一定的耐旱、耐水湿能力。可采用播种繁殖。根系较浅，移植较难，易遭风害，栽植成活后，应进行培土。",
+      "uses": "木材纹理直、结构细、耐久用，可作建筑、舰船、车辆、家具及木纤维工业原料等用材；树干可提树脂，树皮可提栲胶。可作庭园树、风景林树种。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-08/fig-01.png",
+          "description": "雪中枝叶（针叶覆雪）",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-08/fig-02.png",
+          "description": "球果（紫红色）着生枝上",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-08/fig-03.png",
+          "description": "植株全形（树形）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "黑龙江伊春",
+          "oilContent": 28.4,
+          "iodineValue": 164.3,
+          "acidValue": null,
+          "saponificationValue": 192.0,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 2.9,
+            "C16:1": null,
+            "C18:0": 1.2,
+            "C18:1": 22.4,
+            "C18:2": 46.1,
+            "C18:3": 23.8,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "云杉",
+      "aliasText": "粗枝云杉",
+      "englishName": null,
+      "latinName": "Picea asperata Mast.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "云杉属",
+      "features": "乔木。一年生小枝通常淡褐黄色；冬芽圆锥形，有树脂，基部膨大。主枝之叶辐射状伸展，侧枝上面之叶向上伸展，下面及两侧之叶向上方弯伸，四棱状条形，微弯曲，先端微尖或急尖，横切面四棱形，四面有气孔线，上面每边4~8条，下面每边4~6条。球果圆柱状矩圆形或圆柱形，上端渐窄，成熟前绿色，熟时淡褐色或栗褐色；中部种鳞倒卵形，上部圆或截圆形则排列紧密，或上部钝三角形则排列较松，先端全缘，或球果基部或中下部种鳞的先端两裂或微凹；苞鳞三角状匙形，长约5 mm。种子倒卵圆形；种翅淡褐色，倒卵状矩圆形。花期4~5月；果期9~10月。",
+      "distribution": "湖北：神农架大九湖，31°28′50″N，109°58′18″E，1781 m，2010-10-15，李晓东、昝艳燕、罗曼曼400121131。四川：若尔盖县巴西乡林业站，33°36′22″N，103°14′12″E，2749 m，2009-07-22，干友民400241023。青海：祁连县，38°07′55″N，100°11′01″E，3156 m，2012-09-14，刘小波、曹弈璘等40021112002。生于海拔2400~3600 m的山地。产于四川、西藏、青海、甘肃、宁夏、陕西。",
+      "cultivation": "适应性强，喜光、耐旱、耐寒凉。可采用播种、扦插繁殖。",
+      "uses": "树干可取松脂，树皮可提取栲胶，木材、枝桠、根及叶均可用来提取芳香油。木材细致，材质轻软，有弹性，为良好用材。是一种理想的庭园观赏树种。",
+      "distributionPoints": [
+        {
+          "province": "湖北",
+          "locality": "神农架大九湖",
+          "latitude": "31°28′50″N",
+          "longitude": "109°58′18″E",
+          "altitude": "1781 m",
+          "date": "2010-10-15",
+          "collectors": "李晓东、昝艳燕、罗曼曼",
+          "collectionNo": "400121131"
+        },
+        {
+          "province": "四川",
+          "locality": "若尔盖县巴西乡林业站",
+          "latitude": "33°36′22″N",
+          "longitude": "103°14′12″E",
+          "altitude": "2749 m",
+          "date": "2009-07-22",
+          "collectors": "干友民",
+          "collectionNo": "400241023"
+        },
+        {
+          "province": "青海",
+          "locality": "祁连县",
+          "latitude": "38°07′55″N",
+          "longitude": "100°11′01″E",
+          "altitude": "3156 m",
+          "date": "2012-09-14",
+          "collectors": "刘小波、曹弈璘等",
+          "collectionNo": "40021112002"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-08/fig-04.png",
+          "description": "枝叶（针叶与枝条）特写",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-08/fig-05.png",
+          "description": "枝与成熟球果（褐色）",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-08/fig-06.png",
+          "description": "树冠（多株云杉）",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-08/fig-07.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 8.27,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 7.5,
+            "C16:1": null,
+            "C18:0": 1.6,
+            "C18:1": 26.7,
+            "C18:2": 60.9,
+            "C18:3": 0.7,
+            "C20:0": 1.2,
+            "C20:1": 0.9
+          }
+        },
+        {
+          "collectionUnit": "SAU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "四川若尔盖",
+          "oilContent": 13.2,
+          "iodineValue": 17.29,
+          "acidValue": 8.75,
+          "saponificationValue": 189.43,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.05,
+            "C16:0": 9.23,
+            "C16:1": 0.18,
+            "C18:0": 2.22,
+            "C18:1": 17.47,
+            "C18:2": 69.22,
+            "C18:3": 0.38,
+            "C20:0": 0.09,
+            "C20:1": 0.15
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "青海祁连",
+          "oilContent": 45.29,
+          "iodineValue": 78.54,
+          "acidValue": 22.83,
+          "saponificationValue": 157.43,
+          "fattyAcids": {
+            "C12:0": 0.005,
+            "C14:0": 0.08,
+            "C16:0": 9.88,
+            "C16:1": 0.09,
+            "C18:0": 2.8,
+            "C18:1": 7.64,
+            "C18:2": 77.53,
+            "C18:3": 1.59,
+            "C20:0": 0.26,
+            "C20:1": 0.14
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "北京",
+          "oilContent": 43.0,
+          "iodineValue": 163.3,
+          "acidValue": null,
+          "saponificationValue": 196.3,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 2.9,
+            "C16:1": null,
+            "C18:0": 1.6,
+            "C18:1": 18.6,
+            "C18:2": 49.0,
+            "C18:3": 25.3,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 6,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-08/fig-01.png",
+    "page-08/fig-02.png",
+    "page-08/fig-03.png",
+    "page-08/fig-04.png",
+    "page-08/fig-05.png",
+    "page-08/fig-06.png",
+    "page-08/fig-07.png"
+  ]
+}

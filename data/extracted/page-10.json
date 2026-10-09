@@ -1,0 +1,178 @@
+{
+  "page": 10,
+  "printedPage": "20",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "西伯利亚云杉",
+      "aliasText": "新疆云杉",
+      "englishName": null,
+      "latinName": "Picea obovata Ledeb.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "云杉属",
+      "features": "乔木。一、二年生或一至三年生枝黄色或淡褐黄色，有较密的腺头短毛，老枝渐变为灰色或深灰色；冬芽圆锥形，有树脂，淡褐黄色，芽鳞排列较密。小枝上面之叶向前伸展，小枝下面及两侧的叶向上弯伸，四棱状条形，多少弯曲，先端有急尖的短尖头，横切面四棱形或扁棱形，上面每边有微具白粉的气孔线5~7条，下面每边有4~5条。球果卵状圆柱形或圆柱状矩圆形，幼时紫色或黑紫色，熟前黄绿色常带紫色，熟时褐色；中部种鳞楔状倒卵形，上部圆或截圆形，倒三角状卵圆形，连翅长1.4~1.6 cm；种翅褐色，倒卵状矩圆形。花期5月；果期9~10月。",
+      "distribution": "新疆：阿勒泰喀纳斯至哈巴河S229途中，48°35′50″N，86°41′15″E，1439 m，2011-09-19，侯翼国、王茜4003311037。生于海拔1200~1800 m的山地、山坡、河谷。产于新疆。哈萨克斯坦、蒙古、俄罗斯也有分布。",
+      "cultivation": "耐阴，耐寒性强，喜湿润、肥沃、排水良好的酸性灰色森林土。可采用播种繁殖。幼苗期应注意遮阴、合理施肥，应及时灌水或浇水。",
+      "uses": "树皮可提栲胶。材质细，纹理直，供建筑、造纸用，亦可作家具、电线杆等。",
+      "distributionPoints": [
+        {
+          "province": "新疆",
+          "locality": "阿勒泰喀纳斯至哈巴河S229途中",
+          "latitude": "48°35′50″N",
+          "longitude": "86°41′15″E",
+          "altitude": "1439 m",
+          "date": "2011-09-19",
+          "collectors": "侯翼国、王茜",
+          "collectionNo": "4003311037"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-10/fig-01.png",
+          "description": "枝叶与球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-10/fig-02.png",
+          "description": "种子",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-10/fig-03.png",
+          "description": "生境（云杉林）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "XIEG",
+          "testUnit": "SCBG",
+          "testPart": "种子",
+          "origin": "新疆阿勒泰",
+          "oilContent": 24.43,
+          "iodineValue": 33.82,
+          "acidValue": 23.01,
+          "saponificationValue": 208.6,
+          "fattyAcids": {
+            "C12:0": 0.009,
+            "C14:0": 0.4,
+            "C16:0": 18.13,
+            "C16:1": 0.09,
+            "C18:0": 4.95,
+            "C18:1": 12.09,
+            "C18:2": 18.9,
+            "C18:3": 45.08,
+            "C20:0": 0.24,
+            "C20:1": 0.11
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "新疆天山",
+          "oilContent": 36.7,
+          "iodineValue": 166.9,
+          "acidValue": null,
+          "saponificationValue": 187.8,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.1,
+            "C16:1": null,
+            "C18:0": 0.7,
+            "C18:1": 24.9,
+            "C18:2": 54.7,
+            "C18:3": 16.6,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ]
+    },
+    {
+      "chineseName": "青扦",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Picea wilsonii Mast.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "云杉属",
+      "features": "乔木。一年生枝淡黄绿色或淡黄灰色，无毛，稀有疏生短毛；冬芽卵圆形，无树脂，芽鳞排列紧密，淡黄褐色或褐色，先端钝，背部无纵脊，光滑无毛，小枝基部宿存芽鳞的先端紧贴小枝。叶排列较密，在小枝上部向前伸展，小枝下面之叶向两侧伸展，四棱状条形，直或微弯，较短，先端尖，横切面四棱形或扁棱形，四面各有气孔线4~6条，微具白粉。球果卵状圆柱形或圆柱状长卵圆形，成熟前绿色，熟时黄褐色或淡褐色；中部种鳞倒卵形，先端圆或有急尖头，或呈钝三角形，或具凸起截形之尖头，基部宽楔形；苞鳞匙状矩圆形，先端钝圆，长约4 mm。种子倒卵圆形，种翅倒宽披针形，淡褐色，先端圆。花期4月；果期10月。",
+      "distribution": "湖北：神农架大龙潭，31°29′37″N，110°18′03″E，2175 m，2010-11-10，李晓东、昝艳燕、罗曼曼400121127。生于海拔1400~2800 m的山地、河谷。产于湖北、四川、青海、甘肃、陕西、山西、河北、内蒙古。",
+      "cultivation": "适应性较强，喜气候温凉，在土壤湿、深厚、排水良好的土壤生长良好。可采用播种繁殖。",
+      "uses": "木材淡黄白色、纹理直，可供建筑、电杆、家具及工业原料等用材。",
+      "distributionPoints": [
+        {
+          "province": "湖北",
+          "locality": "神农架大龙潭",
+          "latitude": "31°29′37″N",
+          "longitude": "110°18′03″E",
+          "altitude": "2175 m",
+          "date": "2010-11-10",
+          "collectors": "李晓东、昝艳燕、罗曼曼",
+          "collectionNo": "400121127"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-10/fig-04.png",
+          "description": "球果与枝叶",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-10/fig-05.png",
+          "description": "未成熟球果（绿色）与枝叶",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-10/fig-06.png",
+          "description": "植株全形",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 23.48,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.2,
+            "C16:0": 11.17,
+            "C16:1": 0.99,
+            "C18:0": 2.88,
+            "C18:1": 27.83,
+            "C18:2": 32.23,
+            "C18:3": 15.31,
+            "C20:0": 0.43,
+            "C20:1": null
+          }
+        }
+      ]
+    }
+  ],
+  "imagesExtracted": 6,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-10/fig-01.png",
+    "page-10/fig-02.png",
+    "page-10/fig-03.png",
+    "page-10/fig-04.png",
+    "page-10/fig-05.png",
+    "page-10/fig-06.png"
+  ]
+}

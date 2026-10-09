@@ -1,0 +1,151 @@
+{
+  "page": 5,
+  "printedPage": "15",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "怒江冷杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Abies nukiangensis C. Y. Cheng et L. K. Fu",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "冷杉属",
+      "features": "乔木。冬芽圆球形，微具树脂。叶在枝条下面排成两列，枝条上面的叶斜展或两列状排列，条形，通常微弯，长1.2~4.3 cm，宽1.5~2.5 mm，边缘向下卷曲或微卷曲，先端有凹缺，基部微窄，上面深绿色，下面中脉两侧各有1条白粉气孔带。雄球花长约2.5 cm，下垂，雄蕊的药隔二叉状，先端尖。球果圆柱形，上部微窄，熟时黑色，微被白粉；中部种鳞扇状四边形，上部较厚，边缘内曲，中部楔状，下部两侧耳状，基部窄成短柄状；苞鳞不露出，顶端圆或宽圆，边缘有细缺齿。种子较种翅为长，种翅淡黑褐色或红褐色，楔形，上端截形，宽约9 mm，连同种子长1.6~1.9 cm。",
+      "distribution": "云南：丽江市宁蒗县，27°17′8″N，100°51′2″E，2248 m，2008-10-29，张国学400222038。生于海拔2500~3100 m的地带。产于云南。印度、缅甸及越南亦有分布。",
+      "cultivation": "喜冷湿气候，喜深厚、湿润、排水良好的酸性土。可采用播种、扦插繁殖。播种：采用新鲜的种子沙藏1~3个月后播种，幼苗需遮阴。扦插：宜冬季经生长激素处理，生根良好。宜定植于建筑物的背阴面。",
+      "uses": "树皮可提栲胶。木材淡黄白色，质轻软、细密，纹理直，可供建筑、板材、家具、火柴杆及造纸原料等用材。",
+      "distributionPoints": [
+        {
+          "province": "云南",
+          "locality": "丽江市宁蒗县",
+          "latitude": "27°17′8″N",
+          "longitude": "100°51′2″E",
+          "altitude": "2248 m",
+          "date": "2008-10-29",
+          "collectors": "张国学",
+          "collectionNo": "400222038"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-05/fig-01.png",
+          "description": "种子（带翅）堆置特写",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-05/fig-02.png",
+          "description": "种子与手写采集标签（编号0042）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "KMIB",
+          "testUnit": "KMIB",
+          "testPart": "种仁",
+          "origin": "云南丽江",
+          "oilContent": 26.62,
+          "iodineValue": 148.9,
+          "acidValue": 37.6,
+          "saponificationValue": 104.4,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": 2.57,
+            "C18:0": 0.18,
+            "C18:1": 1.45,
+            "C18:2": 22.05,
+            "C18:3": 35.66,
+            "C20:0": 1.12,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "雪松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Cedrus deodara (Roxb.) G. Don",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "雪松属",
+      "features": "乔木。树皮深灰色，裂成不规则的鳞状块片；枝平展、微斜展或微下垂。叶在长枝上辐射状伸展，长2.5~5 cm，宽1~1.5 mm，上部较宽，先端锐尖，下部渐窄，常成三棱形，稀背脊明显，叶之腹面两侧各有2~3条气孔线，背面4~6条，幼时气孔线有白粉。雄球花长卵圆形或椭圆状卵圆形；雌球花卵圆形。球果成熟前淡绿色，微有白粉，熟时红褐色，卵圆形或宽椭圆形，顶端圆钝，有短梗；中部种鳞扇状倒三角形，上部宽圆，边缘内曲，中部楔状，下部耳形，基部爪状，鳞背密生短绒毛；苞鳞短小。种子近三角状，种翅宽大，较种子为长，连同种子长2.2~3.7 cm。",
+      "distribution": "山东：诸城，35°59′34″N，119°24′36″E，52 m，2010-06-10，赵伟华400311221。生于海拔1300~3300 m的地带。产于西藏。北京、旅顺、大连、青岛、徐州、上海、南京、杭州、南平、庐山、武汉、长沙、昆明等地有栽培。",
+      "cultivation": "喜阳光充足、气候温和凉润，适宜土层深厚、排水良好的酸性土，也稍耐阴。可采用播种和扦插繁殖。播种：可于3月中下旬进行，播种量为75 kg/hm²。扦插：在春、夏两季均可进行。春季宜在3月20日前，夏季以7月下旬为佳。可喷洒苯来特或代森锌防治灰霉病，喷洒氧化乐果、敌百虫等防治蚧类及蛾蝶类害虫。",
+      "uses": "材质坚实，有树脂，具香气，耐久用，可作建筑、桥梁、造船、家具及器具等用材。树形美观，为优良的庭园观赏树种。",
+      "distributionPoints": [
+        {
+          "province": "山东",
+          "locality": "诸城",
+          "latitude": "35°59′34″N",
+          "longitude": "119°24′36″E",
+          "altitude": "52 m",
+          "date": "2010-06-10",
+          "collectors": "赵伟华",
+          "collectionNo": "400311221"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-05/fig-03.png",
+          "description": "雄球花（黄色）簇生枝上",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-05/fig-04.png",
+          "description": "幼小球果（绿色）着生枝上",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-05/fig-05.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "ICS",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "山东诸城",
+          "oilContent": 35.65,
+          "iodineValue": 129.03,
+          "acidValue": 80.45,
+          "saponificationValue": 183.41,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 4.52,
+            "C16:1": 0.08,
+            "C18:0": 2.27,
+            "C18:1": 40.27,
+            "C18:2": 31.08,
+            "C18:3": 7.67,
+            "C20:0": 1.86,
+            "C20:1": 1.12
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-05/fig-01.png",
+    "page-05/fig-02.png",
+    "page-05/fig-03.png",
+    "page-05/fig-04.png",
+    "page-05/fig-05.png"
+  ]
+}

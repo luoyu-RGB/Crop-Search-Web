@@ -1,0 +1,418 @@
+{
+  "page": 2,
+  "printedPage": "12",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "银杏",
+      "aliasText": "白果",
+      "englishName": null,
+      "latinName": "Ginkgo biloba L.",
+      "family": "银杏科",
+      "familyLatin": "GINKGOACEAE",
+      "genus": "银杏属",
+      "features": "乔木。短枝密被叶痕，亦可长出长枝；冬芽黄褐色，常为卵圆形，先端钝尖。叶扇形，有长柄，无毛，有多数叉状并列细纹；叶柄长3~10 cm，幼树及萌生枝上的叶常较大而深裂，有时裂片再分裂。球花雌雄异株，单性，生于短枝顶端的鳞片状叶的腋内，呈簇生状；雄球花柔荑花序状，下垂，雄蕊排列疏松，具短梗，花药常2个，长椭圆形；雌球花具长梗，梗端常分两叉，稀3~5裂或不分叉，每叉顶生一盘状珠座，胚珠着生其上，通常仅一个叉端的胚珠发育成种子。种子具长梗，下垂，常为椭圆形、长倒卵形、卵圆形或近圆球形，外种皮肉质，熟时黄色或橙黄色，外被白粉，有臭味；中种皮白色，骨质，具2~3条纵脊；内种皮膜质；胚乳肉质。花期3~4月；种子9~10月成熟。",
+      "distribution": "广西：桂林市广西师范大学，25°16′02″N，110°19′26″E，168m，2010-12-20，许为斌、吴望辉4001101159。河南：郑州惠济区，34°45′34″N，113°39′29″E，489 m，2011-10-05，王亚平、武振江、李丹凤400314052。江苏：徐州市泉山森林公园，34°13′02″N，117°09′28″E，53 m，2010-09-28，李宏庆、桂萍、熊申展4001171073。安徽：宣城市宁国县板桥自然保护区，30°31′57″N，118°38′51″E，267 m，2012-10-02，李星霖、刘巧霞、程志全4001171227；黄山猴园，30°04′18″N，118°08′27″E，540 m，2009-11-03，刘东明、戴建阅400111145。四川：峨边刘沟，29°17′183″N，103°30′446″E，2009-10-11，樊云川，王凯40021109069。湖北：房县白窝王家沟，32°07′00″N，110°47′20″E，2009-09-01，李晓东、杨林森40012131；竹山柳林，31°47′57″N，110°02′56″E，709 m，2010-11-01，李晓东、昝艳燕、罗曼曼400121118；神农架坪堑管理所，31°29′49.9″N，110°04′3″E，1387 m，2010-10-25，丁时东，危文亮等400151087。陕西：佛坪县西岔河三教殿，33°16′50″N，107°34′57″E，776 m，2009-08-09，薛帅400321059。北京：香山，40°00′05″N，116°11′41″E，154 m，2009-11-19，邢福武40011499。生于海拔500~1000m的天然林中，少见。产于浙江。",
+      "cultivation": "适应性较强，喜光，不耐盐碱土及过湿的土壤。可采用分株、扦插、嫁接3种方法繁殖。分株：在2~3月进行，从壮龄雌株母树根蘖苗中分离4~5株健壮、多细根苗，移栽它处。扦插：在夏季进行，选采当年生的短枝，剪成7~10 cm的茎段，下切口削成马耳状斜面，基部浸水2 h后，扦插在蛭石沙床上，间歇喷雾水。嫁接：以盛果期健壮枝条为接穗，嫁接在实生苗上。防治银杏苗木茎腐病，可搭棚遮阴，降低土温；防治害虫可在冬季刮除树皮除虫卵，在6~7月人工摘除虫蛹，或用敌百虫或马拉松喷杀刚孵化的幼虫。",
+      "uses": "种仁可入药；亦可炒食或作甜食，但不宜多吃，以防中毒；外种皮有防治植物病虫害之效。木材可供建筑、家具、器具、雕刻等用。也是优良的庭园树和行道树。",
+      "distributionPoints": [
+        {
+          "province": "广西",
+          "locality": "桂林市广西师范大学",
+          "latitude": "25°16′02″N",
+          "longitude": "110°19′26″E",
+          "altitude": "168m",
+          "date": "2010-12-20",
+          "collectors": "许为斌、吴望辉",
+          "collectionNo": "4001101159"
+        },
+        {
+          "province": "河南",
+          "locality": "郑州惠济区",
+          "latitude": "34°45′34″N",
+          "longitude": "113°39′29″E",
+          "altitude": "489 m",
+          "date": "2011-10-05",
+          "collectors": "王亚平、武振江、李丹凤",
+          "collectionNo": "400314052"
+        },
+        {
+          "province": "江苏",
+          "locality": "徐州市泉山森林公园",
+          "latitude": "34°13′02″N",
+          "longitude": "117°09′28″E",
+          "altitude": "53 m",
+          "date": "2010-09-28",
+          "collectors": "李宏庆、桂萍、熊申展",
+          "collectionNo": "4001171073"
+        },
+        {
+          "province": "安徽",
+          "locality": "宣城市宁国县板桥自然保护区",
+          "latitude": "30°31′57″N",
+          "longitude": "118°38′51″E",
+          "altitude": "267 m",
+          "date": "2012-10-02",
+          "collectors": "李星霖、刘巧霞、程志全",
+          "collectionNo": "4001171227"
+        },
+        {
+          "province": "安徽",
+          "locality": "黄山猴园",
+          "latitude": "30°04′18″N",
+          "longitude": "118°08′27″E",
+          "altitude": "540 m",
+          "date": "2009-11-03",
+          "collectors": "刘东明、戴建阅",
+          "collectionNo": "400111145"
+        },
+        {
+          "province": "四川",
+          "locality": "峨边刘沟",
+          "latitude": "29°17′183″N",
+          "longitude": "103°30′446″E",
+          "altitude": null,
+          "date": "2009-10-11",
+          "collectors": "樊云川，王凯",
+          "collectionNo": "40021109069"
+        },
+        {
+          "province": "湖北",
+          "locality": "房县白窝王家沟",
+          "latitude": "32°07′00″N",
+          "longitude": "110°47′20″E",
+          "altitude": null,
+          "date": "2009-09-01",
+          "collectors": "李晓东、杨林森",
+          "collectionNo": "40012131"
+        },
+        {
+          "province": "湖北",
+          "locality": "竹山柳林",
+          "latitude": "31°47′57″N",
+          "longitude": "110°02′56″E",
+          "altitude": "709 m",
+          "date": "2010-11-01",
+          "collectors": "李晓东、昝艳燕、罗曼曼",
+          "collectionNo": "400121118"
+        },
+        {
+          "province": "湖北",
+          "locality": "神农架坪堑管理所",
+          "latitude": "31°29′49.9″N",
+          "longitude": "110°04′3″E",
+          "altitude": "1387 m",
+          "date": "2010-10-25",
+          "collectors": "丁时东，危文亮等",
+          "collectionNo": "400151087"
+        },
+        {
+          "province": "陕西",
+          "locality": "佛坪县西岔河三教殿",
+          "latitude": "33°16′50″N",
+          "longitude": "107°34′57″E",
+          "altitude": "776 m",
+          "date": "2009-08-09",
+          "collectors": "薛帅",
+          "collectionNo": "400321059"
+        },
+        {
+          "province": "北京",
+          "locality": "香山",
+          "latitude": "40°00′05″N",
+          "longitude": "116°11′41″E",
+          "altitude": "154 m",
+          "date": "2009-11-19",
+          "collectors": "邢福武",
+          "collectionNo": "40011499"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "description": "雄球花枝（柔荑花序）",
+          "isCover": false,
+          "file": "page-02/fig-01.png"
+        },
+        {
+          "order": 2,
+          "description": "秋季黄叶的植株（大树）",
+          "isCover": true,
+          "file": "page-02/fig-02.png"
+        },
+        {
+          "order": 3,
+          "description": "种子（果实）生于枝上",
+          "isCover": false,
+          "file": "page-03/fig-01.png"
+        },
+        {
+          "order": 4,
+          "description": "种子（白果）堆放在蓝色布面上",
+          "isCover": false,
+          "file": "page-03/fig-02.png"
+        },
+        {
+          "order": 5,
+          "description": "树干（树皮）",
+          "isCover": false,
+          "file": "page-02/fig-03.png"
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "GXIB",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "广西桂林",
+          "oilContent": 23.87,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 12.02,
+            "C16:1": null,
+            "C18:0": 1.75,
+            "C18:1": 23.6,
+            "C18:2": 55.03,
+            "C18:3": 1.61,
+            "C20:0": 0.54,
+            "C20:1": 0.28
+          }
+        },
+        {
+          "collectionUnit": "HNAU",
+          "testUnit": "ICS",
+          "testPart": "种仁",
+          "origin": "河南郑州",
+          "oilContent": 4.18,
+          "iodineValue": 160.25,
+          "acidValue": 13.82,
+          "saponificationValue": 132.58,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.44,
+            "C16:0": 8.91,
+            "C16:1": 3.13,
+            "C18:0": 15.13,
+            "C18:1": 21.04,
+            "C18:2": 39.34,
+            "C18:3": 1.38,
+            "C20:0": 0.47,
+            "C20:1": 0.36
+          }
+        },
+        {
+          "collectionUnit": "ECNU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "江苏徐州",
+          "oilContent": 26.89,
+          "iodineValue": 21.88,
+          "acidValue": 2.75,
+          "saponificationValue": 205.38,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.069,
+            "C16:0": 15.15,
+            "C16:1": 0.7,
+            "C18:0": 1.49,
+            "C18:1": 40.53,
+            "C18:2": 37.66,
+            "C18:3": 1.26,
+            "C20:0": 0.16,
+            "C20:1": 0.27
+          }
+        },
+        {
+          "collectionUnit": "ECNU",
+          "testUnit": "SCBG",
+          "testPart": "果实",
+          "origin": "安徽宣城",
+          "oilContent": 20.14,
+          "iodineValue": 31.12,
+          "acidValue": 8.67,
+          "saponificationValue": 173.04,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.15,
+            "C16:0": 14.76,
+            "C16:1": 0.32,
+            "C18:0": 3.66,
+            "C18:1": 20,
+            "C18:2": 50.25,
+            "C18:3": 0.78,
+            "C20:0": 0.48,
+            "C20:1": 0.33
+          }
+        },
+        {
+          "collectionUnit": "SCBG",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "安徽黄山",
+          "oilContent": 3.7,
+          "iodineValue": 133.35,
+          "acidValue": 8.11,
+          "saponificationValue": 188.26,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川峨边",
+          "oilContent": 4.19,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北房县",
+          "oilContent": 20.4,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.26,
+            "C16:0": 5.38,
+            "C16:1": 0.12,
+            "C18:0": 2.45,
+            "C18:1": 30.36,
+            "C18:2": 50.55,
+            "C18:3": 4.03,
+            "C20:0": 2.31,
+            "C20:1": 0.22
+          }
+        },
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北竹山",
+          "oilContent": 0.96,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 9.4,
+            "C16:1": 3,
+            "C18:0": 1.8,
+            "C18:1": 32.6,
+            "C18:2": 42.3,
+            "C18:3": 1.9,
+            "C20:0": 5.1,
+            "C20:1": 1
+          }
+        },
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 20.28,
+          "iodineValue": 22.24,
+          "acidValue": 7.9,
+          "saponificationValue": 156.79,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.63,
+            "C16:0": 1.96,
+            "C16:1": 2.26,
+            "C18:0": 3.1,
+            "C18:1": 31.32,
+            "C18:2": 13.04,
+            "C18:3": 0.91,
+            "C20:0": null,
+            "C20:1": 0.46
+          }
+        },
+        {
+          "collectionUnit": "CAU",
+          "testUnit": "ICS",
+          "testPart": "种仁",
+          "origin": "陕西佛坪",
+          "oilContent": 2.93,
+          "iodineValue": 122.63,
+          "acidValue": 84.96,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 5.67,
+            "C16:1": 2.09,
+            "C18:0": 0.9,
+            "C18:1": 13.13,
+            "C18:2": 38.51,
+            "C18:3": 1.79,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCBG",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "北京香山",
+          "oilContent": 35.65,
+          "iodineValue": 95.1,
+          "acidValue": 11.7,
+          "saponificationValue": 197.99,
+          "fattyAcids": {
+            "C12:0": 0.024,
+            "C14:0": 0.094,
+            "C16:0": 15.38,
+            "C16:1": 0.11,
+            "C18:0": 6.84,
+            "C18:1": 30,
+            "C18:2": 47.02,
+            "C18:3": 0.16,
+            "C20:0": 0.11,
+            "C20:1": 0.26
+          }
+        }
+      ],
+      "uncertain": [
+        "distributionPoints[5].latitude（原书印为29°17′183″N，秒位为三位数，疑原书排版异常，已照抄）",
+        "distributionPoints[5].longitude（原书印为103°30′446″E，秒位为三位数，疑原书排版异常，已照抄）"
+      ]
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-02/fig-03.png"
+  ]
+}

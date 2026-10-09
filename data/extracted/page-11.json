@@ -1,0 +1,431 @@
+{
+  "page": 11,
+  "printedPage": "21",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "华山松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus armandii Franch.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝绿色或灰绿色，无毛；微被白粉。冬芽近圆柱形，褐色，微具树脂，芽鳞排列疏松。针叶5针一束，稀6~7针一束，长8~15 cm，径1~1.5 mm，边缘具细锯齿，仅腹面两侧各具4~8条白色气孔线，横切面三角形，树脂道通常3个，中生或背面2个边生、腹面1个中生；叶鞘早落。雄球花黄色，卵状圆柱形，基部围有近10枚卵状匙形的鳞片。球果圆锥状长卵圆形，幼时绿色，成熟时黄色或褐黄色，种鳞张开，种子脱落；中部种鳞近斜方状倒卵形；鳞盾近斜方形或宽三角状斜方形，不具纵脊，先端钝圆或微尖，不反曲或微反曲；鳞脐不明显。种子黄褐色、暗褐色或黑色，倒卵圆形，无翅或两侧及顶端具棱脊。花期4~5月；果期翌年9~10月。",
+      "distribution": "湖南：桑植县芭茅溪乡天平山，29°40′35″N，110°02′10″E，2009-10-22，张兵400181062；永顺小溪，29°25′20″N，109°25′22″E，324 m，2009-11-03，张代贵、周建军400191169。山东：泰山，36°15′37″N，117°07′15″E，910 m，2009-08-20，赵伟华400311057。河南：灵宝小秦岭，34°25′51″N，110°30′32″E，2413 m，2012-08-15，王亚平400314149。湖北：神农架红坪乡大沟，31°29′38″N，110°24′34″E，1835 m，2009-09-04，危文亮、丁时东400151003；神农架林区木鱼镇老君山，31°24′15″N，110°20′27″E，2508 m，2012-09-01，危文亮，赵永国等400151198；神农架红花朵大岩屋，31°49′05″N，110°29′40″E，2009-10-28，李晓东、杨林森40012175。四川：泸定县冷碛乡，29°51′11″N，102°15′22″E，2218 m，2009-08-24，干友民400241052。云南：麻栗坡县天保乡天保村芭蕉坪，22°58′07″N，104°50′36″E，1202 m，2008-10-29，张国学400222053。西藏：波密县扎木乡岗巴村，29°52′26″N，95°36′08″E，2791 m，2011-09-04，干友民40024132。陕西：眉县营头乡大殿，34°01′51″N，107°25′14″E，2273 m，2009-08-07，薛帅400321032。生于海拔1000~3300 m的山地、河谷。产于湖南、河南、湖北、四川、贵州、云南、西藏、甘肃、陕西、山西。",
+      "cultivation": "喜温凉湿润气候，不耐寒及湿热，稍耐干燥、瘠薄。可采用播种繁殖。通常在播种前进行沙藏层积催芽，也可用50~60℃温水浸种催芽。幼苗出土前应保持土壤湿润并搭棚遮阴。用1:100波尔多液或50%多菌灵1000倍液喷施可防治立枯病。",
+      "uses": "种子含油量高，可制硬化油和食用油等；种仁内富含蛋白质，常作干果炒食；树干可割取树脂，树皮可提取栲胶；针叶可提炼芳香油。木材可供建筑、家具及木纤维工业原料等用材。亦是较好的园林树种。",
+      "distributionPoints": [
+        {
+          "province": "湖南",
+          "locality": "桑植县芭茅溪乡天平山",
+          "latitude": "29°40′35″N",
+          "longitude": "110°02′10″E",
+          "altitude": null,
+          "date": "2009-10-22",
+          "collectors": "张兵",
+          "collectionNo": "400181062"
+        },
+        {
+          "province": "湖南",
+          "locality": "永顺小溪",
+          "latitude": "29°25′20″N",
+          "longitude": "109°25′22″E",
+          "altitude": "324 m",
+          "date": "2009-11-03",
+          "collectors": "张代贵、周建军",
+          "collectionNo": "400191169"
+        },
+        {
+          "province": "山东",
+          "locality": "泰山",
+          "latitude": "36°15′37″N",
+          "longitude": "117°07′15″E",
+          "altitude": "910 m",
+          "date": "2009-08-20",
+          "collectors": "赵伟华",
+          "collectionNo": "400311057"
+        },
+        {
+          "province": "河南",
+          "locality": "灵宝小秦岭",
+          "latitude": "34°25′51″N",
+          "longitude": "110°30′32″E",
+          "altitude": "2413 m",
+          "date": "2012-08-15",
+          "collectors": "王亚平",
+          "collectionNo": "400314149"
+        },
+        {
+          "province": "湖北",
+          "locality": "神农架红坪乡大沟",
+          "latitude": "31°29′38″N",
+          "longitude": "110°24′34″E",
+          "altitude": "1835 m",
+          "date": "2009-09-04",
+          "collectors": "危文亮、丁时东",
+          "collectionNo": "400151003"
+        },
+        {
+          "province": "湖北",
+          "locality": "神农架林区木鱼镇老君山",
+          "latitude": "31°24′15″N",
+          "longitude": "110°20′27″E",
+          "altitude": "2508 m",
+          "date": "2012-09-01",
+          "collectors": "危文亮，赵永国等",
+          "collectionNo": "400151198"
+        },
+        {
+          "province": "湖北",
+          "locality": "神农架红花朵大岩屋",
+          "latitude": "31°49′05″N",
+          "longitude": "110°29′40″E",
+          "altitude": null,
+          "date": "2009-10-28",
+          "collectors": "李晓东、杨林森",
+          "collectionNo": "40012175"
+        },
+        {
+          "province": "四川",
+          "locality": "泸定县冷碛乡",
+          "latitude": "29°51′11″N",
+          "longitude": "102°15′22″E",
+          "altitude": "2218 m",
+          "date": "2009-08-24",
+          "collectors": "干友民",
+          "collectionNo": "400241052"
+        },
+        {
+          "province": "云南",
+          "locality": "麻栗坡县天保乡天保村芭蕉坪",
+          "latitude": "22°58′07″N",
+          "longitude": "104°50′36″E",
+          "altitude": "1202 m",
+          "date": "2008-10-29",
+          "collectors": "张国学",
+          "collectionNo": "400222053"
+        },
+        {
+          "province": "西藏",
+          "locality": "波密县扎木乡岗巴村",
+          "latitude": "29°52′26″N",
+          "longitude": "95°36′08″E",
+          "altitude": "2791 m",
+          "date": "2011-09-04",
+          "collectors": "干友民",
+          "collectionNo": "40024132"
+        },
+        {
+          "province": "陕西",
+          "locality": "眉县营头乡大殿",
+          "latitude": "34°01′51″N",
+          "longitude": "107°25′14″E",
+          "altitude": "2273 m",
+          "date": "2009-08-07",
+          "collectors": "薛帅",
+          "collectionNo": "400321032"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-11/fig-01.png",
+          "description": "植株与生境（山地）",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-11/fig-02.png",
+          "description": "枝叶与球果",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-11/fig-03.png",
+          "description": "种子（松子）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "HUST",
+          "testUnit": "HUST",
+          "testPart": "种仁",
+          "origin": "湖南桑植",
+          "oilContent": 53.3,
+          "iodineValue": 13.71,
+          "acidValue": 9.71,
+          "saponificationValue": 173.27,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.39,
+            "C16:0": 19.52,
+            "C16:1": null,
+            "C18:0": 3.02,
+            "C18:1": 41.77,
+            "C18:2": 24.81,
+            "C18:3": 2.3,
+            "C20:0": 0.62,
+            "C20:1": 0.58
+          }
+        },
+        {
+          "collectionUnit": "JSU",
+          "testUnit": "SCBG",
+          "testPart": "种子",
+          "origin": "湖南永顺",
+          "oilContent": 53.54,
+          "iodineValue": 156.77,
+          "acidValue": 18.26,
+          "saponificationValue": 268.15,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.11,
+            "C16:0": 9.85,
+            "C16:1": 0.09,
+            "C18:0": 5.35,
+            "C18:1": 47.4,
+            "C18:2": 21.55,
+            "C18:3": 0.31,
+            "C20:0": 0.5,
+            "C20:1": 0.39
+          }
+        },
+        {
+          "collectionUnit": "ICS",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "山东泰山",
+          "oilContent": 53.57,
+          "iodineValue": 133.33,
+          "acidValue": 12.05,
+          "saponificationValue": 161.39,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.06,
+            "C16:0": 4.6,
+            "C16:1": 0.18,
+            "C18:0": 1.97,
+            "C18:1": 23.03,
+            "C18:2": 44.29,
+            "C18:3": 13.4,
+            "C20:0": 0.43,
+            "C20:1": 0.94
+          }
+        },
+        {
+          "collectionUnit": "HNAU",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "河南灵宝",
+          "oilContent": 12.01,
+          "iodineValue": 40.39,
+          "acidValue": 34.46,
+          "saponificationValue": 221.58,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.26,
+            "C16:0": 10.76,
+            "C16:1": 0.13,
+            "C18:0": 4.45,
+            "C18:1": 41.3,
+            "C18:2": 17.78,
+            "C18:3": 0.22,
+            "C20:0": 0.92,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 54.65,
+          "iodineValue": 35.08,
+          "acidValue": 34.05,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.03,
+            "C16:0": 6.09,
+            "C16:1": null,
+            "C18:0": 1.48,
+            "C18:1": 8.52,
+            "C18:2": 75.28,
+            "C18:3": 7.38,
+            "C20:0": 0.26,
+            "C20:1": 0.15
+          }
+        },
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 46.8,
+          "iodineValue": 42.37,
+          "acidValue": 16.36,
+          "saponificationValue": 172.18,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": 0.22,
+            "C18:0": 4.39,
+            "C18:1": 81.35,
+            "C18:2": 61.6,
+            "C18:3": 23.69,
+            "C20:0": 0.61,
+            "C20:1": 0.46
+          }
+        },
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 17.6,
+          "iodineValue": 122.53,
+          "acidValue": 3.88,
+          "saponificationValue": 216.94,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.051,
+            "C16:0": 5.94,
+            "C16:1": 0.06,
+            "C18:0": 2.65,
+            "C18:1": 28.77,
+            "C18:2": 60.39,
+            "C18:3": 0.34,
+            "C20:0": 0.52,
+            "C20:1": 1.38
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "四川泸定",
+          "oilContent": 20.16,
+          "iodineValue": 88.99,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": 0.1,
+            "C14:0": 0.56,
+            "C16:0": 4.27,
+            "C16:1": 0.19,
+            "C18:0": 1.36,
+            "C18:1": 70.4,
+            "C18:2": 18.76,
+            "C18:3": 0.66,
+            "C20:0": 0.28,
+            "C20:1": 0.15
+          }
+        },
+        {
+          "collectionUnit": "KMIB",
+          "testUnit": "KMIB",
+          "testPart": "种仁",
+          "origin": "云南麻栗坡",
+          "oilContent": 49.83,
+          "iodineValue": 157.9,
+          "acidValue": 5.7,
+          "saponificationValue": 182.6,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": 4.36,
+            "C18:2": 0.13,
+            "C18:3": 1.81,
+            "C20:0": 47.71,
+            "C20:1": 19.93
+          }
+        },
+        {
+          "collectionUnit": "SAU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "西藏波密",
+          "oilContent": null,
+          "iodineValue": 33.82,
+          "acidValue": 23.01,
+          "saponificationValue": 208.6,
+          "fattyAcids": {
+            "C12:0": 0.02,
+            "C14:0": 0.39,
+            "C16:0": 29.15,
+            "C16:1": 0.48,
+            "C18:0": 3.31,
+            "C18:1": 21.21,
+            "C18:2": 18.44,
+            "C18:3": 4.78,
+            "C20:0": 0.45,
+            "C20:1": 0.02
+          }
+        },
+        {
+          "collectionUnit": "CAU",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "陕西眉县",
+          "oilContent": 54.9,
+          "iodineValue": 96.38,
+          "acidValue": 5.44,
+          "saponificationValue": 148.86,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.09,
+            "C16:0": 8.9,
+            "C16:1": 0.05,
+            "C18:0": 0.62,
+            "C18:1": 47.38,
+            "C18:2": 39.7,
+            "C18:3": 0.43,
+            "C20:0": 0.77,
+            "C20:1": 2.06
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "陕西华山",
+          "oilContent": 20.9,
+          "iodineValue": 157.9,
+          "acidValue": null,
+          "saponificationValue": 189.8,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 5.1,
+            "C16:1": null,
+            "C18:0": 2.2,
+            "C18:1": 23.4,
+            "C18:2": 48.1,
+            "C18:3": 21.2,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": [
+        "chemistry[5].C18:1/C18:2（第6行 OCRI 湖北神农架，各行数值之和为172.32，超过100%，疑为原书数据或列位有误，需人工复核）",
+        "chemistry[8].C18:1—C20:1（第9行 KMIB 云南麻栗坡，C12:0～C18:0 为空而 C20:0 印为47.71，疑为原书列错位，需人工复核）",
+        "collectionNo（湖北神农架红花朵大岩屋记录印为40012175、西藏波密记录印为40024132，均为8位，其余记录为9位，按原书照抄）"
+      ]
+    }
+  ],
+  "imagesExtracted": 3,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-11/fig-01.png",
+    "page-11/fig-02.png",
+    "page-11/fig-03.png"
+  ]
+}

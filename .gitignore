@@ -20,3 +20,15 @@ logs/
 # OS files
 .DS_Store
 Thumbs.db
+
+# 资料整理中间产物（页面渲染图、阅读切片、OCR 工具与临时脚本）
+work/pages/
+work/chunks/
+work/ocr/
+work/tables/
+work/debug/
+work/pkg/
+work/*.dll
+work/*.exe
+work/probe13.txt
+work/_run_tmp.py

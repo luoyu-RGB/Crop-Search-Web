@@ -1,0 +1,34 @@
+﻿crop_no,page,chinese_name,latin_name,family,genus
+1,1,苏铁,Cycas revoluta Thunb.,苏铁科,苏铁属
+2,2,银杏,Ginkgo biloba L.,银杏科,银杏属
+3,3,云南黄果冷杉,Abies ernestii var. salouenensis (Bordères et Gaussen) W. C. Cheng et L.K.Fu,松科,冷杉属
+4,4,巴山冷杉,Abies fargesii Franch.,松科,冷杉属
+5,4,杉松,Abies holophylla Maxim. [Abies yoneyamae K. Satô],松科,冷杉属
+6,5,怒江冷杉,Abies nukiangensis C. Y. Cheng et L. K. Fu,松科,冷杉属
+7,5,雪松,Cedrus deodara (Roxb.) G. Don,松科,雪松属
+8,6,铁坚油杉,Keteleeria davidiana (Bertr.) Beissn.,松科,油杉属
+9,6,云南油杉,Keteleeria evelyniana Mast.,松科,油杉属
+10,7,油杉,Keteleeria fortunei (A. Murray bis) Carrière,松科,油杉属
+11,7,落叶松,Larix gmelinii (Rupr.) Kuzen.,松科,落叶松属
+12,8,黄花落叶松,Larix olgensis A. Henry,松科,落叶松属
+13,8,云杉,Picea asperata Mast.,松科,云杉属
+14,9,鱼鳞云杉,Picea jezoensis var. microsperma (Lindl.) W.C. Cheng et L. K. Fu,松科,云杉属
+15,9,红皮云杉,Picea koraiensis Nakai,松科,云杉属
+16,10,西伯利亚云杉,Picea obovata Ledeb.,松科,云杉属
+17,10,青扦,Picea wilsonii Mast.,松科,云杉属
+18,11,华山松,Pinus armandii Franch.,松科,松属
+19,12,白皮松,Pinus bungeana Zucc. ex Endl.,松科,松属
+20,12,高山松,Pinus densata Mast.,松科,松属
+21,13,赤松,Pinus densiflora Sieb.,松科,松属
+22,13,湿地松,Pinus elliottii Engelm.,松科,松属
+23,14,红松,Pinus koraiensis Sieb. et Zucc.,松科,松属
+24,14,华南五针松,Pinus kwangtungensis Chun et Tsiang,松科,松属
+25,15,马尾松,Pinus massoniana D. Don,松科,松属
+26,16,台湾五针松,Pinus morrisonicola Hayata [Pinus formosana Hayata; Pinus taiwanensis Hayata],松科,松属
+27,16,新疆五针松,Pinus sibirica Du Tour,松科,松属
+28,17,樟子松,Pinus sylvestris var. mongolica Litv.,松科,松属
+29,17,油松,Pinus tabuliformis Carr. [Pinus tabuliformis var. tabuliformis],松科,松属
+30,18,黑松,Pinus thunbergii Parl.,松科,松属
+31,18,云南松,Pinus yunnanensis Franch.,松科,松属
+32,19,金钱松,Pseudolarix amabilis (J. Nelson) Rehd. [P. kaempferi Gordon],松科,金钱松属
+33,19,柳杉,Cryptomeria fortunei Hooibr. ex Otto et Dietrich,杉科,柳杉属

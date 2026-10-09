@@ -1,0 +1,160 @@
+{
+  "page": 9,
+  "printedPage": "19",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "鱼鳞云杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Picea jezoensis var. microsperma (Lindl.) W.C. Cheng et L. K. Fu",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "云杉属",
+      "features": "乔木。一年生枝通常褐色，微有光泽，二、三年生枝微带灰色；冬芽圆锥形，淡褐色，几无树脂，芽鳞上部渐窄，排列较疏松，通常向外开展或微反曲，小枝基部宿存芽鳞的先端反卷或开展。小枝上面之叶覆瓦状向前伸展，下面及两侧之叶向两侧弯伸，条形，常微弯，长1~2 cm，宽1.5~2 mm，先端常微钝，上面有2条白粉气孔带，每带有5~8条气孔线，下面光绿色，无气孔。球果矩圆状圆柱形或长卵圆形，成熟前绿色，熟时褐色或淡黄褐色；种鳞薄，排列疏松，中部种鳞卵状椭圆形或菱状椭圆形，中部较宽，先端近截形或圆，边缘有不规则细缺齿，基部宽楔形微圆；苞鳞先端凸尖或圆。种子连翅长约9 mm，种翅宽约3.5 mm。花期5~6月；果期9~10月。",
+      "distribution": "生于海拔300~800 m气候寒凉、棕色森林土的丘陵或缓坡地带。产于东北大兴安岭至小兴安岭南端及松花江流域中下游。日本、俄罗斯也有分布。",
+      "cultivation": "喜阴，耐低温严寒，不耐干旱、瘠薄、盐碱。可采用播种繁殖。种子催芽多采取混雪埋藏、混沙埋藏催芽或温水浸种催芽，多采取春播。易受日灼和立枯病危害。",
+      "uses": "种子含油率高，供工业用；树皮可提栲胶，树干可割取松脂；叶可提取芳香油；木材纹理直，结构细，不易开裂，耐久用，可供建筑、飞机、桥梁及木纤维工业等用材。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-09/fig-01.png",
+          "description": "枝叶与球果",
+          "isCover": true
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "吉林通化",
+          "oilContent": 44.1,
+          "iodineValue": 163.8,
+          "acidValue": null,
+          "saponificationValue": 192.1,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 2.8,
+            "C16:1": null,
+            "C18:0": 1.4,
+            "C18:1": 22.9,
+            "C18:2": 50.1,
+            "C18:3": 19.1,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ]
+    },
+    {
+      "chineseName": "红皮云杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Picea koraiensis Nakai",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "云杉属",
+      "features": "乔木。一年生枝黄色、淡黄褐色或淡红褐色，二、三年生枝淡黄褐色、褐黄色或灰褐色；冬芽圆锥形，上部芽鳞常向外展，小枝基部宿存，芽鳞的先端向外反曲。叶四棱状条形，主枝之叶近辐射状排列。球果卵状圆柱形或长卵状圆柱形，成熟前绿色，熟时绿黄褐色至褐色；中部种鳞倒卵形或三角状倒卵形，鳞背露出部分微有光泽，平滑，无明显的条纹；苞鳞条状，长约5 mm，中下部微窄，先端钝或微尖，边缘有极细的小缺齿。种子灰黑褐色，倒卵圆形；种翅淡褐色，倒卵状矩圆形，先端圆。花期5~6月；果期9~10月。",
+      "distribution": "黑龙江：桦川县申家店，46°34′06″N，130°37′39″E，673 m，2010-08-13，陈连江、卞勇、贾海伦400351030。生于海拔400~1800 m的山地。产于辽宁、吉林、黑龙江。朝鲜、俄罗斯也有分布。",
+      "cultivation": "喜深厚、湿润土壤，较耐阴。可采用扦插、播种繁殖。扦插：在早春抽出新梢后，剪15 cm长插穗，在塑料大棚内进行扦插。播种：种子用雪藏法贮藏，春季播种前1周左右将种子取出，并混以湿沙播种。",
+      "uses": "树冠塔形，树姿优美，是一种理想的园林观赏植物。",
+      "distributionPoints": [
+        {
+          "province": "黑龙江",
+          "locality": "桦川县申家店",
+          "latitude": "46°34′06″N",
+          "longitude": "130°37′39″E",
+          "altitude": "673 m",
+          "date": "2010-08-13",
+          "collectors": "陈连江、卞勇、贾海伦",
+          "collectionNo": "400351030"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-09/fig-02.png",
+          "description": "树干与树皮",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-09/fig-03.png",
+          "description": "植株全形",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-09/fig-04.png",
+          "description": "未成熟球果（绿色）与枝叶",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-09/fig-05.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SBRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江桦川",
+          "oilContent": 45.83,
+          "iodineValue": 62.69,
+          "acidValue": 12.16,
+          "saponificationValue": 243.23,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.02,
+            "C16:0": 3.67,
+            "C16:1": 0.03,
+            "C18:0": 0.96,
+            "C18:1": 66.96,
+            "C18:2": 26.97,
+            "C18:3": 1.15,
+            "C20:0": 0.11,
+            "C20:1": 0.13
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "黑龙江带岭",
+          "oilContent": 39.3,
+          "iodineValue": 164.3,
+          "acidValue": null,
+          "saponificationValue": 191.6,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.5,
+            "C16:1": null,
+            "C18:0": 1.9,
+            "C18:1": 23.8,
+            "C18:2": 47.1,
+            "C18:3": 18.5,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ]
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-09/fig-01.png",
+    "page-09/fig-02.png",
+    "page-09/fig-03.png",
+    "page-09/fig-04.png",
+    "page-09/fig-05.png"
+  ]
+}

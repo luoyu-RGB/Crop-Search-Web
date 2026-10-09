@@ -1,0 +1,78 @@
+{
+  "page": 3,
+  "printedPage": "13",
+  "section": "银杏科 GINKGOACEAE、松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "云南黄果冷杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Abies ernestii var. salouenensis (Bordères et Gaussen) W. C. Cheng et L.K.Fu",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "冷杉属",
+      "features": "乔木。树皮暗灰色，纵裂成薄块状。大枝平展，树冠尖塔形；冬芽卵圆形或圆锥状卵圆形，有树脂。叶在枝条下面排成两列，上面之叶直立或斜上伸展，条形，弯镰状或直，不反曲，长1.5~3.5 cm，宽2~2.5 mm；果枝之叶长达4~7 cm，上面中脉凹下，多较明显。雌球花紫褐黑色。球果圆柱形或卵状圆柱形，有短梗或近无梗；中部种鳞宽倒三角状扇形、扇状四方形或肾状四边形，上部宽圆较薄，边缘内曲，中部收缩或微收缩，两侧薄，常突出，稀楔形，边缘有缺齿，下部圆截形，基部窄成短柄状，鳞背露出部分密生短柔毛；苞鳞短，上部圆；微凹或平，边缘有细缺齿，背面中上部有纵脊。种子斜三角形，种翅褐色或紫黑色，边缘有波状细缺齿，连同种子长1.5~2.7 cm。花期4~5月；球果10月成熟。",
+      "distribution": "云南：香格里拉，27°55′5″N，99°37′34″E，3494 m，2012-11-02，李晓东、昝艳燕等400121295。生于海拔2600~3200 m的林中。产于云南、西藏。",
+      "cultivation": "喜冷湿气候，喜深厚、湿润、排水良好的酸性土。可采用播种繁殖。采用新鲜的种子沙藏1~3个月后播种。幼苗需遮阴。",
+      "uses": "树皮可提栲胶。木材淡黄白色，质轻软、细密，纹理直，可作建筑、板材、家具、火柴杆及造纸原料等用材。",
+      "distributionPoints": [
+        {
+          "province": "云南",
+          "locality": "香格里拉",
+          "latitude": "27°55′5″N",
+          "longitude": "99°37′34″E",
+          "altitude": "3494 m",
+          "date": "2012-11-02",
+          "collectors": "李晓东、昝艳燕等",
+          "collectionNo": "400121295"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "description": "枝叶（针叶）特写",
+          "isCover": false,
+          "file": "page-03/fig-03.png"
+        },
+        {
+          "order": 2,
+          "description": "植株（大树）",
+          "isCover": true,
+          "file": "page-03/fig-04.png"
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "WHBG",
+          "testUnit": "WHBG",
+          "testPart": "种仁",
+          "origin": "云南香格里拉",
+          "oilContent": 23.15,
+          "iodineValue": 91.98,
+          "acidValue": null,
+          "saponificationValue": 387.2,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.7,
+            "C16:0": 4.68,
+            "C16:1": 1.03,
+            "C18:0": 1.43,
+            "C18:1": null,
+            "C18:2": 74.23,
+            "C18:3": 0.45,
+            "C20:0": 0.23,
+            "C20:1": 0.38
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 2,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-03/fig-03.png",
+    "page-03/fig-04.png"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "page": 6,
+  "printedPage": "16",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "铁坚油杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Keteleeria davidiana (Bertr.) Beissn.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "油杉属",
+      "features": "乔木。一年生枝淡黄灰色；冬芽卵圆形，先端微尖。叶条形，在侧枝上排列成两列，长2~5 cm，宽3~4 mm，先端圆钝或微凹，基部渐窄成短柄，上面光绿色，无气孔线或中上部有极少的气孔线，下面淡绿色，沿中脉两侧各有气孔线10~16条，微有白粉，横切面上面有1层不连续排列的皮下层细胞；幼树或萌生枝有密毛，叶较长。球果圆柱形；中部的种鳞卵形或近斜方状卵形，上部圆或窄长而反曲，边缘向外反曲，有微小的细齿，鳞背露出部分无毛或疏生短毛；鳞苞上部近圆形，先端3裂，中裂窄，鳞苞中部窄短，下部稍宽；种翅中下部或近中部较宽，上部渐窄。花期4月；果期10月。",
+      "distribution": "生于海拔600~1500 m地带。产于湖南、湖北、四川、贵州、甘肃、陕西。",
+      "cultivation": "喜光，喜温暖湿润。可采用播种繁殖。",
+      "uses": "根皮油脂可作造纸填料。木材可作房屋建筑、桥梁及一般用具等用材。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-06/fig-01.png",
+          "description": "枝叶（针叶与枝条）",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-06/fig-02.png",
+          "description": "植株全形（大树）",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-06/fig-03.png",
+          "description": "针叶特写",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "湖北恩施",
+          "oilContent": 47.9,
+          "iodineValue": 123.7,
+          "acidValue": null,
+          "saponificationValue": 184.6,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 7.3,
+            "C16:1": null,
+            "C18:0": 1.9,
+            "C18:1": 50.9,
+            "C18:2": 30.2,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": [
+        "fattyAcids.C18:3"
+      ]
+    },
+    {
+      "chineseName": "云南油杉",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Keteleeria evelyniana Mast.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "油杉属",
+      "features": "乔木。一年生枝干后常呈粉红色，有毛。叶条形，在侧枝上排列成两列，长2~6.5 cm，宽2~3 mm，先端有微凸起的钝尖头，基部楔形，渐窄成短叶柄，上面光绿色，中脉两侧每边有2~10条气孔线，下面沿中脉两侧每边有14~19条气孔线。球果圆柱形；中部的种鳞卵状斜方形或斜方状卵形，长3~4 cm，宽2.5~3 cm，上部向外反曲，边缘有明显的细小缺齿，鳞背露出部分通常有毛；苞鳞中部窄，下部逐渐增宽，上部近圆形，先端呈不明显的3裂，中裂明显，侧裂近圆形；种翅中下部较宽，上部渐窄。花期4~5月；果期10月。",
+      "distribution": "生于海拔700~2600 m的地带。产于四川、贵州、云南。",
+      "cultivation": "喜光，喜温暖湿润，耐火烧，耐寒、耐旱能力较差，对土壤要求较高，在腐殖质含量低、土壤板结黏重、肥力低的地方生长不良。可采用播种繁殖。",
+      "uses": "种子榨油可用于制皂工业。木材可作建筑、家具等用材。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-06/fig-04.png",
+          "description": "雄球花（黄色）着生枝上",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-06/fig-05.png",
+          "description": "树皮（纵裂）特写",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-06/fig-06.png",
+          "description": "植株全形（大树）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "云南昆明",
+          "oilContent": 59.7,
+          "iodineValue": 98.4,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 9.7,
+            "C16:1": null,
+            "C18:0": 1.9,
+            "C18:1": 62.0,
+            "C18:2": 25.5,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 6,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-06/fig-01.png",
+    "page-06/fig-02.png",
+    "page-06/fig-03.png",
+    "page-06/fig-04.png",
+    "page-06/fig-05.png",
+    "page-06/fig-06.png"
+  ]
+}

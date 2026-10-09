@@ -1,0 +1,221 @@
+{
+  "page": 16,
+  "printedPage": "26",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "台湾五针松",
+      "aliasText": "台湾松、黄山松",
+      "englishName": null,
+      "latinName": "Pinus morrisonicola Hayata [Pinus formosana Hayata; Pinus taiwanensis Hayata]",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。树皮深灰褐色，裂成不规则鳞状厚块片或薄片。枝平展，老树树冠平顶，一年生枝淡黄褐色或暗红褐色，无毛，不被白粉；冬芽深褐色，卵圆形或长卵圆形，顶端尖，微有树脂，芽鳞先端尖，边缘薄，有细缺裂。针叶2针一束，边缘有细锯齿，两面有气孔线，横切面半圆形，树脂道3~7（9）个，中生；叶鞘宿存。雄球花圆柱形，淡红褐色，聚生于新枝下部成短穗状。球果卵圆形，几无梗，向下弯垂，成熟前绿色，熟时褐色或暗褐色，后渐变呈暗灰褐色，常宿存树上6~7年；中部种鳞近矩圆形，近鳞盾下部稍窄，基部楔形；鳞盾稍肥厚隆起，近扁菱形，横脊显著；鳞脐具短刺。种子倒卵状椭圆形，具不规则的红褐色斑纹。花期4~5月；果期翌年10月。",
+      "distribution": "江西：铅山县武夷山自然保护区，27°57′31″N，117°50′31″E，1317 m，2011-10-16，凡强、景慧娟4001411050。生于海拔600~3400 m的暖温带季雨林中。产于广西、湖南、江西、福建、台湾、浙江、江苏、安徽、河南、湖北、贵州、云南。",
+      "cultivation": "喜光，喜凉润、湿度较大的高山气候，耐贫瘠，在土层深厚、排水良好的酸性土及向阳山坡生长良好。可采用播种繁殖。“春分”前后播种，每667 m²播种5~6 kg。",
+      "uses": "木材纹理直，结构粗，富含树脂，耐水湿，为矿柱、枕木、码头、桥梁等用材；成年树可采割松脂，松枝、针叶为水泥袋纸和人造纤维原料；松针还可提取芳香油及医用胡萝卜素；采伐后的根桩可培养茯苓，供作中药和食用；花药可掺入糕点食用，并为痱子粉的优良配料；还可制成保健饮料和化妆品。为庭园观赏树种，亦作盆景栽培。",
+      "distributionPoints": [
+        {
+          "province": "江西",
+          "locality": "铅山县武夷山自然保护区",
+          "latitude": "27°57′31″N",
+          "longitude": "117°50′31″E",
+          "altitude": "1317 m",
+          "date": "2011-10-16",
+          "collectors": "凡强、景慧娟",
+          "collectionNo": "4001411050"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-16/fig-01.png",
+          "description": "枝、针叶与幼球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-16/fig-02.png",
+          "description": "球果（绿色，密集簇生）",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-16/fig-03.png",
+          "description": "植株全形（岩石山峰间的老树）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SYSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "江西铅山",
+          "oilContent": 10.61,
+          "iodineValue": 117.62,
+          "acidValue": 2.48,
+          "saponificationValue": 170.72,
+          "fattyAcids": {
+            "C12:0": 0.04,
+            "C14:0": 0.13,
+            "C16:0": 6.27,
+            "C16:1": 0.85,
+            "C18:0": 1.43,
+            "C18:1": 43.12,
+            "C18:2": 40.21,
+            "C18:3": 1.58,
+            "C20:0": 0.17,
+            "C20:1": 0.12
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "江西庐山",
+          "oilContent": 22.4,
+          "iodineValue": 151.0,
+          "acidValue": null,
+          "saponificationValue": 158.0,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 4.6,
+            "C16:1": null,
+            "C18:0": 1.9,
+            "C18:1": 18.8,
+            "C18:2": 47.0,
+            "C18:3": null,
+            "C20:0": 20.5,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": [
+        "C18:3"
+      ]
+    },
+    {
+      "chineseName": "新疆五针松",
+      "aliasText": "西伯利亚红松",
+      "englishName": null,
+      "latinName": "Pinus sibirica Du Tour",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。树冠塔形。大枝近水平开展，小枝粗壮，淡褐色，密被淡黄色柔毛；冬芽圆锥形，淡褐或红褐色，先端尖。针叶5针一束，较粗短，长7~12 cm，粗0.8~1.2 mm，边缘疏生细齿，背面无气孔线，腹面每边具3~5条气孔线，横断面近三角形，树脂道3个，中生；叶鞘早落。雌球果圆锥状卵形，无柄，直立，长6~10 cm，径5~6 cm，不开裂。种鳞宽楔形，内弯；鳞盾紫褐色，宽菱形，密生细绒毛，上部圆，微内曲，基部近平截；鳞脐黄褐色，明显。种子倒卵圆形，黄褐色，长1 cm，径5~6 mm，微具棱脊，无翅。花期5月；果期翌年8~9月。",
+      "distribution": "新疆：阿勒泰白哈巴，48°39′39″N，86°43′47″E，1726 m，2010-09-08，王喜勇、段士民4003310008；阿勒泰喀纳斯自然保护区，48°45′00″N，86°56′01″E，1715 m，2011-09-18，侯翼国、王茜4003311034。生于海拔800~2400 m的山地、河谷。产于新疆、内蒙古、黑龙江。哈萨克斯坦、蒙古、俄罗斯也有分布。",
+      "cultivation": "喜光、抗寒、抗旱，对空气温度要求较高。可采用播种繁殖。",
+      "uses": "种子可食，亦可榨油。木材轻、结构细，有香气，耐久用，可供建筑和特殊用材，亦可作家具等。树形优美，可作庭园树种。",
+      "distributionPoints": [
+        {
+          "province": "新疆",
+          "locality": "阿勒泰白哈巴",
+          "latitude": "48°39′39″N",
+          "longitude": "86°43′47″E",
+          "altitude": "1726 m",
+          "date": "2010-09-08",
+          "collectors": "王喜勇、段士民",
+          "collectionNo": "4003310008"
+        },
+        {
+          "province": "新疆",
+          "locality": "阿勒泰喀纳斯自然保护区",
+          "latitude": "48°45′00″N",
+          "longitude": "86°56′01″E",
+          "altitude": "1715 m",
+          "date": "2011-09-18",
+          "collectors": "侯翼国、王茜",
+          "collectionNo": "4003311034"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-16/fig-04.png",
+          "description": "枝、针叶与雌球花（幼球果）",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-16/fig-05.png",
+          "description": "植株（塔形树冠）",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-16/fig-06.png",
+          "description": "球果特写（紫褐色，开裂）",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-16/fig-07.png",
+          "description": "林相（针叶林景观）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "XIEG",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "新疆阿勒泰",
+          "oilContent": 59.14,
+          "iodineValue": 110.6,
+          "acidValue": 3.74,
+          "saponificationValue": 194.02,
+          "fattyAcids": {
+            "C12:0": 0.019,
+            "C14:0": 0.036,
+            "C16:0": 5.41,
+            "C16:1": null,
+            "C18:0": 3.31,
+            "C18:1": 29.38,
+            "C18:2": 59.3,
+            "C18:3": 0.31,
+            "C20:0": 0.4,
+            "C20:1": 1.84
+          }
+        },
+        {
+          "collectionUnit": "XIEG",
+          "testUnit": "SCBG",
+          "testPart": "种子",
+          "origin": "新疆阿勒泰",
+          "oilContent": 35.24,
+          "iodineValue": 4.57,
+          "acidValue": 9.15,
+          "saponificationValue": 232.97,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.025,
+            "C16:0": 6.41,
+            "C16:1": 0.09,
+            "C18:0": 2.65,
+            "C18:1": 17.61,
+            "C18:2": 8.99,
+            "C18:3": 63.59,
+            "C20:0": 0.39,
+            "C20:1": 0.25
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 7,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-16/fig-01.png",
+    "page-16/fig-02.png",
+    "page-16/fig-03.png",
+    "page-16/fig-04.png",
+    "page-16/fig-05.png",
+    "page-16/fig-06.png",
+    "page-16/fig-07.png"
+  ]
+}

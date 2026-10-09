@@ -1,0 +1,202 @@
+{
+  "page": 18,
+  "printedPage": "28",
+  "section": null,
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "黑松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus thunbergii Parl.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝淡褐黄色，无毛；冬芽银白色，圆柱状椭圆形或圆柱形，顶端尖，芽鳞披针形或条状披针形，边缘白色丝状。针叶2针一束，深绿色，有光泽，粗硬，长6~12 cm，径1.5~2 mm，边缘有细锯齿，背腹面均有气孔线，横切面皮下层细胞1层或2层，连续排列，树脂道6~11个，中生。雄球花淡红褐色，圆柱形，聚生于新枝下部；雌球花单生或2~3个聚生于新枝近顶端，直立，有梗，卵圆形，淡紫红色或淡褐红色。球果成熟前绿色，熟时褐色，圆锥状卵圆形或卵圆形，长4~6 cm，径3~4 cm，有短梗，向下弯垂；中部种鳞卵状椭圆形；鳞盾微肥厚，横脊显著；鳞脐微凹，有短刺。种子倒卵状椭圆形；种翅灰褐色，有深色条纹。花期4~5月；果期翌年10月。",
+      "distribution": "原产于日本及朝鲜海岸地区。中国辽宁、江苏、山东、浙江有栽培。",
+      "cultivation": "喜光，耐寒冷，耐干旱、瘠薄及盐碱土，不耐水涝，抗病虫能力强。可采用播种繁殖。",
+      "uses": "种子可榨油供工业用。木材结构较细、纹理直、耐久用，可作建筑、矿柱、器具等用材。可作园林及庭园树种。",
+      "distributionPoints": [],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-18/fig-01.png",
+          "description": "针叶与球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-18/fig-02.png",
+          "description": "庭园中的植株",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "江苏南京",
+          "oilContent": 30.6,
+          "iodineValue": 152.4,
+          "acidValue": null,
+          "saponificationValue": 193.9,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 12.5,
+            "C16:1": null,
+            "C18:0": 5.3,
+            "C18:1": 37.9,
+            "C18:2": 27.3,
+            "C18:3": 0.5,
+            "C20:0": 3.9,
+            "C20:1": null
+          }
+        }
+      ]
+    },
+    {
+      "chineseName": "云南松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus yunnanensis Franch.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝粗壮，淡红褐色，无毛，二、三年生枝上苞片状的鳞片脱落露出红褐色内皮；冬芽圆锥状卵圆形，粗大，红褐色，无树脂，芽鳞披针形。针叶通常3针一束，稀2针一束，常在枝上宿存3年，长10~30 cm，径约1.2 mm，先端尖，背腹面均有气孔线，边缘有细锯齿，横切面扇状三角形或半圆形，二型皮下层细胞，第一层细胞连续排列，其下有散生细胞，树脂道4~5个，中生与边生并存；叶鞘宿存。雄球花圆柱状，生于新枝下部的苞腋内，聚集成穗状。球果成熟前绿色，熟时褐色或栗褐色，圆锥状卵圆形，有短梗；中部种鳞矩圆状椭圆形；鳞盾通常肥厚、隆起、稀反曲，有横脊；鳞脐微凹或微隆起，有短刺。种子褐色，近卵圆形或倒卵形。花期4~5月；果期翌年10月。",
+      "distribution": "四川：泸定县老川藏线二郎山出洞口，29°51′10″N，102°15′21″E，2218 m，2009-08-24，干友民400241051；盐源莲花山，27°25′240″ N，101°30′291″ E，2009-10-05，樊云川、王凯40021109054。云南：昆明市东郊呼马山，25°01′38″N，102°44′03″E，1972 m，2008-10-29，张国学400222040。生于海拔600~3100 m的山地、河谷。产于广西、四川、贵州、云南、西藏。",
+      "cultivation": "适应性强，喜光，耐干旱、耐瘠薄。可采用播种繁殖。用2.5敌百虫粉剂，每667 m²施3 kg喷粉可防治虫害。",
+      "uses": "树根可培养茯苓，树干富含松脂，是制取松香松节油的原料；树皮可提取栲胶。针叶可提取松针油及加工成松针粉，作饲料添加剂；花粉可作药用，是美容护肤佳品。木材是优质造纸、人造板原料，并供建筑、家具等用材。可作为园林树种，同时为优良的荒山荒地造林先锋树种。",
+      "distributionPoints": [
+        {
+          "province": "四川",
+          "locality": "泸定县老川藏线二郎山出洞口",
+          "latitude": "29°51′10″N",
+          "longitude": "102°15′21″E",
+          "altitude": "2218 m",
+          "date": "2009-08-24",
+          "collectors": "干友民",
+          "collectionNo": "400241051"
+        },
+        {
+          "province": "四川",
+          "locality": "盐源莲花山",
+          "latitude": "27°25′240″ N",
+          "longitude": "101°30′291″ E",
+          "altitude": null,
+          "date": "2009-10-05",
+          "collectors": "樊云川、王凯",
+          "collectionNo": "40021109054"
+        },
+        {
+          "province": "云南",
+          "locality": "昆明市东郊呼马山",
+          "latitude": "25°01′38″N",
+          "longitude": "102°44′03″E",
+          "altitude": "1972 m",
+          "date": "2008-10-29",
+          "collectors": "张国学",
+          "collectionNo": "400222040"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-18/fig-03.png",
+          "description": "针叶与球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-18/fig-04.png",
+          "description": null,
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-18/fig-05.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SAU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "四川泸定",
+          "oilContent": 19.34,
+          "iodineValue": 4.57,
+          "acidValue": 9.15,
+          "saponificationValue": 232.97,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.67,
+            "C16:0": 5.51,
+            "C16:1": 0.03,
+            "C18:0": 1.87,
+            "C18:1": 30.13,
+            "C18:2": 43.5,
+            "C18:3": 0.48,
+            "C20:0": 0.22,
+            "C20:1": 7.07
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川盐源",
+          "oilContent": 48.76,
+          "iodineValue": 115.2,
+          "acidValue": 3.8,
+          "saponificationValue": 157.2,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 8.78,
+            "C16:1": null,
+            "C18:0": 2.27,
+            "C18:1": 21.22,
+            "C18:2": 47.01,
+            "C18:3": 20.03,
+            "C20:0": 0.69,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "KMIB",
+          "testUnit": "KMIB",
+          "testPart": "种仁",
+          "origin": "云南昆明",
+          "oilContent": 21.69,
+          "iodineValue": 141.4,
+          "acidValue": 7.5,
+          "saponificationValue": 169.8,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": 3.68,
+            "C18:0": 0.24,
+            "C18:1": 1.55,
+            "C18:2": 17.92,
+            "C18:3": 43.56,
+            "C20:0": 1.23,
+            "C20:1": null
+          }
+        }
+      ]
+    }
+  ],
+  "imagesExtracted": 5,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-18/fig-01.png",
+    "page-18/fig-02.png",
+    "page-18/fig-03.png",
+    "page-18/fig-04.png",
+    "page-18/fig-05.png"
+  ]
+}

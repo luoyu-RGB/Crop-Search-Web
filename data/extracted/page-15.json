@@ -1,0 +1,256 @@
+{
+  "page": 15,
+  "printedPage": "25",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "马尾松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus massoniana D. Don",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。枝条淡黄褐色，无白粉，稀有白粉，无毛；冬芽卵状圆柱形或圆柱形，芽鳞边缘丝状，先端尖或成渐尖的长尖头，微反曲。针叶2针一束，稀3针一束，长12~20 cm，两面有气孔线，边缘有细锯齿，横切面皮下层细胞单型，第一层连续排列，第二层由个别细胞断续排列而成，树脂道4~8个，在背面边生；叶鞘初成褐色，后渐变成灰黑色，宿存。雄球花淡红褐色，圆柱形，聚生于新枝下部苞腋，穗状；雌球花单生或2~4个聚生于新枝近顶端，淡紫红色。一年生小球果圆球形或卵圆形，褐色或紫褐色，上部珠鳞的鳞脐具向上直立的短刺，下部珠鳞的鳞脐平钝无刺。球果卵圆形或圆锥状卵圆形，有短梗，下垂；中部种鳞近矩圆状倒卵形；鳞盾菱形，微隆起或平，横脊微明显；鳞脐微凹，无刺，生于干燥环境者常具极短的刺。种子长卵圆形。花期4~5月；果期翌年10~12月。",
+      "distribution": "广东：阳山县秤架乡太平洞，24°55′48″N，112°59′07″E，2010-10-22，王发国、陈林400113062。湖南：保靖县白云山，28°37′51″N，109°17′16″E，398 m，2012-08-05，张代贵、张洁40019101262。湖北：鹤峰县太平乡肖家坪，29°49′28″N，109°54′55″E，937 m，2009-09-07，赵永国、丁时东400151042。四川：泸定泸桥镇，29°54′4″N，102°13′44″E，2010-11-11，崔龙、李志强40021110098；雅安宝兴蜂桶寨邓池沟，30°32′7″N，102°56′26″E，1789 m，2011-09-28，李志强、刘小波等40021111015。生于海拔2000 m以下的山地、平原。产于广东、广西、湖南、江西、福建、台湾、浙江、江苏、安徽、河南、湖北、四川、贵州、云南、陕西。",
+      "cultivation": "喜光树种，不耐阴蔽，喜温。可采用播种繁殖。播种季节在2月上旬至3月上旬。马尾松毛虫是常见害虫，目前有白僵菌、Bt、仿生农药灭幼脲等适时施用。",
+      "uses": "松籽含油率高，除食用外，可制肥皂、油漆及润滑油等；球果可提炼原油；松根可提取松焦油，也可培养贵重的中药材茯苓。松香是许多轻、重工业的重要原料，主要用于造纸、橡胶、涂料、油漆、胶黏等工业。松节油可合成松油，加工树脂，合成香料，生产杀虫剂，并为许多贵重萜烯香料的合成原料。松针含有挥发油，可提取松针油，供作清凉喷雾剂、皂用香精及配制其他合成香料，还可浸提栲胶；树皮可制胶黏剂和人造板。树干通直，可孤植或丛植作园林树，也是荒山造林先锋树种。",
+      "distributionPoints": [
+        {
+          "province": "广东",
+          "locality": "阳山县秤架乡太平洞",
+          "latitude": "24°55′48″N",
+          "longitude": "112°59′07″E",
+          "altitude": null,
+          "date": "2010-10-22",
+          "collectors": "王发国、陈林",
+          "collectionNo": "400113062"
+        },
+        {
+          "province": "湖南",
+          "locality": "保靖县白云山",
+          "latitude": "28°37′51″N",
+          "longitude": "109°17′16″E",
+          "altitude": "398 m",
+          "date": "2012-08-05",
+          "collectors": "张代贵、张洁",
+          "collectionNo": "40019101262"
+        },
+        {
+          "province": "湖北",
+          "locality": "鹤峰县太平乡肖家坪",
+          "latitude": "29°49′28″N",
+          "longitude": "109°54′55″E",
+          "altitude": "937 m",
+          "date": "2009-09-07",
+          "collectors": "赵永国、丁时东",
+          "collectionNo": "400151042"
+        },
+        {
+          "province": "四川",
+          "locality": "泸定泸桥镇",
+          "latitude": "29°54′4″N",
+          "longitude": "102°13′44″E",
+          "altitude": null,
+          "date": "2010-11-11",
+          "collectors": "崔龙、李志强",
+          "collectionNo": "40021110098"
+        },
+        {
+          "province": "四川",
+          "locality": "雅安宝兴蜂桶寨邓池沟",
+          "latitude": "30°32′7″N",
+          "longitude": "102°56′26″E",
+          "altitude": "1789 m",
+          "date": "2011-09-28",
+          "collectors": "李志强、刘小波等",
+          "collectionNo": "40021111015"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-15/fig-01.png",
+          "description": "枝、针叶与幼球果",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-15/fig-02.png",
+          "description": "成熟球果（开裂）特写",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-15/fig-03.png",
+          "description": "球果（数个，深褐色）",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-15/fig-04.png",
+          "description": "树皮特写（块状剥落）",
+          "isCover": false
+        },
+        {
+          "order": 5,
+          "file": "page-15/fig-05.png",
+          "description": "植株全形（大树与山坡）",
+          "isCover": false
+        },
+        {
+          "order": 6,
+          "file": "page-15/fig-06.png",
+          "description": "针叶与黄色雄球花（小孢子叶球）特写",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SCBG",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "广东阳山",
+          "oilContent": 29.4,
+          "iodineValue": 91.74,
+          "acidValue": 5.62,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": 0.05,
+            "C14:0": 0.02,
+            "C16:0": 2.79,
+            "C16:1": 0.05,
+            "C18:0": 7.33,
+            "C18:1": 23.09,
+            "C18:2": 50.9,
+            "C18:3": 0.27,
+            "C20:0": 0.45,
+            "C20:1": 0.61
+          }
+        },
+        {
+          "collectionUnit": "JSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖南保靖",
+          "oilContent": 39.45,
+          "iodineValue": 91.85,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.11,
+            "C16:0": 6.66,
+            "C16:1": 0.12,
+            "C18:0": 3.43,
+            "C18:1": 30.96,
+            "C18:2": 52.11,
+            "C18:3": 1.79,
+            "C20:0": 1.04,
+            "C20:1": 0.5
+          }
+        },
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北鹤峰",
+          "oilContent": 46.42,
+          "iodineValue": 75.06,
+          "acidValue": 2.51,
+          "saponificationValue": 239.09,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.08,
+            "C16:0": 12.41,
+            "C16:1": null,
+            "C18:0": 7.06,
+            "C18:1": 14.71,
+            "C18:2": 14.86,
+            "C18:3": 37.08,
+            "C20:0": 0.95,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川泸定",
+          "oilContent": null,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川雅安",
+          "oilContent": 30.88,
+          "iodineValue": 156.77,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "广东乐昌",
+          "oilContent": 27.1,
+          "iodineValue": 156.3,
+          "acidValue": null,
+          "saponificationValue": 190.8,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 3.6,
+            "C16:1": null,
+            "C18:0": 1.9,
+            "C18:1": 19.6,
+            "C18:2": 47.5,
+            "C18:3": 23.8,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 6,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-15/fig-01.png",
+    "page-15/fig-02.png",
+    "page-15/fig-03.png",
+    "page-15/fig-04.png",
+    "page-15/fig-05.png",
+    "page-15/fig-06.png"
+  ]
+}

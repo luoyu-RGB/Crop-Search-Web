@@ -2,6 +2,24 @@
 
 数据库建议使用 MySQL，主键统一使用自增整数 `BIGINT`，时间字段使用 `DATETIME`，数值字段缺失时保存 `NULL`。
 
+数据来源说明：`crops`、`crop_aliases`、`crop_images`、`crop_samples`、`crop_oil_data`、`crop_components` 六张表的初始数据来自《课程设计资料.pdf》（《中国非粮生物柴油植物》）的逐页转写，转写文件为 `data/extracted/page-NN.json`，转写规范见 `docs/pdf-extraction-spec.md`。
+每页 PDF 对应一条作物记录（`crops.source_page` 记录 PDF 物理页码），页底“含油率及化学组分数据”表的每一行对应一条 `crop_samples` 记录，并在 `crop_oil_data` 中保存含油率、碘值、酸值、皂化值，在 `crop_components` 中按“一行一种组分”保存脂肪酸含量。
+
+脂肪酸组分统一使用以下 10 个组分名（`crop_components.component_name`）：
+
+| 组分名 | 含义 |
+|---|---|
+| C12:0 | 十二烷酸（月桂酸） |
+| C14:0 | 十四烷酸（肉豆蔻酸） |
+| C16:0 | 十六烷酸（棕榈酸） |
+| C16:1 | 十六碳一烯酸（棕榈油酸） |
+| C18:0 | 十八烷酸（硬脂酸） |
+| C18:1 | 十八碳一烯酸（油酸） |
+| C18:2 | 十八碳二烯酸（亚油酸） |
+| C18:3 | 十八碳三烯酸（亚麻酸） |
+| C20:0 | 二十烷酸（花生酸） |
+| C20:1 | 二十碳一烯酸（花生一烯酸） |
+
 ## users：用户表
 
 | 字段 | 类型 | 说明 |

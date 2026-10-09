@@ -1,0 +1,340 @@
+{
+  "page": 19,
+  "printedPage": "29",
+  "section": "松科 PINACEAE、杉科 TAXODIACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "金钱松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pseudolarix amabilis (J. Nelson) Rehd. [P. kaempferi Gordon]",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "金钱松属",
+      "features": "乔木。一年生长枝淡红褐色或淡红黄色，无毛，有光泽，二、三年生枝淡黄灰色或淡褐灰色。叶条形，柔软，镰状或直，上部稍宽，长2~5.5 cm，宽1.5~4 mm，先端锐尖或尖，上面绿色，下面蓝绿色，中脉明显，每边有5~14条气孔线，气孔带较中脉带为宽或近于等宽。长枝之叶辐射状伸展，短枝之叶簇状密生。雄球花黄色，圆柱状；雌球花紫红色，直立，椭圆形，长约1.3 cm，有短梗。球果卵圆形或倒卵圆形，成熟前绿色或淡黄绿色，熟时淡红褐色，有短梗；中部的种鳞卵状披针形，基部宽约1.7 cm，两侧耳状，先端钝有凹缺；腹面种翅痕之间有纵脊凸起，脊上密生短柔毛，鳞背光滑无毛；苞鳞长为种鳞的1/4~1/3，卵状披针形，边缘有细齿。种子卵圆形，白色；种翅三角状披针形，淡黄色或淡褐黄色。花期4月；果期10月。",
+      "distribution": "江西：吉安市井冈山，26°33′26″N，114°09′17″E，160 m，2009-09-04，廖文波等400142007。生于常绿、落叶阔叶混交林中。产于湖南、江西、福建、浙江。",
+      "cultivation": "喜温凉湿润气候。可采用播种、扦插繁殖。播种：为菌根性树种，宜在林间播种育苗，或用菌根土覆盖苗床，圃地适宜连作。扦插：利用10年生以下细枝条扦插，成活率可达70%。主要的病害有猝倒病、茎腐病和松落叶病，可用70%敌克松700倍液喷洒防治。主要虫害有袋蛾，除及时摘去袋囊外，对幼虫可用90%敌百虫1000倍液喷杀之。",
+      "uses": "种子可榨油；根皮可治顽癣和食积等症；木材纹理直，耐水湿，为建筑、桥梁、船舶、家具等的优良用材。树姿优美，为著名的庭园树种。",
+      "distributionPoints": [
+        {
+          "province": "江西",
+          "locality": "吉安市井冈山",
+          "latitude": "26°33′26″N",
+          "longitude": "114°09′17″E",
+          "altitude": "160 m",
+          "date": "2009-09-04",
+          "collectors": "廖文波等",
+          "collectionNo": "400142007"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-19/fig-01.png",
+          "description": "枝叶特写",
+          "isCover": true
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SYSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "江西吉安",
+          "oilContent": 31.04,
+          "iodineValue": 150.02,
+          "acidValue": 2.65,
+          "saponificationValue": 177.87,
+          "fattyAcids": {
+            "C12:0": 0.09,
+            "C14:0": 0.23,
+            "C16:0": 21.07,
+            "C16:1": 0.8,
+            "C18:0": 2.2,
+            "C18:1": 44.44,
+            "C18:2": 16.81,
+            "C18:3": 9.9,
+            "C20:0": 0.2,
+            "C20:1": 0.15
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "湖北恩施",
+          "oilContent": 43.9,
+          "iodineValue": 163.4,
+          "acidValue": null,
+          "saponificationValue": 150.2,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 8.2,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": 29.5,
+            "C18:2": 33.8,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": [
+        "fattyAcids.C18:3"
+      ]
+    },
+    {
+      "chineseName": "柳杉",
+      "aliasText": "长叶孔雀松",
+      "englishName": null,
+      "latinName": "Cryptomeria fortunei Hooibr. ex Otto et Dietrich",
+      "family": "杉科",
+      "familyLatin": "TAXODIACEAE",
+      "genus": "柳杉属",
+      "features": "乔木，高达40 m，胸径可达2 m。大枝近轮生，平展或斜展；小枝细长，常下垂，绿色，枝条中部的叶较长，常向两端逐渐变短。叶钻形略向内弯曲，先端内曲，四边有气孔线，长1~1.5 cm，果枝的叶通常较短，幼树及萌芽枝的叶。雄球花单生叶腋，长椭圆形，集生于小枝上部，成短穗状花序状；雌球花顶生于短枝上。球果圆球形或扁球形；种鳞20左右，鳞背中部或中下部有1个三角状分离的苞鳞尖头，基部宽3~14 mm，能育的种鳞有2粒种子。种子褐色，近椭圆形，扁平，长4~6.5 mm，边缘有窄翅。花期4月；球果10月成熟。",
+      "distribution": "湖南：永顺县小溪茶园溪，28°46′15″N，110°14′50″E，333 m，2010-10-04，肖艳、徐亮400191143；古丈县高林乡各竹溪，28°39′43″N，110°04′13″E，981 m，2010-11-06，徐亮、周建军、钱凯歌400191159。四川：宜宾老君山，28°41′40″N，103°59′15″E，1863 m，2011-10-15，邓星光、吴阳晨等4002111080；雅安宝兴蜂桶寨邓池沟，30°32′07″N，102°56′27″E，1780 m，2011-09-27，李志强、刘小波等4002111104；峨眉山高桥，28°29′894″ N，103°21′947″ E，2009-10-06，樊云川、王凯4002110902。河南：信阳波尔登公园，31°51′35″N，114°5′28″E，298 m，2012-09-15，王亚平400314221。湖北：神农架坪堑管理所，31°29′44″N，110°05′1″E，1470 m，2010-10-23，丁时东、危文亮400151075。为我国特有树种，产于江西庐山、福建南平及浙江天目山，有数百年的老树。长江以南地区均有栽培，生长良好。",
+      "cultivation": "喜光，喜温凉至温暖湿润的环境，耐寒，耐干旱，喜疏松且排水良好、富含有机质的壤土。播种繁殖，于春季进行。",
+      "uses": "树姿雄伟，为优良的庭园树种，可从植或列植。",
+      "distributionPoints": [
+        {
+          "province": "湖南",
+          "locality": "永顺县小溪茶园溪",
+          "latitude": "28°46′15″N",
+          "longitude": "110°14′50″E",
+          "altitude": "333 m",
+          "date": "2010-10-04",
+          "collectors": "肖艳、徐亮",
+          "collectionNo": "400191143"
+        },
+        {
+          "province": "湖南",
+          "locality": "古丈县高林乡各竹溪",
+          "latitude": "28°39′43″N",
+          "longitude": "110°04′13″E",
+          "altitude": "981 m",
+          "date": "2010-11-06",
+          "collectors": "徐亮、周建军、钱凯歌",
+          "collectionNo": "400191159"
+        },
+        {
+          "province": "四川",
+          "locality": "宜宾老君山",
+          "latitude": "28°41′40″N",
+          "longitude": "103°59′15″E",
+          "altitude": "1863 m",
+          "date": "2011-10-15",
+          "collectors": "邓星光、吴阳晨等",
+          "collectionNo": "4002111080"
+        },
+        {
+          "province": "四川",
+          "locality": "雅安宝兴蜂桶寨邓池沟",
+          "latitude": "30°32′07″N",
+          "longitude": "102°56′27″E",
+          "altitude": "1780 m",
+          "date": "2011-09-27",
+          "collectors": "李志强、刘小波等",
+          "collectionNo": "4002111104"
+        },
+        {
+          "province": "四川",
+          "locality": "峨眉山高桥",
+          "latitude": "28°29′894″ N",
+          "longitude": "103°21′947″ E",
+          "altitude": null,
+          "date": "2009-10-06",
+          "collectors": "樊云川、王凯",
+          "collectionNo": "4002110902"
+        },
+        {
+          "province": "河南",
+          "locality": "信阳波尔登公园",
+          "latitude": "31°51′35″N",
+          "longitude": "114°5′28″E",
+          "altitude": "298 m",
+          "date": "2012-09-15",
+          "collectors": "王亚平",
+          "collectionNo": "400314221"
+        },
+        {
+          "province": "湖北",
+          "locality": "神农架坪堑管理所",
+          "latitude": "31°29′44″N",
+          "longitude": "110°05′1″E",
+          "altitude": "1470 m",
+          "date": "2010-10-23",
+          "collectors": "丁时东、危文亮",
+          "collectionNo": "400151075"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-19/fig-02.png",
+          "description": "枝叶与雄球花",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-19/fig-03.png",
+          "description": "种子",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-19/fig-04.png",
+          "description": null,
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "JSU",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖南永顺",
+          "oilContent": 42.02,
+          "iodineValue": 120.98,
+          "acidValue": 4.72,
+          "saponificationValue": 191.83,
+          "fattyAcids": {
+            "C12:0": 0,
+            "C14:0": 0.28,
+            "C16:0": 4.4,
+            "C16:1": 0.34,
+            "C18:0": 76.78,
+            "C18:1": 18.16,
+            "C18:2": 0.047,
+            "C18:3": 0.24,
+            "C20:0": 0,
+            "C20:1": 0
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川宜宾",
+          "oilContent": 6.93,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "果实",
+          "origin": "四川雅安",
+          "oilContent": 9.12,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "SCU",
+          "testUnit": "SCU",
+          "testPart": "种仁",
+          "origin": "四川峨眉山",
+          "oilContent": 16.27,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 6.95,
+            "C16:1": null,
+            "C18:0": 9.78,
+            "C18:1": 34.29,
+            "C18:2": 48.99,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "HNAU",
+          "testUnit": "ICS",
+          "testPart": "种仁",
+          "origin": "河南信阳",
+          "oilContent": 6.43,
+          "iodineValue": 95.94,
+          "acidValue": 88.31,
+          "saponificationValue": 68.41,
+          "fattyAcids": {
+            "C12:0": 2.07,
+            "C14:0": 0.7,
+            "C16:0": 6.8,
+            "C16:1": 1.39,
+            "C18:0": 1.64,
+            "C18:1": 12.1,
+            "C18:2": 12.63,
+            "C18:3": 3.63,
+            "C20:0": 10.78,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OCRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "湖北神农架",
+          "oilContent": 12.66,
+          "iodineValue": 38.36,
+          "acidValue": 0.69,
+          "saponificationValue": 396.81,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 7.57,
+            "C16:1": 0.06,
+            "C18:0": 1.84,
+            "C18:1": 11.81,
+            "C18:2": 53.6,
+            "C18:3": 32.54,
+            "C20:0": 0.3,
+            "C20:1": 0.29
+          }
+        }
+      ],
+      "uncertain": [
+        "fattyAcids.C14:0"
+      ]
+    }
+  ],
+  "imagesExtracted": 4,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-19/fig-01.png",
+    "page-19/fig-02.png",
+    "page-19/fig-03.png",
+    "page-19/fig-04.png"
+  ]
+}

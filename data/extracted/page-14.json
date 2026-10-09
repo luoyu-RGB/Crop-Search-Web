@@ -1,0 +1,273 @@
+{
+  "page": 14,
+  "printedPage": "24",
+  "section": "松科 PINACEAE",
+  "verified": false,
+  "crops": [
+    {
+      "chineseName": "红松",
+      "aliasText": null,
+      "englishName": null,
+      "latinName": "Pinus koraiensis Sieb. et Zucc.",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝密被黄褐色或红褐色柔毛；冬芽淡红褐色，矩圆状卵圆形，先端尖，微被树脂，芽鳞排列较疏松。针叶5针一束，长6~12 cm，粗硬，直，深绿色，边缘具细锯齿，背面通常无气孔线；叶鞘早落。雄球花椭圆状圆柱形，红黄色；雌球花绿褐色，圆柱状卵圆形，直立。球果圆锥状卵圆形、圆锥状长卵圆形或卵状矩圆形，成熟后种鳞不张开，或稍微张开而露出种子；种鳞菱形，上部渐窄而开展，先端钝，向外反曲；鳞盾黄褐色或微带灰绿色，三角形或斜方状三角形，表面有皱纹；鳞脐不显著。种子大，着生于种鳞腹面下部的凹槽中，无翅或顶端及上部两侧微具棱脊，暗紫褐色或褐色，倒卵状三角形。花期6月；果期翌年9~10月。",
+      "distribution": "山西：翼城县历山，35°18′38″N，111°33′19″E，1782 m，2010-10-13，谢光辉400322011。黑龙江：伊春市嘉荫县八字山，48°16′05″N，129°31′03″E，1102 m，2010-08-18，陈连江、卞勇、贾海伦400351064。生于海拔200~1800 m的山地。产于山西、吉林、黑龙江。日本、朝鲜、俄罗斯也有分布。",
+      "cultivation": "喜弱光，喜冷凉湿润气候及酸性土。可采用播种繁殖。播种前一般要经过浸种、消毒、催芽3个过程。",
+      "uses": "种子又名松子，既是重要的中药，又可食用，可做糖果、糕点辅料，还可代植物油食用；松子油，除可食用外，还是干漆、皮革工业的重要原料。树干高大通直，树姿优美，可作为园林树种。",
+      "distributionPoints": [
+        {
+          "province": "山西",
+          "locality": "翼城县历山",
+          "latitude": "35°18′38″N",
+          "longitude": "111°33′19″E",
+          "altitude": "1782 m",
+          "date": "2010-10-13",
+          "collectors": "谢光辉",
+          "collectionNo": "400322011"
+        },
+        {
+          "province": "黑龙江",
+          "locality": "伊春市嘉荫县八字山",
+          "latitude": "48°16′05″N",
+          "longitude": "129°31′03″E",
+          "altitude": "1102 m",
+          "date": "2010-08-18",
+          "collectors": "陈连江、卞勇、贾海伦",
+          "collectionNo": "400351064"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-14/fig-01.png",
+          "description": "枝、针叶与雄球花",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-14/fig-02.png",
+          "description": "枝、针叶与幼球果",
+          "isCover": false
+        },
+        {
+          "order": 3,
+          "file": "page-14/fig-03.png",
+          "description": "种子（松子，褐色）",
+          "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-14/fig-04.png",
+          "description": "树皮特写",
+          "isCover": false
+        },
+        {
+          "order": 5,
+          "file": "page-14/fig-05.png",
+          "description": "植株全形（大树树冠）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "CAU",
+          "testUnit": "ICS",
+          "testPart": "种子",
+          "origin": "山西翼城",
+          "oilContent": 45.3,
+          "iodineValue": 77.13,
+          "acidValue": 2.2,
+          "saponificationValue": 196.4,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": 0.08,
+            "C16:0": 9.68,
+            "C16:1": 0.09,
+            "C18:0": 4.69,
+            "C18:1": 30.02,
+            "C18:2": 51.64,
+            "C18:3": 0.46,
+            "C20:0": 1.1,
+            "C20:1": 2.22
+          }
+        },
+        {
+          "collectionUnit": "SBRI",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "黑龙江伊春",
+          "oilContent": 46.82,
+          "iodineValue": 4.184,
+          "acidValue": 11.91,
+          "saponificationValue": 263.82,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": null,
+            "C16:1": null,
+            "C18:0": null,
+            "C18:1": null,
+            "C18:2": null,
+            "C18:3": null,
+            "C20:0": null,
+            "C20:1": null
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "辽宁本溪",
+          "oilContent": 69.2,
+          "iodineValue": 144.2,
+          "acidValue": null,
+          "saponificationValue": 184.3,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 6.3,
+            "C16:1": null,
+            "C18:0": 2.0,
+            "C18:1": 29.9,
+            "C18:2": 51.7,
+            "C18:3": 10.0,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "chineseName": "华南五针松",
+      "aliasText": "广东松",
+      "englishName": null,
+      "latinName": "Pinus kwangtungensis Chun et Tsiang",
+      "family": "松科",
+      "familyLatin": "PINACEAE",
+      "genus": "松属",
+      "features": "乔木。一年生枝淡褐色，老枝淡灰褐色或淡黄褐色；冬芽茶褐色，微有树脂。针叶5针一束，长3.5~7 cm，径1~1.5 mm，先端尖，边缘有疏生细锯齿，仅腹面每侧有4~5条白色气孔线，横切面三角形，皮下层由单层细胞组成，树脂道2~3个，背面2个边生，有时腹面1个中生或无；叶鞘早落。球果柱状矩圆形或圆柱状卵形，通常单生，熟时淡红褐色，微具树脂；种鳞楔状倒卵形；鳞盾菱形，先端边缘较薄，微内曲或直伸。种子椭圆形或倒卵形，长8~12 mm，连同种翅与种鳞近等长。花期4~5月；果期翌年10月。",
+      "distribution": "广东：乳源广东松小黄山，113°01′08″N，24°53′48″E，639 m，2012-11-06，王发国、于海玲400119217。重庆：南川区水江镇乐村林场，29°07′12″N，107°14′40″E，1413 m，2009-09-06，刘正宇等400231056。生于海拔500~1600 m的山脊、山坡、山顶。产于海南、广东、广西、湖南、贵州。",
+      "cultivation": "适应性较强。可采用播种繁殖。圃地选择排水良好的缓坡山地。“清明”前后播种，播前消毒，浸种催芽，待胚根露白时播下，伏天适当遮阴。",
+      "uses": "可割取树脂提炼松香与松节油。木材坚实耐用，可供房屋建筑、枕木、矿柱、家具等用。为优良的园林树，可作园林树种。",
+      "distributionPoints": [
+        {
+          "province": "广东",
+          "locality": "乳源广东松小黄山",
+          "latitude": "113°01′08″N",
+          "longitude": "24°53′48″E",
+          "altitude": "639 m",
+          "date": "2012-11-06",
+          "collectors": "王发国、于海玲",
+          "collectionNo": "400119217"
+        },
+        {
+          "province": "重庆",
+          "locality": "南川区水江镇乐村林场",
+          "latitude": "29°07′12″N",
+          "longitude": "107°14′40″E",
+          "altitude": "1413 m",
+          "date": "2009-09-06",
+          "collectors": "刘正宇等",
+          "collectionNo": "400231056"
+        }
+      ],
+      "images": [
+        {
+          "order": 1,
+          "file": "page-14/fig-06.png",
+          "description": "枝、针叶与球果特写",
+          "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-14/fig-07.png",
+          "description": "植株全形（山脊云雾中的老树）",
+          "isCover": false
+        }
+      ],
+      "chemistry": [
+        {
+          "collectionUnit": "SCBG",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "广东乳源",
+          "oilContent": 28.1,
+          "iodineValue": 88.02,
+          "acidValue": 10.58,
+          "saponificationValue": 277.74,
+          "fattyAcids": {
+            "C12:0": 0.003,
+            "C14:0": 0.03,
+            "C16:0": 3.725,
+            "C16:1": 0.1,
+            "C18:0": 2.09,
+            "C18:1": 35.87,
+            "C18:2": 56.99,
+            "C18:3": 0.2,
+            "C20:0": 0.09,
+            "C20:1": 0.92
+          }
+        },
+        {
+          "collectionUnit": "CIPP",
+          "testUnit": "SCBG",
+          "testPart": "种仁",
+          "origin": "重庆南川",
+          "oilContent": 46.19,
+          "iodineValue": null,
+          "acidValue": null,
+          "saponificationValue": null,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 5.6,
+            "C16:1": 0.15,
+            "C18:0": 1.17,
+            "C18:1": 21.83,
+            "C18:2": 27.84,
+            "C18:3": 39.31,
+            "C20:0": null,
+            "C20:1": 0.22
+          }
+        },
+        {
+          "collectionUnit": "OFPC",
+          "testUnit": null,
+          "testPart": "种子",
+          "origin": "湖南宜章",
+          "oilContent": 35.0,
+          "iodineValue": 168.0,
+          "acidValue": null,
+          "saponificationValue": 192.1,
+          "fattyAcids": {
+            "C12:0": null,
+            "C14:0": null,
+            "C16:0": 4.5,
+            "C16:1": null,
+            "C18:0": 1.8,
+            "C18:1": 17.8,
+            "C18:2": 44.9,
+            "C18:3": 21.2,
+            "C20:0": null,
+            "C20:1": null
+          }
+        }
+      ],
+      "uncertain": []
+    }
+  ],
+  "imagesExtracted": 7,
+  "imagesAssigned": true,
+  "unassignedImages": [
+    "page-14/fig-01.png",
+    "page-14/fig-02.png",
+    "page-14/fig-03.png",
+    "page-14/fig-04.png",
+    "page-14/fig-05.png",
+    "page-14/fig-06.png",
+    "page-14/fig-07.png"
+  ]
+}
