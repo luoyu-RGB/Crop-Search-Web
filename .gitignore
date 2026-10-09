@@ -4,6 +4,8 @@ build/
 out/
 *.class
 *.jar
+__pycache__/
+*.pyc
 
 # IDE
 .idea/
