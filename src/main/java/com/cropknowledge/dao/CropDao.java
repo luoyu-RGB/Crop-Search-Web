@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -16,6 +17,176 @@ import java.util.Map;
 
 public class CropDao {
     private static final int PAGE_SIZE = 10;
+
+    public List<Crop> findForAdmin(String status, String name) throws SQLException {
+        List<Crop> crops = new ArrayList<>();
+        StringBuilder sql = new StringBuilder("SELECT c.* FROM crops c WHERE 1=1");
+        List<Object> params = new ArrayList<>();
+        if (status != null && !status.isEmpty() && !"ALL".equals(status)) {
+            sql.append(" AND c.review_status = ?");
+            params.add(status);
+        }
+        if (name != null && !name.trim().isEmpty()) {
+            sql.append(" AND (c.chinese_name LIKE ? OR c.english_name LIKE ? OR c.latin_name LIKE ?)");
+            String pattern = "%" + name.trim() + "%";
+            params.add(pattern); params.add(pattern); params.add(pattern);
+        }
+        sql.append(" ORDER BY c.update_time DESC, c.id DESC LIMIT 200");
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement(sql.toString())) {
+            bind(statement, params);
+            try (ResultSet result = statement.executeQuery()) { while (result.next()) crops.add(readSummary(result)); }
+        }
+        return crops;
+    }
+
+    public Crop findByIdForAdmin(long id) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("SELECT * FROM crops WHERE id = ?")) {
+            statement.setLong(1, id);
+            try (ResultSet result = statement.executeQuery()) {
+                if (!result.next()) return null;
+                Crop crop = readSummary(result);
+                loadRelated(connection, crop);
+                return crop;
+            }
+        }
+    }
+
+    public long create(Crop crop) throws SQLException {
+        String sql = "INSERT INTO crops (chinese_name, english_name, latin_name, family, genus, features, distribution, cultivation, uses, source_page, review_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            bindCrop(statement, crop, false);
+            statement.executeUpdate();
+            try (ResultSet keys = statement.getGeneratedKeys()) {
+                if (!keys.next()) throw new SQLException("No generated crop id");
+                long id = keys.getLong(1); logOperation(connection, "CREATE", id, crop.chineseName); return id;
+            }
+        }
+    }
+
+    public void update(Crop crop) throws SQLException {
+        String sql = "UPDATE crops SET chinese_name=?, english_name=?, latin_name=?, family=?, genus=?, features=?, distribution=?, cultivation=?, uses=?, source_page=?, review_status=? WHERE id=?";
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement(sql)) {
+            bindCrop(statement, crop, true); statement.setLong(12, crop.id); statement.executeUpdate();
+            logOperation(connection, "UPDATE", crop.id, crop.chineseName);
+        }
+    }
+
+    public void delete(long id) throws SQLException {
+        try (Connection connection = Database.getConnection()) {
+            String name = null;
+            try (PreparedStatement lookup = connection.prepareStatement("SELECT chinese_name FROM crops WHERE id=?")) { lookup.setLong(1, id); try (ResultSet result = lookup.executeQuery()) { if (result.next()) name = result.getString(1); } }
+            try (PreparedStatement statement = connection.prepareStatement("DELETE FROM crops WHERE id=?")) { statement.setLong(1, id); statement.executeUpdate(); }
+            logOperation(connection, "DELETE", id, name);
+        }
+    }
+
+    private static void bindCrop(PreparedStatement statement, Crop crop, boolean update) throws SQLException {
+        statement.setString(1, crop.chineseName); statement.setString(2, nullable(crop.englishName)); statement.setString(3, nullable(crop.latinName));
+        statement.setString(4, nullable(crop.family)); statement.setString(5, nullable(crop.genus)); statement.setString(6, nullable(crop.features));
+        statement.setString(7, nullable(crop.distribution)); statement.setString(8, nullable(crop.cultivation)); statement.setString(9, nullable(crop.uses));
+        if (crop.sourcePage > 0) statement.setInt(10, crop.sourcePage); else statement.setNull(10, java.sql.Types.INTEGER);
+        statement.setString(11, crop.reviewStatus == null ? "DRAFT" : crop.reviewStatus);
+    }
+
+    private static String nullable(String value) { return value == null || value.trim().isEmpty() ? null : value.trim(); }
+
+    public void addAlias(long cropId, String alias) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("INSERT INTO crop_aliases (crop_id, alias_name) VALUES (?, ?)")) {
+            statement.setLong(1, cropId); statement.setString(2, alias.trim()); statement.executeUpdate(); logOperation(connection, "ADD_ALIAS", cropId, alias);
+        }
+    }
+
+    public void deleteAlias(long cropId, String alias) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("DELETE FROM crop_aliases WHERE crop_id=? AND alias_name=?")) {
+            statement.setLong(1, cropId); statement.setString(2, alias); statement.executeUpdate(); logOperation(connection, "DELETE_ALIAS", cropId, alias);
+        }
+    }
+
+    public long addSample(long cropId, Crop.Sample sample, Map<String, java.math.BigDecimal> components) throws SQLException {
+        try (Connection connection = Database.getConnection()) {
+            connection.setAutoCommit(false);
+            try {
+                String sampleSql = "INSERT INTO crop_samples (crop_id, collection_unit, test_unit, test_part, origin, remark) VALUES (?, ?, ?, ?, ?, ?)";
+                long sampleId;
+                try (PreparedStatement statement = connection.prepareStatement(sampleSql, Statement.RETURN_GENERATED_KEYS)) {
+                    statement.setLong(1, cropId); statement.setString(2, nullable(sample.collectionUnit)); statement.setString(3, nullable(sample.testUnit));
+                    statement.setString(4, nullable(sample.testPart)); statement.setString(5, nullable(sample.origin)); statement.setString(6, nullable(sample.remark)); statement.executeUpdate();
+                    try (ResultSet keys = statement.getGeneratedKeys()) { if (!keys.next()) throw new SQLException("No generated sample id"); sampleId = keys.getLong(1); }
+                }
+                String oilSql = "INSERT INTO crop_oil_data (crop_id, sample_id, oil_content, iodine_value, acid_value, saponification_value) VALUES (?, ?, ?, ?, ?, ?)";
+                try (PreparedStatement statement = connection.prepareStatement(oilSql)) {
+                    statement.setLong(1, cropId); statement.setLong(2, sampleId); setDecimal(statement, 3, sample.oilContent); setDecimal(statement, 4, sample.iodineValue); setDecimal(statement, 5, sample.acidValue); setDecimal(statement, 6, sample.saponificationValue); statement.executeUpdate();
+                }
+                if (components != null && !components.isEmpty()) {
+                    String componentSql = "INSERT INTO crop_components (crop_id, sample_id, component_name, component_value) VALUES (?, ?, ?, ?)";
+                    try (PreparedStatement statement = connection.prepareStatement(componentSql)) {
+                        for (Map.Entry<String, java.math.BigDecimal> entry : components.entrySet()) { statement.setLong(1, cropId); statement.setLong(2, sampleId); statement.setString(3, entry.getKey()); setDecimal(statement, 4, entry.getValue()); statement.addBatch(); }
+                        statement.executeBatch();
+                    }
+                }
+                logOperation(connection, "ADD_SAMPLE", cropId, sample.origin); connection.commit(); return sampleId;
+            } catch (SQLException ex) { connection.rollback(); throw ex; }
+            finally { connection.setAutoCommit(true); }
+        }
+    }
+
+    private static void setDecimal(PreparedStatement statement, int index, java.math.BigDecimal value) throws SQLException { if (value == null) statement.setNull(index, java.sql.Types.DECIMAL); else statement.setBigDecimal(index, value); }
+
+    public void deleteSample(long cropId, long sampleId) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("DELETE FROM crop_samples WHERE id=? AND crop_id=?")) {
+            statement.setLong(1, sampleId); statement.setLong(2, cropId); statement.executeUpdate(); logOperation(connection, "DELETE_SAMPLE", cropId, Long.toString(sampleId));
+        }
+    }
+
+    public void updateSample(long cropId, long sampleId, Crop.Sample sample, Map<String, java.math.BigDecimal> components) throws SQLException {
+        try (Connection connection = Database.getConnection()) {
+            connection.setAutoCommit(false);
+            try {
+                try (PreparedStatement statement = connection.prepareStatement("UPDATE crop_samples SET collection_unit=?, test_unit=?, test_part=?, origin=?, remark=? WHERE id=? AND crop_id=?")) {
+                    statement.setString(1, nullable(sample.collectionUnit)); statement.setString(2, nullable(sample.testUnit)); statement.setString(3, nullable(sample.testPart)); statement.setString(4, nullable(sample.origin)); statement.setString(5, nullable(sample.remark)); statement.setLong(6, sampleId); statement.setLong(7, cropId); if (statement.executeUpdate() != 1) throw new SQLException("Sample does not belong to crop");
+                }
+                try (PreparedStatement statement = connection.prepareStatement("UPDATE crop_oil_data SET oil_content=?, iodine_value=?, acid_value=?, saponification_value=? WHERE crop_id=? AND sample_id=?")) {
+                    setDecimal(statement, 1, sample.oilContent); setDecimal(statement, 2, sample.iodineValue); setDecimal(statement, 3, sample.acidValue); setDecimal(statement, 4, sample.saponificationValue); statement.setLong(5, cropId); statement.setLong(6, sampleId); if (statement.executeUpdate() == 0) { try (PreparedStatement insert = connection.prepareStatement("INSERT INTO crop_oil_data (crop_id, sample_id, oil_content, iodine_value, acid_value, saponification_value) VALUES (?, ?, ?, ?, ?, ?)")) { insert.setLong(1, cropId); insert.setLong(2, sampleId); setDecimal(insert, 3, sample.oilContent); setDecimal(insert, 4, sample.iodineValue); setDecimal(insert, 5, sample.acidValue); setDecimal(insert, 6, sample.saponificationValue); insert.executeUpdate(); } }
+                }
+                try (PreparedStatement statement = connection.prepareStatement("DELETE FROM crop_components WHERE crop_id=? AND sample_id=?")) { statement.setLong(1, cropId); statement.setLong(2, sampleId); statement.executeUpdate(); }
+                if (components != null && !components.isEmpty()) {
+                    try (PreparedStatement statement = connection.prepareStatement("INSERT INTO crop_components (crop_id, sample_id, component_name, component_value) VALUES (?, ?, ?, ?)")) { for (Map.Entry<String, java.math.BigDecimal> entry : components.entrySet()) { statement.setLong(1, cropId); statement.setLong(2, sampleId); statement.setString(3, entry.getKey()); setDecimal(statement, 4, entry.getValue()); statement.addBatch(); } statement.executeBatch(); }
+                }
+                logOperation(connection, "UPDATE_SAMPLE", cropId, Long.toString(sampleId)); connection.commit();
+            } catch (SQLException ex) { connection.rollback(); throw ex; } finally { connection.setAutoCommit(true); }
+        }
+    }
+
+    public void addImage(long cropId, String path, String title, String type, boolean cover) throws SQLException {
+        try (Connection connection = Database.getConnection()) {
+            if (cover) try (PreparedStatement clear = connection.prepareStatement("UPDATE crop_images SET is_cover=0 WHERE crop_id=?")) { clear.setLong(1, cropId); clear.executeUpdate(); }
+            int sortOrder = 0;
+            try (PreparedStatement latest = connection.prepareStatement("SELECT COALESCE(MAX(sort_order), 0) + 1 FROM crop_images WHERE crop_id=?")) { latest.setLong(1, cropId); try (ResultSet result = latest.executeQuery()) { if (result.next()) sortOrder = result.getInt(1); } }
+            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO crop_images (crop_id, image_path, image_title, image_type, is_cover, sort_order) VALUES (?, ?, ?, ?, ?, ?)")) {
+                statement.setLong(1, cropId); statement.setString(2, path); statement.setString(3, nullable(title)); statement.setString(4, nullable(type)); statement.setBoolean(5, cover); statement.setInt(6, sortOrder); statement.executeUpdate();
+            }
+            logOperation(connection, "ADD_IMAGE", cropId, path);
+        }
+    }
+
+    public void deleteImage(long cropId, long imageId) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("DELETE FROM crop_images WHERE id=? AND crop_id=?")) {
+            statement.setLong(1, imageId); statement.setLong(2, cropId); statement.executeUpdate(); logOperation(connection, "DELETE_IMAGE", cropId, Long.toString(imageId));
+        }
+    }
+
+    public void setCover(long cropId, long imageId) throws SQLException {
+        try (Connection connection = Database.getConnection()) {
+            connection.setAutoCommit(false);
+            try (PreparedStatement clear = connection.prepareStatement("UPDATE crop_images SET is_cover=0 WHERE crop_id=?"); PreparedStatement set = connection.prepareStatement("UPDATE crop_images SET is_cover=1 WHERE id=? AND crop_id=?")) {
+                clear.setLong(1, cropId); clear.executeUpdate(); set.setLong(1, imageId); set.setLong(2, cropId); if (set.executeUpdate() != 1) throw new SQLException("Image does not belong to crop"); logOperation(connection, "SET_COVER", cropId, Long.toString(imageId)); connection.commit();
+            } catch (SQLException ex) { connection.rollback(); throw ex; } finally { connection.setAutoCommit(true); }
+        }
+    }
+
+    private static void logOperation(Connection connection, String action, long cropId, String detail) {
+        try (PreparedStatement statement = connection.prepareStatement("INSERT INTO admin_operation_logs (action, crop_id, detail) VALUES (?, ?, ?)")) { statement.setString(1, action); statement.setLong(2, cropId); statement.setString(3, detail); statement.executeUpdate(); } catch (SQLException ignored) { }
+    }
 
     public Map<String, List<String>> filterOptions(boolean includePending) throws SQLException {
         Map<String, List<String>> options = new LinkedHashMap<>();
@@ -84,20 +255,20 @@ public class CropDao {
             try (ResultSet result = statement.executeQuery()) { while (result.next()) crop.aliases.add(result.getString(1)); }
         }
         try (PreparedStatement statement = connection.prepareStatement(
-                "SELECT image_path, image_title FROM crop_images WHERE crop_id = ? ORDER BY is_cover DESC, sort_order")) {
+                "SELECT id, image_path, image_title, image_type, is_cover FROM crop_images WHERE crop_id = ? ORDER BY is_cover DESC, sort_order")) {
             statement.setLong(1, crop.id);
             try (ResultSet result = statement.executeQuery()) {
-                while (result.next()) { Crop.Image image = new Crop.Image(); image.path = result.getString(1); image.title = result.getString(2); crop.images.add(image); }
+                while (result.next()) { Crop.Image image = new Crop.Image(); image.id = result.getLong(1); image.path = result.getString(2); image.title = result.getString(3); image.type = result.getString(4); image.cover = result.getBoolean(5); crop.images.add(image); }
             }
         }
-        String sampleSql = "SELECT s.id, s.origin, s.test_part, o.oil_content, o.iodine_value, o.acid_value, o.saponification_value "
+        String sampleSql = "SELECT s.id, s.collection_unit, s.test_unit, s.origin, s.test_part, s.remark, o.oil_content, o.iodine_value, o.acid_value, o.saponification_value "
             + "FROM crop_samples s LEFT JOIN crop_oil_data o ON o.sample_id = s.id WHERE s.crop_id = ? ORDER BY s.id";
         try (PreparedStatement statement = connection.prepareStatement(sampleSql)) {
             statement.setLong(1, crop.id);
             try (ResultSet result = statement.executeQuery()) {
                 while (result.next()) {
-                    Crop.Sample sample = new Crop.Sample(); sample.origin = result.getString(2); sample.testPart = result.getString(3);
-                    sample.oilContent = result.getBigDecimal(4); sample.iodineValue = result.getBigDecimal(5); sample.acidValue = result.getBigDecimal(6); sample.saponificationValue = result.getBigDecimal(7);
+                    Crop.Sample sample = new Crop.Sample(); sample.id = result.getLong(1); sample.collectionUnit = result.getString(2); sample.testUnit = result.getString(3); sample.origin = result.getString(4); sample.testPart = result.getString(5); sample.remark = result.getString(6);
+                    sample.oilContent = result.getBigDecimal(7); sample.iodineValue = result.getBigDecimal(8); sample.acidValue = result.getBigDecimal(9); sample.saponificationValue = result.getBigDecimal(10);
                     loadComponents(connection, result.getLong(1), sample); crop.samples.add(sample);
                 }
             }
@@ -105,10 +276,10 @@ public class CropDao {
     }
 
     private void loadComponents(Connection connection, long sampleId, Crop.Sample sample) throws SQLException {
-        try (PreparedStatement statement = connection.prepareStatement("SELECT component_name, component_value FROM crop_components WHERE sample_id = ? ORDER BY id")) {
+        try (PreparedStatement statement = connection.prepareStatement("SELECT id, component_name, component_value FROM crop_components WHERE sample_id = ? ORDER BY id")) {
             statement.setLong(1, sampleId);
             try (ResultSet result = statement.executeQuery()) {
-                while (result.next()) { Crop.Component component = new Crop.Component(); component.name = result.getString(1); component.value = result.getBigDecimal(2); sample.components.add(component); }
+                while (result.next()) { Crop.Component component = new Crop.Component(); component.id = result.getLong(1); component.name = result.getString(2); component.value = result.getBigDecimal(3); sample.components.add(component); }
             }
         }
     }

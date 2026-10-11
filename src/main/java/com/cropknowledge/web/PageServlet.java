@@ -11,7 +11,11 @@ import jakarta.servlet.http.HttpServletResponse;
 public class PageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String view = request.getServletPath().startsWith("/admin") ? "admin" : "account";
+        if (request.getServletPath().startsWith("/admin")) {
+            response.sendRedirect(request.getContextPath() + "/admin/crops");
+            return;
+        }
+        String view = "account";
         request.getRequestDispatcher("/WEB-INF/views/" + view + ".jsp").forward(request, response);
     }
 }

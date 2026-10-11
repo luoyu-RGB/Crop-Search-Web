@@ -28,13 +28,20 @@ public class Crop {
     public final List<Sample> samples = new ArrayList<>();
 
     public static class Image {
+        public long id;
         public String path;
         public String title;
+        public String type;
+        public boolean cover;
     }
 
     public static class Sample {
+        public long id;
+        public String collectionUnit;
+        public String testUnit;
         public String origin;
         public String testPart;
+        public String remark;
         public BigDecimal oilContent;
         public BigDecimal iodineValue;
         public BigDecimal acidValue;
@@ -43,6 +50,7 @@ public class Crop {
     }
 
     public static class Component {
+        public long id;
         public String name;
         public BigDecimal value;
     }
