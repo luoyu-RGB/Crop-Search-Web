@@ -108,4 +108,27 @@ class CropDaoIntegrationTest {
                         "C18:1".equals(component.name) && component.value.compareTo(search.minComponent) >= 0)));
         }
     }
+
+    @Test
+    void assistantUsesOnlyUnambiguousApprovedCropMentions() throws Exception {
+        List<Crop> single = dao.findApprovedMentionedIn("请介绍一下银杏的主要用途");
+        assertEquals(1, single.size());
+        assertEquals("银杏", single.get(0).chineseName);
+        assertTrue(dao.findApprovedMentionedIn("今天的天气怎么样？").isEmpty());
+        List<Crop> comparison = dao.findApprovedMentionedIn("银杏和苏铁有什么区别？");
+        assertEquals(2, comparison.size());
+        assertTrue(comparison.stream().anyMatch(crop -> "银杏".equals(crop.chineseName)));
+        assertTrue(comparison.stream().anyMatch(crop -> "苏铁".equals(crop.chineseName)));
+    }
+
+    @Test
+    void assistantFindsApprovedCropsByProvince() throws Exception {
+        List<Crop> yunnan = dao.findApprovedByLocationMentionedIn("生长在云南的作物");
+        assertFalse(yunnan.isEmpty());
+        assertTrue(yunnan.size() <= 20);
+        assertTrue(yunnan.stream().allMatch(crop -> "APPROVED".equals(crop.reviewStatus)));
+        assertTrue(yunnan.stream().allMatch(crop -> crop.distribution != null && crop.distribution.contains("云南")));
+        assertTrue(dao.findApprovedByLocationMentionedIn("云南油杉有什么用途？").isEmpty());
+        assertTrue(dao.findApprovedByLocationMentionedIn("今天的天气怎么样？").isEmpty());
+    }
 }

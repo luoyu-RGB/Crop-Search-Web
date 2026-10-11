@@ -256,19 +256,69 @@ public class CropDao {
         }
     }
 
-    public Crop findApprovedByName(String name) throws SQLException {
-        if (name == null || name.trim().isEmpty()) return null;
-        String value = name.trim();
-        String sql = "SELECT c.* FROM crops c WHERE c.review_status='APPROVED' AND "
-            + "(c.chinese_name=? OR c.english_name=? OR c.latin_name=? OR EXISTS "
-            + "(SELECT 1 FROM crop_aliases a WHERE a.crop_id=c.id AND a.alias_name=?)) ORDER BY c.id LIMIT 1";
+    /** Finds approved crops explicitly mentioned in the question, including aliases. */
+    public List<Crop> findApprovedMentionedIn(String question) throws SQLException {
+        List<Crop> crops = new ArrayList<>();
+        if (question == null || question.trim().isEmpty()) return crops;
+        String sql = "SELECT DISTINCT c.id FROM crops c WHERE c.review_status='APPROVED' AND ("
+            + "(CHAR_LENGTH(c.chinese_name)>=2 AND LOCATE(c.chinese_name, ?) > 0) OR "
+            + "(CHAR_LENGTH(c.english_name)>=3 AND LOCATE(LOWER(c.english_name), LOWER(?)) > 0) OR "
+            + "(CHAR_LENGTH(c.latin_name)>=3 AND LOCATE(LOWER(c.latin_name), LOWER(?)) > 0) OR "
+            + "EXISTS (SELECT 1 FROM crop_aliases a WHERE a.crop_id=c.id "
+            + "AND CHAR_LENGTH(a.alias_name)>=2 AND LOCATE(a.alias_name, ?) > 0)) LIMIT 5";
+        List<Long> ids = new ArrayList<>();
         try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, value); statement.setString(2, value); statement.setString(3, value); statement.setString(4, value);
+            for (int i = 1; i <= 4; i++) statement.setString(i, question);
             try (ResultSet result = statement.executeQuery()) {
-                if (!result.next()) return null;
-                Crop crop = readSummary(result); loadRelated(connection, crop); return crop;
+                while (result.next()) ids.add(result.getLong(1));
             }
         }
+        for (Long id : ids) {
+            Crop crop = findById(id, false);
+            if (crop != null) crops.add(crop);
+        }
+        return crops;
+    }
+
+    /** Finds approved records for a question about crops in a named province. */
+    public List<Crop> findApprovedByLocationMentionedIn(String question) throws SQLException {
+        List<Crop> crops = new ArrayList<>();
+        if (question == null || !(question.contains("作物") || question.contains("植物")
+                || question.contains("品种") || question.contains("种类") || question.contains("哪些"))) return crops;
+
+        try (Connection connection = Database.getConnection()) {
+            List<String> provinces = new ArrayList<>();
+            String provinceSql = "SELECT DISTINCT p.province FROM crop_distribution_points p "
+                + "JOIN crops c ON c.id=p.crop_id WHERE c.review_status='APPROVED' "
+                + "AND CHAR_LENGTH(p.province)>=2";
+            try (PreparedStatement statement = connection.prepareStatement(provinceSql);
+                    ResultSet result = statement.executeQuery()) {
+                while (result.next()) {
+                    String province = result.getString(1);
+                    if (question.contains(province)) provinces.add(province);
+                }
+            }
+            if (provinces.isEmpty()) return crops;
+
+            StringBuilder sql = new StringBuilder("SELECT c.* FROM crops c WHERE c.review_status='APPROVED' AND (");
+            for (int i = 0; i < provinces.size(); i++) {
+                if (i > 0) sql.append(" OR ");
+                sql.append("(LOCATE(?, c.distribution)>0 OR EXISTS (SELECT 1 FROM crop_distribution_points p "
+                    + "WHERE p.crop_id=c.id AND p.province=?))");
+            }
+            sql.append(") ORDER BY c.chinese_name, c.id LIMIT 20");
+            try (PreparedStatement statement = connection.prepareStatement(sql.toString())) {
+                int index = 1;
+                for (String province : provinces) {
+                    statement.setString(index++, province);
+                    statement.setString(index++, province);
+                }
+                try (ResultSet result = statement.executeQuery()) {
+                    while (result.next()) crops.add(readSummary(result));
+                }
+            }
+        }
+        return crops;
     }
 
     private void loadRelated(Connection connection, Crop crop) throws SQLException {

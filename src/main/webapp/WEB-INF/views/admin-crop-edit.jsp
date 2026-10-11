@@ -1,11 +1,320 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="java.util.*,com.cropknowledge.model.Crop,com.cropknowledge.web.Html" %>
-<% Crop crop=(Crop)request.getAttribute("crop"); String root=request.getContextPath(); boolean existing=crop.id>0; String error=(String)request.getAttribute("error"); String[] componentNames=(String[])request.getAttribute("components"); %>
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><%=existing?"编辑":"新增"%>作物 · 管理后台</title><link rel="stylesheet" href="<%=root%>/assets/site.css"><link rel="stylesheet" href="<%=root%>/assets/admin.css"></head><body>
-<header class="site-header"><a class="brand" href="<%=root%>/">作物知识库</a><nav><a href="<%=root%>/admin/crops">返回列表</a><form action="<%=root%>/logout" method="post"><button class="link-button" type="submit">退出</button></form></nav></header>
-<main class="page admin-page"><a class="back-link" href="<%=root%>/admin/crops">← 返回资料列表</a><div class="intro"><span class="eyebrow">CROP EDITOR</span><h1><%=existing?"编辑作物资料":"新增作物资料"%></h1><p>保存后可继续维护别名、样品和图片。</p></div>
-<% if(error!=null){ %><p class="error" role="alert"><%=Html.escape(error)%></p><% } %><% if("1".equals(request.getParameter("saved"))){ %><p class="success" role="status">保存成功。</p><% } %>
-<section class="admin-card"><h2>基本资料与审核</h2><form class="admin-form" method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="save"><input type="hidden" name="id" value="<%=existing?crop.id:""%>"><div class="form-grid"><label>中文名 *<input name="chineseName" required maxlength="100" value="<%=Html.escape(crop.chineseName)%>"></label><label>英文名<input name="englishName" maxlength="150" value="<%=Html.escape(crop.englishName)%>"></label><label>拉丁学名<input name="latinName" maxlength="200" value="<%=Html.escape(crop.latinName)%>"></label><label>科<input name="family" maxlength="100" value="<%=Html.escape(crop.family)%>"></label><label>属<input name="genus" maxlength="100" value="<%=Html.escape(crop.genus)%>"></label><label>来源页码<input type="number" min="1" name="sourcePage" value="<%=crop.sourcePage==0?"":crop.sourcePage%>"></label><label>审核状态<select name="reviewStatus"><% for(String item:(String[])request.getAttribute("statuses")){ %><option value="<%=item%>" <%=item.equals(crop.reviewStatus)?"selected":""%>><%=item%></option><% } %></select></label></div><label>主要特征<textarea name="features" rows="3"><%=Html.escape(crop.features)%></textarea></label><label>分布<textarea name="distribution" rows="3"><%=Html.escape(crop.distribution)%></textarea></label><label>栽培<textarea name="cultivation" rows="3"><%=Html.escape(crop.cultivation)%></textarea></label><label>用途<textarea name="uses" rows="3"><%=Html.escape(crop.uses)%></textarea></label><div class="form-actions"><button class="button" type="submit">保存资料</button></div></form><% if(existing){ %><form method="post" action="<%=root%>/admin/crops" class="form-actions"><input type="hidden" name="action" value="delete"><input type="hidden" name="cropId" value="<%=crop.id%>"><button class="danger-button" type="submit" onclick="return confirm('确定删除该作物及其关联资料吗？')">删除作物</button></form><% } %></section>
-<% if(existing){ %><section class="admin-card"><h2>别名</h2><div class="tag-list"><% for(String alias:crop.aliases){ %><span class="tag"><%=Html.escape(alias)%><form method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="deleteAlias"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="alias" value="<%=Html.escape(alias)%>"><button title="删除" onclick="return confirm('删除这个别名吗？')">×</button></form></span><% } %></div><form class="inline-form" method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="addAlias"><input type="hidden" name="cropId" value="<%=crop.id%>"><input name="alias" maxlength="100" required placeholder="新增别名"><button class="button small" type="submit">添加别名</button></form></section>
-<section class="admin-card"><h2>样品与检测数据</h2><% if(crop.samples.isEmpty()){ %><p class="subtle">暂无样品记录。</p><% } %><% for(Crop.Sample sample:crop.samples){ %><div class="related-row"><div class="sample-summary"><strong><%=Html.escape(sample.origin)%></strong> · <%=Html.escape(sample.testPart)%><p class="subtle">含油率：<%=sample.oilContent==null?"—":sample.oilContent%>　碘值：<%=sample.iodineValue==null?"—":sample.iodineValue%>　酸值：<%=sample.acidValue==null?"—":sample.acidValue%>　皂化值：<%=sample.saponificationValue==null?"—":sample.saponificationValue%></p></div><details><summary>编辑检测数据</summary><form class="admin-form sample-edit-form" method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="updateSample"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="sampleId" value="<%=sample.id%>"><div class="form-grid"><label>采集单位<input name="collectionUnit" value="<%=Html.escape(sample.collectionUnit)%>"></label><label>检测单位<input name="testUnit" value="<%=Html.escape(sample.testUnit)%>"></label><label>产地<input name="origin" value="<%=Html.escape(sample.origin)%>"></label><label>检测部位<input name="testPart" value="<%=Html.escape(sample.testPart)%>"></label><label>含油率<input type="number" min="0" step="any" name="oilContent" value="<%=sample.oilContent==null?"":sample.oilContent%>"></label><label>碘值<input type="number" min="0" step="any" name="iodineValue" value="<%=sample.iodineValue==null?"":sample.iodineValue%>"></label><label>酸值<input type="number" min="0" step="any" name="acidValue" value="<%=sample.acidValue==null?"":sample.acidValue%>"></label><label>皂化值<input type="number" min="0" step="any" name="saponificationValue" value="<%=sample.saponificationValue==null?"":sample.saponificationValue%>"></label></div><div class="component-grid"><span class="field-caption">脂肪酸组成（可单独修改每项）</span><% for(String componentName:componentNames){ String componentValue=""; for(Crop.Component component:sample.components){ if(componentName.equals(component.name)){ componentValue=component.value==null?"":component.value.toPlainString(); } } %><label><%=componentName%><input type="number" min="0" step="any" name="component_<%=componentName.replace(":", "_")%>" value="<%=Html.escape(componentValue)%>" placeholder="—"></label><% } %></div><label>备注<textarea name="remark" rows="2"><%=Html.escape(sample.remark)%></textarea></label><button class="button small" type="submit">保存样品</button></form></details><form method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="deleteSample"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="sampleId" value="<%=sample.id%>"><button class="danger-link" onclick="return confirm('删除这条样品记录吗？')">删除</button></form></div><% } %><h3>新增样品</h3><form class="admin-form" method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="addSample"><input type="hidden" name="cropId" value="<%=crop.id%>"><div class="form-grid"><label>采集单位<input name="collectionUnit" maxlength="150"></label><label>检测单位<input name="testUnit" maxlength="150"></label><label>产地<input name="origin" maxlength="200"></label><label>检测部位<input name="testPart" maxlength="100"></label><label>含油率<input type="number" min="0" step="any" name="oilContent"></label><label>碘值<input type="number" min="0" step="any" name="iodineValue"></label><label>酸值<input type="number" min="0" step="any" name="acidValue"></label><label>皂化值<input type="number" min="0" step="any" name="saponificationValue"></label></div><div class="component-grid"><span class="field-caption">脂肪酸组成（可单独填写每项）</span><% for(String componentName:componentNames){ %><label><%=componentName%><input type="number" min="0" step="any" name="component_<%=componentName.replace(":", "_")%>" placeholder="—"></label><% } %></div><label>备注<textarea name="remark" rows="2"></textarea></label><button class="button small" type="submit">添加样品</button></form></section>
-<section class="admin-card"><h2>图片</h2><div class="admin-images"><% for(Crop.Image image:crop.images){ %><figure><img src="<%=root%>/assets/crops/<%=Html.escape(image.path)%>" alt="<%=Html.escape(image.title)%>"><figcaption><%=Html.escape(image.title)%> <% if(image.cover){ %><span class="status status-APPROVED">封面</span><% } %></figcaption><form class="image-title-form" method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="updateImage"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="imageId" value="<%=image.id%>"><input name="imageTitle" maxlength="100" value="<%=Html.escape(image.title)%>" placeholder="图片标题"><button class="small-link" type="submit">保存标题</button></form><div class="image-actions"><% if(!image.cover){ %><form method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="setCover"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="imageId" value="<%=image.id%>"><button class="small-link">设为封面</button></form><% } %><form method="post" action="<%=root%>/admin/crops"><input type="hidden" name="action" value="deleteImage"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="hidden" name="imageId" value="<%=image.id%>"><button class="danger-link" onclick="return confirm('删除这张图片吗？')">删除</button></form></div></figure><% } %></div><form class="inline-form" method="post" action="<%=root%>/admin/crops" enctype="multipart/form-data"><input type="hidden" name="action" value="uploadImage"><input type="hidden" name="cropId" value="<%=crop.id%>"><input type="file" name="imageFile" accept="image/jpeg,image/png,image/gif,image/webp" required><input name="imageTitle" maxlength="100" placeholder="图片标题"><label class="check"><input type="checkbox" name="cover" value="true">设为封面</label><button class="button small" type="submit">上传图片</button></form></section><% } %>
-</main></body></html>
+<%
+    Crop crop = (Crop) request.getAttribute("crop");
+    String root = request.getContextPath();
+    boolean existing = crop.id > 0;
+    String error = (String) request.getAttribute("error");
+    String[] componentNames = (String[]) request.getAttribute("components");
+%>
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title><%= existing?"编辑":"新增" %>作物 · 管理后台</title>
+        <link rel="stylesheet" href="<%= root %>/assets/site.css">
+        <link rel="stylesheet" href="<%= root %>/assets/admin.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="<%= root %>/">作物知识库</a>
+            <nav>
+                <a href="<%= root %>/admin/crops">返回列表</a>
+                <form action="<%= root %>/logout" method="post">
+                    <button class="link-button" type="submit">退出</button>
+                </form>
+            </nav>
+        </header>
+        <main class="page admin-page">
+            <a class="back-link" href="<%= root %>/admin/crops">← 返回资料列表</a>
+            <div class="intro">
+                <span class="eyebrow">CROP EDITOR</span>
+                <h1><%= existing?"编辑作物资料":"新增作物资料" %></h1>
+                <p>保存后可继续维护别名、样品和图片。</p>
+            </div>
+            <% if(error!=null){ %>
+                <p class="error" role="alert"><%= Html.escape(error) %></p>
+            <% } %>
+            <% if("1".equals(request.getParameter("saved"))){ %>
+                <p class="success" role="status">保存成功。</p>
+            <% } %>
+            <section class="admin-card">
+                <h2>基本资料与审核</h2>
+                <form class="admin-form" method="post" action="<%= root %>/admin/crops">
+                    <input type="hidden" name="action" value="save">
+                    <input type="hidden" name="id" value="<%= existing?crop.id:"" %>">
+                    <div class="form-grid">
+                        <label>
+                            中文名 *
+                            <input name="chineseName" required maxlength="100" value="<%= Html.escape(crop.chineseName) %>">
+                        </label>
+                        <label>
+                            英文名
+                            <input name="englishName" maxlength="150" value="<%= Html.escape(crop.englishName) %>">
+                        </label>
+                        <label>
+                            拉丁学名
+                            <input name="latinName" maxlength="200" value="<%= Html.escape(crop.latinName) %>">
+                        </label>
+                        <label>
+                            科
+                            <input name="family" maxlength="100" value="<%= Html.escape(crop.family) %>">
+                        </label>
+                        <label>
+                            属
+                            <input name="genus" maxlength="100" value="<%= Html.escape(crop.genus) %>">
+                        </label>
+                        <label>
+                            来源页码
+                            <input type="number" min="1" name="sourcePage" value="<%= crop.sourcePage==0?"":crop.sourcePage %>">
+                        </label>
+                        <label>
+                            审核状态
+                            <select name="reviewStatus">
+                                <% for(String item:(String[])request.getAttribute("statuses")){ %>
+                                    <option value="<%= item %>" <%= item.equals(crop.reviewStatus)?"selected":"" %>><%= item %></option>
+                                <% } %>
+                            </select>
+                        </label>
+                    </div>
+                    <label>
+                        主要特征
+                        <textarea name="features" rows="3"><%= Html.escape(crop.features) %></textarea>
+                    </label>
+                    <label>
+                        分布
+                        <textarea name="distribution" rows="3"><%= Html.escape(crop.distribution) %></textarea>
+                    </label>
+                    <label>
+                        栽培
+                        <textarea name="cultivation" rows="3"><%= Html.escape(crop.cultivation) %></textarea>
+                    </label>
+                    <label>
+                        用途
+                        <textarea name="uses" rows="3"><%= Html.escape(crop.uses) %></textarea>
+                    </label>
+                    <div class="form-actions">
+                        <button class="button" type="submit">保存资料</button>
+                    </div>
+                </form>
+                <% if(existing){ %>
+                    <form method="post" action="<%= root %>/admin/crops" class="form-actions">
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="cropId" value="<%= crop.id %>">
+                        <button class="danger-button" type="submit" onclick="return confirm('确定删除该作物及其关联资料吗？')">删除作物</button>
+                    </form>
+                <% } %>
+            </section>
+            <% if(existing){ %>
+                <section class="admin-card">
+                    <h2>别名</h2>
+                    <div class="tag-list">
+                        <% for(String alias:crop.aliases){ %>
+                            <span class="tag"><%= Html.escape(alias) %>
+                            <form method="post" action="<%= root %>/admin/crops">
+                                <input type="hidden" name="action" value="deleteAlias">
+                                <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                <input type="hidden" name="alias" value="<%= Html.escape(alias) %>">
+                                <button title="删除" onclick="return confirm('删除这个别名吗？')">×</button>
+                            </form>
+                            </span>
+                        <% } %>
+                    </div>
+                    <form class="inline-form" method="post" action="<%= root %>/admin/crops">
+                        <input type="hidden" name="action" value="addAlias">
+                        <input type="hidden" name="cropId" value="<%= crop.id %>">
+                        <input name="alias" maxlength="100" required placeholder="新增别名">
+                        <button class="button small" type="submit">添加别名</button>
+                    </form>
+                </section>
+                <section class="admin-card">
+                    <h2>样品与检测数据</h2>
+                    <% if(crop.samples.isEmpty()){ %>
+                        <p class="subtle">暂无样品记录。</p>
+                    <% } %>
+                    <% for(Crop.Sample sample:crop.samples){ %>
+                        <div class="related-row">
+                            <div class="sample-summary">
+                                <strong><%= Html.escape(sample.origin) %></strong> · <%= Html.escape(sample.testPart) %>
+                                <p class="subtle">含油率：<%= sample.oilContent==null?"—":sample.oilContent %>　碘值：<%= sample.iodineValue==null?"—":sample.iodineValue %>　酸值：<%= sample.acidValue==null?"—":sample.acidValue %>　皂化值：<%= sample.saponificationValue==null?"—":sample.saponificationValue %></p>
+                            </div>
+                            <details>
+                                <summary>编辑检测数据</summary>
+                                <form class="admin-form sample-edit-form" method="post" action="<%= root %>/admin/crops">
+                                    <input type="hidden" name="action" value="updateSample">
+                                    <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                    <input type="hidden" name="sampleId" value="<%= sample.id %>">
+                                    <div class="form-grid">
+                                        <label>
+                                            采集单位
+                                            <input name="collectionUnit" value="<%= Html.escape(sample.collectionUnit) %>">
+                                        </label>
+                                        <label>
+                                            检测单位
+                                            <input name="testUnit" value="<%= Html.escape(sample.testUnit) %>">
+                                        </label>
+                                        <label>
+                                            产地
+                                            <input name="origin" value="<%= Html.escape(sample.origin) %>">
+                                        </label>
+                                        <label>
+                                            检测部位
+                                            <input name="testPart" value="<%= Html.escape(sample.testPart) %>">
+                                        </label>
+                                        <label>
+                                            含油率
+                                            <input type="number" min="0" step="any" name="oilContent" value="<%= sample.oilContent==null?"":sample.oilContent %>">
+                                        </label>
+                                        <label>
+                                            碘值
+                                            <input type="number" min="0" step="any" name="iodineValue" value="<%= sample.iodineValue==null?"":sample.iodineValue %>">
+                                        </label>
+                                        <label>
+                                            酸值
+                                            <input type="number" min="0" step="any" name="acidValue" value="<%= sample.acidValue==null?"":sample.acidValue %>">
+                                        </label>
+                                        <label>
+                                            皂化值
+                                            <input type="number" min="0" step="any" name="saponificationValue" value="<%= sample.saponificationValue==null?"":sample.saponificationValue %>">
+                                        </label>
+                                    </div>
+                                    <div class="component-grid">
+                                        <span class="field-caption">脂肪酸组成（可单独修改每项）</span>
+                                        <%
+                                            for (String componentName : componentNames) {
+                                                String componentValue = "";
+                                                for (Crop.Component component : sample.components) {
+                                                    if (componentName.equals(component.name)) {
+                                                        componentValue = component.value == null
+                                                            ? "" : component.value.toPlainString();
+                                                    }
+                                                }
+                                        %>
+                                            <label>
+                                                <%= componentName %>
+                                                <input type="number" min="0" step="any" name="component_<%= componentName.replace(":", "_") %>" value="<%= Html.escape(componentValue) %>" placeholder="—">
+                                            </label>
+                                        <% } %>
+                                    </div>
+                                    <label>
+                                        备注
+                                        <textarea name="remark" rows="2"><%= Html.escape(sample.remark) %></textarea>
+                                    </label>
+                                    <button class="button small" type="submit">保存样品</button>
+                                </form>
+                            </details>
+                            <form method="post" action="<%= root %>/admin/crops">
+                                <input type="hidden" name="action" value="deleteSample">
+                                <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                <input type="hidden" name="sampleId" value="<%= sample.id %>">
+                                <button class="danger-link" onclick="return confirm('删除这条样品记录吗？')">删除</button>
+                            </form>
+                        </div>
+                    <% } %>
+                    <h3>新增样品</h3>
+                    <form class="admin-form" method="post" action="<%= root %>/admin/crops">
+                        <input type="hidden" name="action" value="addSample">
+                        <input type="hidden" name="cropId" value="<%= crop.id %>">
+                        <div class="form-grid">
+                            <label>
+                                采集单位
+                                <input name="collectionUnit" maxlength="150">
+                            </label>
+                            <label>
+                                检测单位
+                                <input name="testUnit" maxlength="150">
+                            </label>
+                            <label>
+                                产地
+                                <input name="origin" maxlength="200">
+                            </label>
+                            <label>
+                                检测部位
+                                <input name="testPart" maxlength="100">
+                            </label>
+                            <label>
+                                含油率
+                                <input type="number" min="0" step="any" name="oilContent">
+                            </label>
+                            <label>
+                                碘值
+                                <input type="number" min="0" step="any" name="iodineValue">
+                            </label>
+                            <label>
+                                酸值
+                                <input type="number" min="0" step="any" name="acidValue">
+                            </label>
+                            <label>
+                                皂化值
+                                <input type="number" min="0" step="any" name="saponificationValue">
+                            </label>
+                        </div>
+                        <div class="component-grid">
+                            <span class="field-caption">脂肪酸组成（可单独填写每项）</span>
+                            <% for(String componentName:componentNames){ %>
+                                <label>
+                                    <%= componentName %>
+                                    <input type="number" min="0" step="any" name="component_<%= componentName.replace(":", "_") %>" placeholder="—">
+                                </label>
+                            <% } %>
+                        </div>
+                        <label>
+                            备注
+                            <textarea name="remark" rows="2"></textarea>
+                        </label>
+                        <button class="button small" type="submit">添加样品</button>
+                    </form>
+                </section>
+                <section class="admin-card">
+                    <h2>图片</h2>
+                    <div class="admin-images">
+                        <% for(Crop.Image image:crop.images){ %>
+                            <figure>
+                                <img src="<%= root %>/assets/crops/<%= Html.escape(image.path) %>" alt="<%= Html.escape(image.title) %>">
+                                <figcaption><%= Html.escape(image.title) %>
+                                <% if(image.cover){ %>
+                                    <span class="status status-APPROVED">封面</span>
+                                <% } %>
+                                </figcaption>
+                                <form class="image-title-form" method="post" action="<%= root %>/admin/crops">
+                                    <input type="hidden" name="action" value="updateImage">
+                                    <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                    <input type="hidden" name="imageId" value="<%= image.id %>">
+                                    <input name="imageTitle" maxlength="100" value="<%= Html.escape(image.title) %>" placeholder="图片标题">
+                                    <button class="small-link" type="submit">保存标题</button>
+                                </form>
+                                <div class="image-actions">
+                                    <% if(!image.cover){ %>
+                                        <form method="post" action="<%= root %>/admin/crops">
+                                            <input type="hidden" name="action" value="setCover">
+                                            <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                            <input type="hidden" name="imageId" value="<%= image.id %>">
+                                            <button class="small-link">设为封面</button>
+                                        </form>
+                                    <% } %>
+                                    <form method="post" action="<%= root %>/admin/crops">
+                                        <input type="hidden" name="action" value="deleteImage">
+                                        <input type="hidden" name="cropId" value="<%= crop.id %>">
+                                        <input type="hidden" name="imageId" value="<%= image.id %>">
+                                        <button class="danger-link" onclick="return confirm('删除这张图片吗？')">删除</button>
+                                    </form>
+                                </div>
+                            </figure>
+                        <% } %>
+                    </div>
+                    <form class="inline-form" method="post" action="<%= root %>/admin/crops" enctype="multipart/form-data">
+                        <input type="hidden" name="action" value="uploadImage">
+                        <input type="hidden" name="cropId" value="<%= crop.id %>">
+                        <input type="file" name="imageFile" accept="image/jpeg,image/png,image/gif,image/webp" required>
+                        <input name="imageTitle" maxlength="100" placeholder="图片标题">
+                        <label class="check">
+                            <input type="checkbox" name="cover" value="true">
+                            设为封面
+                        </label>
+                        <button class="button small" type="submit">上传图片</button>
+                    </form>
+                </section>
+            <% } %>
+        </main>
+    </body>
+</html>

@@ -8,8 +8,10 @@ import com.cropknowledge.model.DeepSeekFieldSuggestion;
 import com.cropknowledge.service.DeepSeekAnswerService;
 import com.cropknowledge.service.DeepSeekFieldSuggestionService;
 import com.cropknowledge.service.DeepSeekService;
+import com.cropknowledge.service.WebSearchService;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -33,6 +35,25 @@ public class DeepSeekServlet extends HttpServlet {
             request.setAttribute("error", ex.getMessage());
         } catch (DeepSeekService.MissingApiKeyException ex) {
             request.setAttribute("error", "Tomcat 未配置 DEEPSEEK_API_KEY，请在服务器运行配置的“环境”中添加后重启");
+        } catch (DeepSeekAnswerService.WebSearchException ex) {
+            IOException cause = ex.getCause() instanceof IOException ? (IOException) ex.getCause() : null;
+            getServletContext().log("Web search failed: " + (cause == null ? "no results" : cause.getClass().getSimpleName()));
+            if (cause == null || cause instanceof WebSearchService.NoResultsException) {
+                request.setAttribute("error", "数据库没有匹配资料，联网搜索也没有找到可用结果。请换个关键词重试");
+            } else if (cause instanceof WebSearchService.SearchHttpException) {
+                int status = ((WebSearchService.SearchHttpException) cause).getStatusCode();
+                if (status == 401 || status == 403) {
+                    request.setAttribute("error", "网页搜索站点拒绝了请求，请稍后重试");
+                } else if (status == 429) {
+                    request.setAttribute("error", "联网搜索请求次数已达上限，请稍后重试");
+                } else {
+                    request.setAttribute("error", "联网搜索服务返回 HTTP " + status + "，请稍后重试");
+                }
+            } else if (cause instanceof java.net.SocketTimeoutException) {
+                request.setAttribute("error", "数据库没有匹配资料，连接联网搜索服务超时，请检查服务器网络后重试");
+            } else {
+                request.setAttribute("error", "数据库没有匹配资料，联网搜索连接失败，请检查服务器网络后重试");
+            }
         } catch (IllegalStateException ex) {
             request.setAttribute("error", "DeepSeek 配置或响应异常，请检查服务器日志与环境变量");
         } catch (SQLException ex) {
@@ -47,13 +68,14 @@ public class DeepSeekServlet extends HttpServlet {
 
     private void answer(HttpServletRequest request) throws SQLException {
         String question = require(request.getParameter("question"), "请输入问题");
-        Crop crop = crops.findApprovedByName(cropName(question));
+        List<Crop> matches = crops.findApprovedMentionedIn(question);
+        if (matches.isEmpty()) matches = crops.findApprovedByLocationMentionedIn(question);
         try (DeepSeekService deepSeek = new DeepSeekService()) {
-            DeepSeekAnswer answer = new DeepSeekAnswerService(deepSeek).answer(crop, question);
+            DeepSeekAnswer answer = new DeepSeekAnswerService(deepSeek, new WebSearchService()).answer(matches, question);
             request.setAttribute("answer", answer);
             long userId = ((Number) request.getSession(false).getAttribute("userId")).longValue();
             try {
-                questions.save(userId, question, answer.getText(), answer.getCropId(), answer.getSourcePage());
+                questions.save(userId, question, answer.getHistoryText(), answer.getCropId(), answer.getSourcePage());
             } catch (SQLException ex) {
                 getServletContext().log("DeepSeek question history save failed", ex);
                 request.setAttribute("error", "结果已显示，但问答记录保存失败");
@@ -77,16 +99,6 @@ public class DeepSeekServlet extends HttpServlet {
         if (value == null || value.trim().isEmpty()) throw new UserInputException(message);
         if (value.length() > 4000) throw new UserInputException("输入内容过长");
         return value.trim();
-    }
-
-    private static String cropName(String question) {
-        String value = question.replaceFirst("^(请问|请|帮我|想知道)", "").trim();
-        int end = value.indexOf('的');
-        if (end > 0) value = value.substring(0, end);
-        for (String token : new String[]{"是什么", "有哪些", "怎么样", "如何", "？", "?"}) {
-            int at = value.indexOf(token); if (at > 0) value = value.substring(0, at);
-        }
-        return value.replaceAll("^(介绍|查询|查找|搜索|关于)", "").trim();
     }
 
     private static final class UserInputException extends IllegalArgumentException {
