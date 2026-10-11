@@ -54,6 +54,13 @@
                 <version>3.4.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webResources>
+                        <resource>
+                            <directory>${project.basedir}/data/images</directory>
+                            <targetPath>assets/crops</targetPath>
+                            <includes><include>page-*/*.png</include></includes>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
         </plugins>

@@ -12,7 +12,7 @@
 <% if (session.getAttribute("userId") == null) { %>
 <a href="<%= request.getContextPath() %>/login">登录</a><a class="button small" href="<%= request.getContextPath() %>/register">注册</a>
 <% } else { %>
-<a href="<%= request.getContextPath() %>/account/">我的账户</a><% if ("ADMIN".equals(session.getAttribute("role"))) { %><a href="<%= request.getContextPath() %>/admin/">管理后台</a><% } %>
+<a href="<%= request.getContextPath() %>/search">作物查询</a><a href="<%= request.getContextPath() %>/account/">我的账户</a><% if ("ADMIN".equals(session.getAttribute("role"))) { %><a href="<%= request.getContextPath() %>/admin/">管理后台</a><% } %>
 <form action="<%= request.getContextPath() %>/logout" method="post"><button class="link-button" type="submit">退出</button></form>
 <% } %>
 </nav></header>

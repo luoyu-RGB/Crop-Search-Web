@@ -1,4 +1,4 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>我的账户 · 作物知识库</title><link rel="stylesheet" href="<%= request.getContextPath() %>/assets/site.css"></head><body>
 <header class="site-header"><a class="brand" href="<%= request.getContextPath() %>/">作物知识库</a><nav><form action="<%= request.getContextPath() %>/logout" method="post"><button class="link-button" type="submit">退出</button></form></nav></header>
-<main class="page"><div class="intro"><span class="eyebrow">ACCOUNT</span><h1>我的账户</h1><p>你好，<%= session.getAttribute("username") %></p></div><section class="notice"><h2>作物资料</h2><p>资料查询功能正在开发，下一阶段上线。</p><a href="<%= request.getContextPath() %>/">返回首页</a></section></main></body></html>
+<main class="page"><div class="intro"><span class="eyebrow">ACCOUNT</span><h1>我的账户</h1><p>你好，<%= session.getAttribute("username") %></p></div><section class="notice"><h2>作物资料</h2><p>按名称、科属、用途和检测数据查找资料。</p><a class="button" href="<%= request.getContextPath() %>/search">开始查询</a></section></main></body></html>
