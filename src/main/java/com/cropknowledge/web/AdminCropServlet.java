@@ -69,6 +69,7 @@ public class AdminCropServlet extends HttpServlet {
             if ("updateSample".equals(action)) { updateSample(request, response, cropId); return; }
             if ("deleteSample".equals(action)) { crops.deleteSample(cropId, parseId(request.getParameter("sampleId"))); redirectEdit(request, response, cropId); return; }
             if ("uploadImage".equals(action)) { uploadImage(request, response, cropId); return; }
+            if ("updateImage".equals(action)) { updateImage(request, response, cropId); return; }
             if ("deleteImage".equals(action)) { deleteImage(request, response, cropId, parseId(request.getParameter("imageId"))); return; }
             if ("setCover".equals(action)) { crops.setCover(cropId, parseId(request.getParameter("imageId"))); redirectEdit(request, response, cropId); return; }
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Unknown admin action");
@@ -97,13 +98,13 @@ public class AdminCropServlet extends HttpServlet {
 
     private void addSample(HttpServletRequest request, HttpServletResponse response, long cropId) throws IOException, SQLException {
         Crop.Sample sample = sampleFromRequest(request);
-        crops.addSample(cropId, sample, parseComponents(request.getParameter("components")));
+        crops.addSample(cropId, sample, parseComponentFields(request));
         redirectEdit(request, response, cropId);
     }
 
     private void updateSample(HttpServletRequest request, HttpServletResponse response, long cropId) throws IOException, SQLException {
         Crop.Sample sample = sampleFromRequest(request);
-        crops.updateSample(cropId, parseId(request.getParameter("sampleId")), sample, parseComponents(request.getParameter("components")));
+        crops.updateSample(cropId, parseId(request.getParameter("sampleId")), sample, parseComponentFields(request));
         redirectEdit(request, response, cropId);
     }
 
@@ -137,6 +138,13 @@ public class AdminCropServlet extends HttpServlet {
         redirectEdit(request, response, cropId);
     }
 
+    private void updateImage(HttpServletRequest request, HttpServletResponse response, long cropId) throws IOException, SQLException {
+        String title = trim(request.getParameter("imageTitle"));
+        if (title.length() > 100) throw new IllegalArgumentException("图片标题不能超过 100 个字符");
+        crops.updateImageTitle(cropId, parseId(request.getParameter("imageId")), title);
+        redirectEdit(request, response, cropId);
+    }
+
     private Path uploadRoot() throws IOException {
         String realPath = getServletContext().getRealPath("/assets/crops/admin");
         if (realPath == null) throw new IOException("Upload directory is unavailable");
@@ -164,5 +172,16 @@ public class AdminCropServlet extends HttpServlet {
         Map<String, BigDecimal> values = new LinkedHashMap<>(); String text = trim(value); if (text.isEmpty()) return values;
         for (String item : text.split("[,;\\n]")) { String[] pair = item.trim().split("=", 2); if (pair.length != 2) throw new IllegalArgumentException("脂肪酸格式应为 C18:1=12.3"); String name = pair[0].trim(); boolean valid = false; for (String component : COMPONENTS) if (component.equals(name)) valid = true; if (!valid) throw new IllegalArgumentException("脂肪酸名称无效：" + name); values.put(name, decimal(pair[1], name)); }
         return values;
+    }
+
+    private static Map<String, BigDecimal> parseComponentFields(HttpServletRequest request) {
+        Map<String, BigDecimal> values = new LinkedHashMap<>();
+        boolean hasStructuredFields = false;
+        for (String component : COMPONENTS) {
+            String value = trim(request.getParameter("component_" + component.replace(":", "_")));
+            if (!value.isEmpty()) hasStructuredFields = true;
+            if (!value.isEmpty()) values.put(component, decimal(value, component));
+        }
+        return hasStructuredFields ? values : parseComponents(request.getParameter("components"));
     }
 }

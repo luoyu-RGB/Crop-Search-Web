@@ -175,6 +175,14 @@ public class CropDao {
         }
     }
 
+    public void updateImageTitle(long cropId, long imageId, String title) throws SQLException {
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement("UPDATE crop_images SET image_title=? WHERE id=? AND crop_id=?")) {
+            statement.setString(1, nullable(title)); statement.setLong(2, imageId); statement.setLong(3, cropId);
+            if (statement.executeUpdate() != 1) throw new SQLException("Image does not belong to crop");
+            logOperation(connection, "UPDATE_IMAGE", cropId, title);
+        }
+    }
+
     public void setCover(long cropId, long imageId) throws SQLException {
         try (Connection connection = Database.getConnection()) {
             connection.setAutoCommit(false);
