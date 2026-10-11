@@ -84,25 +84,25 @@
         {
           "order": 3,
           "file": "page-15/fig-03.png",
-          "description": "球果（数个，深褐色）",
+          "description": "树皮特写（块状剥落）",
           "isCover": false
         },
         {
           "order": 4,
           "file": "page-15/fig-04.png",
-          "description": "树皮特写（块状剥落）",
+          "description": "种子（松子，深褐色）",
           "isCover": false
         },
         {
           "order": 5,
           "file": "page-15/fig-05.png",
-          "description": "植株全形（大树与山坡）",
+          "description": "针叶与黄色雄球花（小孢子叶球）特写",
           "isCover": false
         },
         {
           "order": 6,
           "file": "page-15/fig-06.png",
-          "description": "针叶与黄色雄球花（小孢子叶球）特写",
+          "description": "植株全形（大树与山坡）",
           "isCover": false
         }
       ],
@@ -245,12 +245,5 @@
   ],
   "imagesExtracted": 6,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-15/fig-01.png",
-    "page-15/fig-02.png",
-    "page-15/fig-03.png",
-    "page-15/fig-04.png",
-    "page-15/fig-05.png",
-    "page-15/fig-06.png"
-  ]
+  "unassignedImages": []
 }

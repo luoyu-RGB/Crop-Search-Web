@@ -110,13 +110,13 @@
         {
           "order": 2,
           "file": "page-18/fig-04.png",
-          "description": null,
+          "description": "种子",
           "isCover": false
         },
         {
           "order": 3,
           "file": "page-18/fig-05.png",
-          "description": null,
+          "description": "植株景观",
           "isCover": false
         }
       ],
@@ -192,11 +192,5 @@
   ],
   "imagesExtracted": 5,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-18/fig-01.png",
-    "page-18/fig-02.png",
-    "page-18/fig-03.png",
-    "page-18/fig-04.png",
-    "page-18/fig-05.png"
-  ]
+  "unassignedImages": []
 }

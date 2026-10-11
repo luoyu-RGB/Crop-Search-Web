@@ -35,6 +35,12 @@
           "file": "page-08/fig-03.png",
           "description": "植株全形（树形）",
           "isCover": false
+        },
+        {
+          "order": 4,
+          "file": "page-08/fig-04.png",
+          "description": "树干与树皮",
+          "isCover": false
         }
       ],
       "chemistry": [
@@ -110,26 +116,20 @@
       "images": [
         {
           "order": 1,
-          "file": "page-08/fig-04.png",
+          "file": "page-08/fig-05.png",
           "description": "枝叶（针叶与枝条）特写",
           "isCover": true
         },
         {
           "order": 2,
-          "file": "page-08/fig-05.png",
+          "file": "page-08/fig-06.png",
           "description": "枝与成熟球果（褐色）",
           "isCover": false
         },
         {
           "order": 3,
-          "file": "page-08/fig-06.png",
-          "description": "树冠（多株云杉）",
-          "isCover": false
-        },
-        {
-          "order": 4,
           "file": "page-08/fig-07.png",
-          "description": null,
+          "description": "树冠（多株云杉）",
           "isCover": false
         }
       ],
@@ -228,13 +228,5 @@
   ],
   "imagesExtracted": 6,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-08/fig-01.png",
-    "page-08/fig-02.png",
-    "page-08/fig-03.png",
-    "page-08/fig-04.png",
-    "page-08/fig-05.png",
-    "page-08/fig-06.png",
-    "page-08/fig-07.png"
-  ]
+  "unassignedImages": []
 }

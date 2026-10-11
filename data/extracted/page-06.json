@@ -127,12 +127,5 @@
   ],
   "imagesExtracted": 6,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-06/fig-01.png",
-    "page-06/fig-02.png",
-    "page-06/fig-03.png",
-    "page-06/fig-04.png",
-    "page-06/fig-05.png",
-    "page-06/fig-06.png"
-  ]
+  "unassignedImages": []
 }

@@ -32,13 +32,13 @@
         },
         {
           "order": 3,
-          "file": "page-13/fig-03.png",
+          "file": "page-13/fig-04.png",
           "description": "针叶与红色雄球花簇",
           "isCover": false
         },
         {
           "order": 4,
-          "file": "page-13/fig-04.png",
+          "file": "page-13/fig-03.png",
           "description": "植株全形（树冠）",
           "isCover": false
         }
@@ -96,25 +96,25 @@
       "images": [
         {
           "order": 1,
-          "file": "page-13/fig-05.png",
-          "description": "针叶与红色雄球花（小孢子叶球）特写",
+          "file": "page-13/fig-07.png",
+          "description": "针叶与红色芽状结构特写",
           "isCover": true
         },
         {
           "order": 2,
-          "file": "page-13/fig-06.png",
+          "file": "page-13/fig-08.png",
           "description": "植株全形与生境",
           "isCover": false
         },
         {
           "order": 3,
-          "file": "page-13/fig-07.png",
+          "file": "page-13/fig-06.png",
           "description": "种子（黑色，散放）",
           "isCover": false
         },
         {
           "order": 4,
-          "file": "page-13/fig-08.png",
+          "file": "page-13/fig-05.png",
           "description": "球果与针叶枝",
           "isCover": false
         }
@@ -170,14 +170,5 @@
   ],
   "imagesExtracted": 8,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-13/fig-01.png",
-    "page-13/fig-02.png",
-    "page-13/fig-03.png",
-    "page-13/fig-04.png",
-    "page-13/fig-05.png",
-    "page-13/fig-06.png",
-    "page-13/fig-07.png",
-    "page-13/fig-08.png"
-  ]
+  "unassignedImages": []
 }

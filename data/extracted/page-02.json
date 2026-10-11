@@ -143,19 +143,19 @@
         },
         {
           "order": 3,
-          "description": "种子（果实）生于枝上",
+          "description": "种子（白果）堆放在蓝色布面上",
           "isCover": false,
           "file": "page-03/fig-01.png"
         },
         {
           "order": 4,
-          "description": "种子（白果）堆放在蓝色布面上",
+          "description": "树干与树皮",
           "isCover": false,
           "file": "page-03/fig-02.png"
         },
         {
           "order": 5,
-          "description": "树干（树皮）",
+          "description": "枝上未成熟种子（绿色白果）",
           "isCover": false,
           "file": "page-02/fig-03.png"
         }
@@ -412,7 +412,5 @@
   ],
   "imagesExtracted": 5,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-02/fig-03.png"
-  ]
+  "unassignedImages": []
 }

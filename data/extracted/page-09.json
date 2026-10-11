@@ -23,6 +23,12 @@
           "file": "page-09/fig-01.png",
           "description": "枝叶与球果",
           "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-09/fig-02.png",
+          "description": "树干与树皮",
+          "isCover": false
         }
       ],
       "chemistry": [
@@ -77,26 +83,20 @@
       "images": [
         {
           "order": 1,
-          "file": "page-09/fig-02.png",
+          "file": "page-09/fig-03.png",
           "description": "树干与树皮",
           "isCover": true
         },
         {
           "order": 2,
-          "file": "page-09/fig-03.png",
+          "file": "page-09/fig-04.png",
           "description": "植株全形",
           "isCover": false
         },
         {
           "order": 3,
-          "file": "page-09/fig-04.png",
-          "description": "未成熟球果（绿色）与枝叶",
-          "isCover": false
-        },
-        {
-          "order": 4,
           "file": "page-09/fig-05.png",
-          "description": null,
+          "description": "未成熟球果（绿色）与枝叶",
           "isCover": false
         }
       ],
@@ -150,11 +150,5 @@
   ],
   "imagesExtracted": 5,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-09/fig-01.png",
-    "page-09/fig-02.png",
-    "page-09/fig-03.png",
-    "page-09/fig-04.png",
-    "page-09/fig-05.png"
-  ]
+  "unassignedImages": []
 }

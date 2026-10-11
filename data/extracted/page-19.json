@@ -34,6 +34,12 @@
           "file": "page-19/fig-01.png",
           "description": "枝叶特写",
           "isCover": true
+        },
+        {
+          "order": 2,
+          "file": "page-19/fig-02.png",
+          "description": "植株",
+          "isCover": false
         }
       ],
       "chemistry": [
@@ -173,20 +179,14 @@
       "images": [
         {
           "order": 1,
-          "file": "page-19/fig-02.png",
+          "file": "page-19/fig-03.png",
           "description": "枝叶与雄球花",
           "isCover": true
         },
         {
           "order": 2,
-          "file": "page-19/fig-03.png",
-          "description": "种子",
-          "isCover": false
-        },
-        {
-          "order": 3,
           "file": "page-19/fig-04.png",
-          "description": null,
+          "description": "种子",
           "isCover": false
         }
       ],
@@ -331,10 +331,5 @@
   ],
   "imagesExtracted": 4,
   "imagesAssigned": true,
-  "unassignedImages": [
-    "page-19/fig-01.png",
-    "page-19/fig-02.png",
-    "page-19/fig-03.png",
-    "page-19/fig-04.png"
-  ]
+  "unassignedImages": []
 }
