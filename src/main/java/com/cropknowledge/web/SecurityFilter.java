@@ -22,7 +22,7 @@ public class SecurityFilter implements Filter {
         response.setHeader("X-Content-Type-Options", "nosniff");
         String path = request.getRequestURI().substring(request.getContextPath().length());
         if (!path.startsWith("/account/") && !path.startsWith("/admin/")
-            && !path.equals("/search") && !path.startsWith("/crop/")) {
+            && !path.equals("/search") && !path.equals("/assistant") && !path.startsWith("/crop/")) {
             chain.doFilter(input, output);
             return;
         }

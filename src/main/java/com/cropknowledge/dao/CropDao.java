@@ -256,6 +256,21 @@ public class CropDao {
         }
     }
 
+    public Crop findApprovedByName(String name) throws SQLException {
+        if (name == null || name.trim().isEmpty()) return null;
+        String value = name.trim();
+        String sql = "SELECT c.* FROM crops c WHERE c.review_status='APPROVED' AND "
+            + "(c.chinese_name=? OR c.english_name=? OR c.latin_name=? OR EXISTS "
+            + "(SELECT 1 FROM crop_aliases a WHERE a.crop_id=c.id AND a.alias_name=?)) ORDER BY c.id LIMIT 1";
+        try (Connection connection = Database.getConnection(); PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, value); statement.setString(2, value); statement.setString(3, value); statement.setString(4, value);
+            try (ResultSet result = statement.executeQuery()) {
+                if (!result.next()) return null;
+                Crop crop = readSummary(result); loadRelated(connection, crop); return crop;
+            }
+        }
+    }
+
     private void loadRelated(Connection connection, Crop crop) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(
                 "SELECT alias_name FROM crop_aliases WHERE crop_id = ? ORDER BY id")) {
