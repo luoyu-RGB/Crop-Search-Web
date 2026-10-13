@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>作物知识库</title>
-        <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/site.css">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/site.css?v=20261013-ui6">
     </head>
     <body>
         <header class="site-header">
@@ -27,13 +27,13 @@
                 <% } %>
             </nav>
         </header>
-        <main class="page">
-            <div class="intro">
+        <main class="page home-page">
+            <div class="intro hero-intro">
                 <span class="eyebrow">CROP KNOWLEDGE</span>
                 <h1>作物知识库</h1>
                 <p>作物资料查询与 AI 辅助问答平台</p>
             </div>
-            <section class="notice">
+            <section class="notice home-cta">
                 <h2>资料查询</h2>
                 <p>先登录后可查询已审核作物资料，并使用 AI 生成带来源页的辅助回答。</p>
                 <% if(session.getAttribute("userId")==null){ %>

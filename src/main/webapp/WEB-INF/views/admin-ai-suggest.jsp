@@ -1,53 +1,12 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="com.cropknowledge.model.DeepSeekFieldSuggestion,com.cropknowledge.web.Html" %>
 <%
-    String root = request.getContextPath();
-    DeepSeekFieldSuggestion suggestion =
-        (DeepSeekFieldSuggestion) request.getAttribute("suggestion");
+ String root=request.getContextPath();
+ DeepSeekFieldSuggestion suggestion=(DeepSeekFieldSuggestion)request.getAttribute("suggestion");
 %>
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>DeepSeek OCR 建议 · 管理后台</title>
-        <link rel="stylesheet" href="<%= root %>/assets/site.css">
-        <link rel="stylesheet" href="<%= root %>/assets/admin.css">
-    </head>
-    <body>
-        <header class="site-header">
-            <a class="brand" href="<%= root %>/">作物知识库</a>
-            <nav>
-                <a href="<%= root %>/admin/crops">资料管理</a>
-                <a href="<%= root %>/account/">我的账户</a>
-            </nav>
-        </header>
-        <main class="page">
-            <div class="intro">
-                <span class="eyebrow">DEEPSEEK OCR</span>
-                <h1>OCR 字段建议</h1>
-                <p>AI只生成候选 JSON，结果必须人工核对后再录入，不会自动发布。</p>
-            </div>
-            <% if(request.getAttribute("error")!=null){ %>
-                <p class="error" role="alert"><%= Html.escape(request.getAttribute("error")) %></p>
-            <% } %>
-            <form class="auth-form" method="post" action="<%= root %>/admin/ai-suggest">
-                <label>
-                    PDF 来源页码
-                    <input name="sourcePage" type="number" min="1" required>
-                </label>
-                <label>
-                    OCR 文本
-                    <textarea name="ocrText" rows="14" maxlength="4000" required></textarea>
-                </label>
-                <button class="button" type="submit">调用 DeepSeek 生成建议</button>
-            </form>
-            <% if(suggestion!=null){ %>
-                <section class="notice">
-                    <h2>待审核建议（PDF 第 <%= suggestion.getSourcePage() %> 页）</h2>
-                    <p>以下是AI原始返回，未写入作物表：</p>
-                    <pre style="white-space:pre-wrap"><%= Html.escape(suggestion.getRawResponse()) %></pre>
-                </section>
-            <% } %>
-        </main>
-    </body>
-</html>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OCR 字段建议 · 作物知识库</title><link rel="stylesheet" href="<%=root%>/assets/site.css?v=20261013-ui6"><link rel="stylesheet" href="<%=root%>/assets/admin.css?v=20261013-ui6"></head>
+<body><header class="site-header"><a class="brand" href="<%=root%>/">作物知识库</a><nav aria-label="主导航"><a href="<%=root%>/admin/crops">资料管理</a><a href="<%=root%>/account/">我的账户</a></nav></header>
+<main class="page admin-page ai-suggest-page"><div class="intro"><span class="eyebrow">DEEPSEEK · OCR WORKSPACE</span><h1>OCR 字段建议</h1><p>把 PDF 页面中的 OCR 文本交给 AI 整理成候选字段，审核后再录入知识库。</p></div>
+<% if(request.getAttribute("error")!=null){ %><p class="error" role="alert"><%=Html.escape(request.getAttribute("error"))%></p><% } %>
+<div class="ai-suggest-grid"><section class="admin-card ai-input-card"><div class="section-kicker">STEP 01 · 输入来源</div><h2>提供 PDF 页面内容</h2><p class="subtle">页码用于追溯来源；OCR 文本越完整，字段建议越准确。</p><form class="admin-form" method="post" action="<%=root%>/admin/ai-suggest"><label>PDF 来源页码<input name="sourcePage" type="number" min="1" required placeholder="例如 12"></label><label>OCR 文本<textarea name="ocrText" rows="15" maxlength="4000" required placeholder="粘贴 PDF 页面识别出的文字…"></textarea><span class="field-help">最多 4000 个字符</span></label><button class="button" type="submit">调用 DeepSeek 生成建议 <span aria-hidden="true">→</span></button></form></section>
+<aside class="ai-guide-card"><div class="section-kicker">HOW IT WORKS</div><h2>三步完成整理</h2><ol class="ai-steps"><li><strong>粘贴 OCR 文本</strong><span>保留作物名称、分类和描述等上下文。</span></li><li><strong>生成候选 JSON</strong><span>AI 只负责提取和归类字段。</span></li><li><strong>人工核对后录入</strong><span>结果不会自动发布到知识库。</span></li></ol><div class="ai-note"><strong>审核提醒</strong><span>请对照 PDF 原文检查名称、数值和页码。</span></div></aside></div>
+<% if(suggestion!=null){ %><section class="admin-card ai-result-card"><div class="result-label"><span class="status status-PENDING">待审核</span><span>PDF 第 <%=suggestion.getSourcePage()%> 页</span></div><h2>AI 返回的候选结果</h2><p class="subtle">以下内容尚未写入作物资料表，请核对后手动录入。</p><pre class="ai-json"><%=Html.escape(suggestion.getRawResponse())%></pre></section><% } %></main></body></html>

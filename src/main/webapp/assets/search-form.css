@@ -4,3 +4,19 @@
 .condition-list{display:grid;gap:14px}
 .condition-row{display:grid;grid-template-columns:minmax(190px,280px) minmax(0,1fr);gap:16px;align-items:end}
 @media(max-width:600px){.condition-row{grid-template-columns:1fr;gap:8px}}
+
+/* Loaded last on the search page: keep field labels away from the panel edge. */
+.search-form .search-section { padding-inline: clamp(24px, 4vw, 44px); }
+.search-form .range-row { grid-template-columns: 160px minmax(0,1fr) 28px minmax(0,1fr); gap: 12px; min-height: 58px; }
+.search-form .range-row > span:first-child { padding-left: 2px; align-self: center; font-weight: 600; }
+.search-form .range-row input, .search-form .range-row select { min-height: 46px; }
+@media (max-width: 700px) {
+  .search-form .search-section { padding-inline: 18px; }
+  .search-form .range-row { grid-template-columns: 116px minmax(0,1fr) 20px minmax(0,1fr); gap: 8px; }
+}
+@media (max-width: 520px) {
+  .search-form .range-row { grid-template-columns: 1fr 1fr; gap: 8px 10px; }
+  .search-form .range-row > span:first-child { grid-column: 1 / -1; }
+  .search-form .range-row > span:nth-of-type(2) { display: none; }
+  .search-form .range-row label { grid-column: 1 / -1; }
+}

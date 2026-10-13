@@ -18,9 +18,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>作物查询 · 作物知识库</title>
-        <link rel="stylesheet" href="<%= root %>/assets/site.css">
-        <link rel="stylesheet" href="<%= root %>/assets/crop.css">
-        <link rel="stylesheet" href="<%= root %>/assets/search-form.css">
+        <link rel="stylesheet" href="<%= root %>/assets/site.css?v=20261013-ui6">
+        <link rel="stylesheet" href="<%= root %>/assets/crop.css?v=20261013-ui6">
+        <link rel="stylesheet" href="<%= root %>/assets/search-form.css?v=20261013-ui6">
     </head>
     <body>
         <header class="site-header">

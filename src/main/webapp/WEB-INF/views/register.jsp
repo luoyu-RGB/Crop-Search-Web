@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>注册 · 作物知识库</title>
-        <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/site.css">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/site.css?v=20261013-ui6">
     </head>
     <body>
         <header class="site-header">

@@ -10,8 +10,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>管理员后台 · 作物资料</title>
-        <link rel="stylesheet" href="<%= root %>/assets/site.css">
-        <link rel="stylesheet" href="<%= root %>/assets/admin.css">
+        <link rel="stylesheet" href="<%= root %>/assets/site.css?v=20261013-ui6">
+        <link rel="stylesheet" href="<%= root %>/assets/admin.css?v=20261013-ui6">
     </head>
     <body>
         <header class="site-header">

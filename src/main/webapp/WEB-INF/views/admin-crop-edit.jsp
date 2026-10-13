@@ -12,8 +12,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title><%= existing?"编辑":"新增" %>作物 · 管理后台</title>
-        <link rel="stylesheet" href="<%= root %>/assets/site.css">
-        <link rel="stylesheet" href="<%= root %>/assets/admin.css">
+        <link rel="stylesheet" href="<%= root %>/assets/site.css?v=20261013-ui6">
+        <link rel="stylesheet" href="<%= root %>/assets/admin.css?v=20261013-ui6">
     </head>
     <body>
         <header class="site-header">
@@ -265,13 +265,17 @@
                         <button class="button small" type="submit">添加样品</button>
                     </form>
                 </section>
-                <section class="admin-card">
-                    <h2>图片</h2>
+                <section class="admin-card image-manager">
+                    <div class="image-section-heading">
+                        <div><span class="section-kicker">IMAGE LIBRARY</span><h2>图片管理</h2></div>
+                        <span class="image-count"><%= crop.images.size() %> 张图片</span>
+                    </div>
+                    <p class="image-section-description">维护图片标题，选择一张封面用于展示作物资料。</p>
                     <div class="admin-images">
                         <% for(Crop.Image image:crop.images){ %>
                             <figure>
                                 <img src="<%= root %>/assets/crops/<%= Html.escape(image.path) %>" alt="<%= Html.escape(image.title) %>">
-                                <figcaption><%= Html.escape(image.title) %>
+                                <figcaption><span class="image-caption-title" title="<%= Html.escape(image.title) %>"><%= Html.escape(image.title) %></span>
                                 <% if(image.cover){ %>
                                     <span class="status status-APPROVED">封面</span>
                                 <% } %>
@@ -280,7 +284,7 @@
                                     <input type="hidden" name="action" value="updateImage">
                                     <input type="hidden" name="cropId" value="<%= crop.id %>">
                                     <input type="hidden" name="imageId" value="<%= image.id %>">
-                                    <input name="imageTitle" maxlength="100" value="<%= Html.escape(image.title) %>" placeholder="图片标题">
+                                    <input name="imageTitle" maxlength="100" value="<%= Html.escape(image.title) %>" placeholder="图片标题" aria-label="修改图片标题">
                                     <button class="small-link" type="submit">保存标题</button>
                                 </form>
                                 <div class="image-actions">
@@ -291,6 +295,8 @@
                                             <input type="hidden" name="imageId" value="<%= image.id %>">
                                             <button class="small-link">设为封面</button>
                                         </form>
+                                    <% }else{ %>
+                                        <span class="current-cover">当前封面</span>
                                     <% } %>
                                     <form method="post" action="<%= root %>/admin/crops">
                                         <input type="hidden" name="action" value="deleteImage">
@@ -302,16 +308,20 @@
                             </figure>
                         <% } %>
                     </div>
-                    <form class="inline-form" method="post" action="<%= root %>/admin/crops" enctype="multipart/form-data">
+                    <form class="image-upload-form" method="post" action="<%= root %>/admin/crops" enctype="multipart/form-data">
                         <input type="hidden" name="action" value="uploadImage">
                         <input type="hidden" name="cropId" value="<%= crop.id %>">
-                        <input type="file" name="imageFile" accept="image/jpeg,image/png,image/gif,image/webp" required>
-                        <input name="imageTitle" maxlength="100" placeholder="图片标题">
-                        <label class="check">
+                        <label class="upload-field" for="image-file">选择图片
+                            <input id="image-file" type="file" name="imageFile" accept="image/jpeg,image/png,image/gif,image/webp" required>
+                        </label>
+                        <label class="upload-field" for="image-title">图片标题
+                            <input id="image-title" name="imageTitle" maxlength="100" placeholder="例如：树果、种子">
+                        </label>
+                        <label class="upload-cover">
                             <input type="checkbox" name="cover" value="true">
                             设为封面
                         </label>
-                        <button class="button small" type="submit">上传图片</button>
+                        <button class="button" type="submit">上传图片 <span aria-hidden="true">↑</span></button>
                     </form>
                 </section>
             <% } %>
