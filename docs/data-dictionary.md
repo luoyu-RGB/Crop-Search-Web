@@ -25,11 +25,11 @@
 | 字段 | 类型 | 说明 |
 |---|---|---|
 | id | BIGINT | 主键 |
-| username | VARCHAR(50) | 登录名，唯一 |
+| username | VARCHAR(50) | 用户名，可重复 |
 | password_hash | VARCHAR(255) | 加密后的密码 |
 | real_name | VARCHAR(50) | 姓名 |
 | role | VARCHAR(20) | USER 或 ADMIN |
-| email | VARCHAR(100) | 邮箱 |
+| email | VARCHAR(100) | 登录邮箱，必填且唯一 |
 | status | TINYINT | 1 正常，0 禁用 |
 | create_time | DATETIME | 创建时间 |
 

@@ -9,11 +9,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class UserDao {
-    public User findByUsername(String username) throws SQLException {
-        String sql = "SELECT id, username, password_hash, role, status FROM users WHERE username = ?";
+    public User findByEmail(String email) throws SQLException {
+        String sql = "SELECT id, username, password_hash, role, status FROM users WHERE email = ?";
         try (Connection connection = Database.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, username);
+            statement.setString(1, email);
             try (ResultSet result = statement.executeQuery()) {
                 if (!result.next()) return null;
                 return new User(result.getLong("id"), result.getString("username"),

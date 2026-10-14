@@ -36,6 +36,7 @@ public class AuthServlet extends HttpServlet {
             return;
         }
         String username = request.getParameter("username");
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
         try {
             if ("/register".equals(path)) {
@@ -43,9 +44,9 @@ public class AuthServlet extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/login?registered=1");
                 return;
             }
-            User user = auth.login(username, password);
+            User user = auth.login(email, password);
             if (user == null) {
-                request.setAttribute("error", "用户名或密码错误，或账号已禁用");
+                request.setAttribute("error", "邮箱或密码错误，或账号已禁用");
             } else {
                 HttpSession old = request.getSession(false);
                 if (old != null) old.invalidate();

@@ -17,17 +17,19 @@
         <main class="auth-page">
             <form class="auth-form" method="post" action="<%= request.getContextPath() %>/register" id="registerForm">
                 <h1>创建账户</h1>
-                <p class="subtle">注册后可使用作物查询服务</p>
+                <p class="subtle">用户名可与他人重复，邮箱用于登录且必须唯一</p>
                 <% if (request.getAttribute("error") != null) { %>
                     <p class="error" role="alert"><%= Html.escape(request.getAttribute("error")) %></p>
                 <% } %>
                 <label>
                     用户名
-                    <input name="username" required minlength="3" maxlength="30" pattern="[A-Za-z0-9_]+" autocomplete="username">
+                    <input name="username" required minlength="3" maxlength="30" pattern="[A-Za-z0-9_]+" autocomplete="username"
+                           value="<%= Html.escape(request.getParameter("username")) %>">
                 </label>
                 <label>
                     邮箱
-                    <input name="email" type="email" required maxlength="100" autocomplete="email">
+                    <input name="email" type="email" required maxlength="100" autocomplete="email"
+                           value="<%= Html.escape(request.getParameter("email")) %>">
                 </label>
                 <label>
                     密码

@@ -8,7 +8,7 @@
 
 | 模块 | 已实现功能 |
 | --- | --- |
-| 账户与权限 | 注册、登录、退出、Session 管理，普通用户与管理员权限控制 |
+| 账户与权限 | 邮箱登录、注册、退出、Session 管理，普通用户与管理员权限控制 |
 | 作物检索 | 按中文名、英文名、拉丁学名及别名查询；按科属、特征、分布、栽培和用途组合筛选 |
 | 数值筛选 | 含油率、碘值、酸值、皂化值和脂肪酸含量范围筛选，支持“全部满足”或“任意满足” |
 | 结果与详情 | 分页、自选结果字段、作物图片、样品检测数据及 PDF 来源页码 |
@@ -75,7 +75,7 @@ SOURCE database/seed.sql;
 SOURCE database/approve-initial-crops.sql;
 ```
 
-新数据库使用的 `schema.sql` 已包含当前表结构。已有数据库的增量脚本、历史图片修正说明见 [database/README.md](database/README.md) 和 [第七阶段记录](docs/phase-7-record.md)。初始数据脚本用于首次导入，不应在已有相同数据的库中反复执行。
+新数据库使用的 `schema.sql` 已包含当前表结构。已有数据库请先执行 `database/migrate-email-login.sql`，确认账号邮箱没有缺失或重复后再完成迁移。其他增量脚本、历史图片修正说明见 [database/README.md](database/README.md) 和 [第七阶段记录](docs/phase-7-record.md)。初始数据脚本用于首次导入，不应在已有相同数据的库中反复执行。
 
 ### 3. 配置运行环境变量
 
@@ -119,7 +119,7 @@ mvn clean package
 
 ```sql
 USE crop_knowledge;
-UPDATE users SET role = 'ADMIN' WHERE username = 'YOUR_REGISTERED_USERNAME';
+UPDATE users SET role = 'ADMIN' WHERE email = 'YOUR_REGISTERED_EMAIL';
 ```
 
 角色修改后退出并重新登录即可进入后台。密码由注册流程生成带随机盐的 PBKDF2-HMAC-SHA256 哈希。

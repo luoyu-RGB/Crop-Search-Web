@@ -17,7 +17,7 @@
         <main class="auth-page">
             <form class="auth-form" method="post" action="<%= request.getContextPath() %>/login">
                 <h1>登录</h1>
-                <p class="subtle">访问你的作物知识库账户</p>
+                <p class="subtle">使用注册邮箱访问你的作物知识库账户</p>
                 <% if (request.getParameter("registered") != null) { %>
                     <p class="success">注册成功，请登录。</p>
                 <% } %>
@@ -25,8 +25,9 @@
                     <p class="error" role="alert"><%= Html.escape(request.getAttribute("error")) %></p>
                 <% } %>
                 <label>
-                    用户名
-                    <input name="username" required autocomplete="username">
+                    邮箱
+                    <input name="email" type="email" required maxlength="100" autocomplete="email"
+                           value="<%= Html.escape(request.getParameter("email")) %>">
                 </label>
                 <label>
                     密码

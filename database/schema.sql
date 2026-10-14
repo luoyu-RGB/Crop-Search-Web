@@ -6,14 +6,15 @@ USE crop_knowledge;
 
 CREATE TABLE IF NOT EXISTS users (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL UNIQUE,
+    username VARCHAR(50) NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
     real_name VARCHAR(50),
     role VARCHAR(20) NOT NULL DEFAULT 'USER',
-    email VARCHAR(100),
+    email VARCHAR(100) NOT NULL,
     status TINYINT NOT NULL DEFAULT 1,
     create_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT ck_users_role CHECK (role IN ('USER', 'ADMIN'))
+    CONSTRAINT ck_users_role CHECK (role IN ('USER', 'ADMIN')),
+    CONSTRAINT uq_users_email UNIQUE (email)
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS crops (
