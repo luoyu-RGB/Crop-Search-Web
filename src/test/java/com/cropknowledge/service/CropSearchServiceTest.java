@@ -57,6 +57,15 @@ class CropSearchServiceTest {
             service.validateFilterOptions(service.parse(request(values)), options));
     }
 
+    @Test
+    void rejectsPathologicalPageOffsets() {
+        Map<String, String> values = new HashMap<>();
+        values.put("page", "1001");
+        assertThrows(IllegalArgumentException.class, () -> service.parse(request(values)));
+        values.put("page", "1000");
+        assertEquals(1000, service.parse(request(values)).page);
+    }
+
     private static HttpServletRequest request(Map<String, String> values) {
         return (HttpServletRequest) Proxy.newProxyInstance(
             HttpServletRequest.class.getClassLoader(), new Class<?>[]{HttpServletRequest.class},

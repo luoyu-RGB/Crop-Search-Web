@@ -17,6 +17,11 @@ CREATE TABLE IF NOT EXISTS users (
     CONSTRAINT uq_users_email UNIQUE (email)
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS schema_migrations (
+    version VARCHAR(100) PRIMARY KEY,
+    applied_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS crops (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     chinese_name VARCHAR(100) NOT NULL,
@@ -36,7 +41,8 @@ CREATE TABLE IF NOT EXISTS crops (
     CONSTRAINT ck_crops_review_status CHECK (review_status IN ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED')),
     INDEX idx_crops_chinese_name (chinese_name),
     INDEX idx_crops_family_genus (family, genus),
-    INDEX idx_crops_review_status (review_status)
+    INDEX idx_crops_review_status (review_status),
+    INDEX idx_crops_status_name (review_status, chinese_name, id)
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS crop_aliases (
@@ -58,7 +64,8 @@ CREATE TABLE IF NOT EXISTS crop_samples (
     origin VARCHAR(200),
     remark TEXT,
     CONSTRAINT fk_sample_crop FOREIGN KEY (crop_id) REFERENCES crops(id) ON DELETE CASCADE,
-    INDEX idx_sample_origin (origin)
+    INDEX idx_sample_origin (origin),
+    INDEX idx_sample_crop_id (crop_id, id)
 ) ENGINE=InnoDB;
 
 -- 分布采集点：资料“分布”段落中的逐条采集记录（省、地点、经纬度、海拔、日期、采集人、采集号）
@@ -93,7 +100,8 @@ CREATE TABLE IF NOT EXISTS crop_oil_data (
     CONSTRAINT fk_oil_crop FOREIGN KEY (crop_id) REFERENCES crops(id) ON DELETE CASCADE,
     CONSTRAINT fk_oil_sample FOREIGN KEY (sample_id) REFERENCES crop_samples(id) ON DELETE SET NULL,
     INDEX idx_oil_content (oil_content),
-    INDEX idx_iodine_value (iodine_value)
+    INDEX idx_iodine_value (iodine_value),
+    INDEX idx_oil_crop_sample (crop_id, sample_id)
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS crop_components (
@@ -107,7 +115,8 @@ CREATE TABLE IF NOT EXISTS crop_components (
     CONSTRAINT fk_component_crop FOREIGN KEY (crop_id) REFERENCES crops(id) ON DELETE CASCADE,
     CONSTRAINT fk_component_sample FOREIGN KEY (sample_id) REFERENCES crop_samples(id) ON DELETE SET NULL,
     UNIQUE KEY uq_crop_component_sample (crop_id, sample_id, component_name),
-    INDEX idx_component_name_value (component_name, component_value)
+    INDEX idx_component_name_value (component_name, component_value),
+    INDEX idx_component_sample (sample_id, component_name, component_value)
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS crop_images (

@@ -33,6 +33,7 @@
                 <h2>从作物资料中获取答案</h2>
                 <p class="panel-description">输入一个具体问题，系统会优先检索已审核资料，并展示回答来源。</p>
                 <form class="question-form" method="post" action="<%= root %>/assistant">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                     <label for="question">你的问题</label>
                     <div class="question-row">
                         <input id="question" name="question" maxlength="300" required value="<%= Html.escape(request.getParameter("question")) %>" placeholder="例如：银杏的主要用途是什么？">

@@ -12,6 +12,7 @@ import com.openai.models.chat.completions.ChatCompletionMessageToolCall;
 import com.openai.models.chat.completions.ChatCompletionNamedToolChoice;
 import com.openai.models.chat.completions.ChatCompletionToolMessageParam;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 /** DeepSeek adapter through its OpenAI-compatible Chat Completions endpoint. */
@@ -26,7 +27,8 @@ public final class DeepSeekService implements AutoCloseable {
 
     DeepSeekService(String apiKey, String baseUrl, String model) {
         this.model = model;
-        this.client = OpenAIOkHttpClient.builder().apiKey(requiredApiKey(apiKey)).baseUrl(baseUrl).build();
+        this.client = OpenAIOkHttpClient.builder().apiKey(requiredApiKey(apiKey)).baseUrl(baseUrl)
+            .timeout(Duration.ofSeconds(30)).maxRetries(1).build();
     }
 
     public String complete(String systemPrompt, String userPrompt) {
