@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Set;
 
 public final class CropSearchService {
+    static final int MAX_PAGE = 1000;
     private static final Set<String> COMPONENTS = new HashSet<>(Arrays.asList(
         "C12:0", "C14:0", "C16:0", "C16:1", "C18:0", "C18:1", "C18:2", "C18:3", "C20:0", "C20:1"));
     private static final Set<String> FILTER_FIELDS = new HashSet<>(Arrays.asList(
@@ -53,7 +54,10 @@ public final class CropSearchService {
             && "true".equals(request.getParameter("preview"));
         String page = request.getParameter("page");
         if (page != null && !page.isEmpty()) {
-            try { search.page = Math.max(1, Integer.parseInt(page)); }
+            try {
+                search.page = Integer.parseInt(page);
+                if (search.page < 1 || search.page > MAX_PAGE) throw new NumberFormatException();
+            }
             catch (NumberFormatException ex) { throw new IllegalArgumentException("页码无效"); }
         }
         return search;

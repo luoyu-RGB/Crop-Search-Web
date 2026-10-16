@@ -22,6 +22,7 @@
                         <a href="<%= request.getContextPath() %>/admin/">管理后台</a>
                     <% } %>
                     <form action="<%= request.getContextPath() %>/logout" method="post">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                         <button class="link-button" type="submit">退出</button>
                     </form>
                 <% } %>

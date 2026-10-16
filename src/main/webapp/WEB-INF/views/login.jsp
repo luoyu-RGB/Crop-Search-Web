@@ -16,6 +16,7 @@
         </header>
         <main class="auth-page">
             <form class="auth-form" method="post" action="<%= request.getContextPath() %>/login">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                 <h1>登录</h1>
                 <p class="subtle">使用注册邮箱访问你的作物知识库账户</p>
                 <% if (request.getParameter("registered") != null) { %>

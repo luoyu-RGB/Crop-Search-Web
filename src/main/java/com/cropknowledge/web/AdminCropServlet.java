@@ -12,6 +12,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import javax.imageio.ImageIO;
+import javax.imageio.ImageReader;
+import javax.imageio.stream.ImageInputStream;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
@@ -23,6 +26,7 @@ import jakarta.servlet.http.Part;
 @WebServlet("/admin/crops/*")
 @MultipartConfig(maxFileSize = 5 * 1024 * 1024, maxRequestSize = 6 * 1024 * 1024)
 public class AdminCropServlet extends HttpServlet {
+    private static final int MAX_IMAGE_DIMENSION = 6000;
     private static final String[] STATUSES = {"DRAFT", "PENDING", "APPROVED", "REJECTED"};
     private static final String[] COMPONENTS = {"C12:0", "C14:0", "C16:0", "C16:1", "C18:0", "C18:1", "C18:2", "C18:3", "C20:0", "C20:1"};
     private final CropDao crops = new CropDao();
@@ -117,24 +121,37 @@ public class AdminCropServlet extends HttpServlet {
 
     private void uploadImage(HttpServletRequest request, HttpServletResponse response, long cropId) throws IOException, SQLException, ServletException {
         Part part = request.getPart("imageFile");
-        if (part == null || part.getSize() == 0) throw new IllegalArgumentException("请选择图片文件");
-        if (part.getContentType() == null || !part.getContentType().toLowerCase().startsWith("image/")) throw new IllegalArgumentException("上传文件必须是图片");
+        if (part == null || part.getSize() == 0) throw new IllegalArgumentException("Image file is required");
         String original = part.getSubmittedFileName();
         String filename = original == null ? "" : Paths.get(original).getFileName().toString();
-        int dot = filename.lastIndexOf('.'); String extension = dot < 0 ? "" : filename.substring(dot + 1).toLowerCase();
-        if (!("jpg".equals(extension) || "jpeg".equals(extension) || "png".equals(extension) || "gif".equals(extension) || "webp".equals(extension))) throw new IllegalArgumentException("仅支持 JPG、PNG、GIF 或 WEBP 图片");
-        Path root = uploadRoot(); Files.createDirectories(root);
-        String storedName = UUID.randomUUID().toString().replace("-", "") + "." + extension;
-        Path target = root.resolve(storedName); try (java.io.InputStream input = part.getInputStream()) { Files.copy(input, target); }
-        try { crops.addImage(cropId, "admin/" + storedName, trim(request.getParameter("imageTitle")), extension, "true".equals(request.getParameter("cover"))); }
-        catch (SQLException ex) { Files.deleteIfExists(target); throw ex; }
+        int dot = filename.lastIndexOf('.');
+        String extension = dot < 0 ? "" : filename.substring(dot + 1).toLowerCase();
+        String format = validateImage(part, extension);
+        Path root = uploadRoot();
+        Files.createDirectories(root);
+        String storedExtension = "jpeg".equals(format) ? "jpg" : format;
+        String storedName = UUID.randomUUID().toString().replace("-", "") + "." + storedExtension;
+        Path target = root.resolve(storedName).normalize();
+        if (!target.startsWith(root)) throw new IOException("Invalid upload path");
+        try (java.io.InputStream input = part.getInputStream()) { Files.copy(input, target); }
+        try {
+            crops.addImage(cropId, "admin/" + storedName, trim(request.getParameter("imageTitle")), storedExtension, "true".equals(request.getParameter("cover")));
+        } catch (SQLException ex) {
+            Files.deleteIfExists(target);
+            throw ex;
+        }
         redirectEdit(request, response, cropId);
     }
 
     private void deleteImage(HttpServletRequest request, HttpServletResponse response, long cropId, long imageId) throws IOException, SQLException {
         Crop crop = crops.findByIdForAdmin(cropId); if (crop == null) throw new IllegalArgumentException("作物不存在");
         String path = null; for (Crop.Image image : crop.images) if (image.id == imageId) path = image.path;
-        crops.deleteImage(cropId, imageId); if (path != null && path.startsWith("admin/")) Files.deleteIfExists(uploadRoot().resolve(path.substring("admin/".length())).normalize());
+        crops.deleteImage(cropId, imageId);
+        if (path != null && path.startsWith("admin/")) {
+            Path root = uploadRoot();
+            Path file = root.resolve(path.substring("admin/".length())).normalize();
+            if (file.startsWith(root)) Files.deleteIfExists(file);
+        }
         redirectEdit(request, response, cropId);
     }
 
@@ -146,9 +163,37 @@ public class AdminCropServlet extends HttpServlet {
     }
 
     private Path uploadRoot() throws IOException {
-        String realPath = getServletContext().getRealPath("/assets/crops/admin");
+        String configured = System.getenv("CROP_UPLOAD_DIR");
+        String realPath = configured == null || configured.trim().isEmpty()
+            ? getServletContext().getRealPath("/assets/crops/admin") : configured.trim();
         if (realPath == null) throw new IOException("Upload directory is unavailable");
         return Paths.get(realPath).toAbsolutePath().normalize();
+    }
+
+    private static String validateImage(Part part, String extension) throws IOException {
+        if (!("jpg".equals(extension) || "jpeg".equals(extension) || "png".equals(extension) || "gif".equals(extension))) {
+            throw new IllegalArgumentException("Only JPG, PNG or GIF images are accepted");
+        }
+        try (ImageInputStream input = ImageIO.createImageInputStream(part.getInputStream())) {
+            if (input == null) throw new IllegalArgumentException("Unable to identify image file");
+            java.util.Iterator<ImageReader> readers = ImageIO.getImageReaders(input);
+            if (!readers.hasNext()) throw new IllegalArgumentException("Unsupported image format");
+            ImageReader reader = readers.next();
+            try {
+                reader.setInput(input, true, true);
+                int width = reader.getWidth(0), height = reader.getHeight(0);
+                if (width <= 0 || height <= 0 || width > MAX_IMAGE_DIMENSION || height > MAX_IMAGE_DIMENSION) {
+                    throw new IllegalArgumentException("Image dimensions must not exceed 6000x6000 pixels");
+                }
+                String format = reader.getFormatName().toLowerCase();
+                boolean matches = (("jpg".equals(extension) || "jpeg".equals(extension)) && "jpeg".equals(format))
+                    || ("png".equals(extension) && "png".equals(format))
+                    || ("gif".equals(extension) && "gif".equals(format));
+                if (!matches) throw new IllegalArgumentException("File extension does not match image format");
+                if (reader.read(0) == null) throw new IllegalArgumentException("Unable to identify image file");
+                return format;
+            } finally { reader.dispose(); }
+        }
     }
 
     private void showEditError(HttpServletRequest request, HttpServletResponse response, String message) throws ServletException, IOException {

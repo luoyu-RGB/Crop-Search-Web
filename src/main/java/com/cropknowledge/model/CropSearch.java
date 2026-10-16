@@ -32,6 +32,20 @@ public class CropSearch {
         return component != null && !component.isEmpty();
     }
 
+    /** Returns whether the user supplied at least one actual search condition. */
+    public boolean hasCriteria() {
+        return !empty(name) || !empty(family) || !empty(genus) || !empty(features)
+            || !empty(distribution) || !empty(cultivation) || !empty(uses)
+            || !textFilters.isEmpty() || minOil != null || maxOil != null
+            || minIodine != null || maxIodine != null || minAcid != null || maxAcid != null
+            || minSaponification != null || maxSaponification != null || hasComponentCondition()
+            || minComponent != null || maxComponent != null;
+    }
+
+    private static boolean empty(String value) {
+        return value == null || value.isEmpty();
+    }
+
     public static class TextFilter {
         public final String field;
         public final String value;

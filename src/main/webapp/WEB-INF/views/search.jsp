@@ -29,6 +29,7 @@
                 <a href="<%= root %>/assistant">AI问答</a>
                 <a href="<%= root %>/account/">我的账户</a>
                 <form method="post" action="<%= root %>/logout">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                     <button class="link-button">退出</button>
                 </form>
             </nav>

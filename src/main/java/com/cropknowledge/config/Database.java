@@ -38,6 +38,9 @@ public final class Database {
                     config.setPassword(password);
                     config.setMaximumPoolSize(10);
                     config.setMinimumIdle(1);
+                    config.setConnectionTimeout(10_000);
+                    config.setValidationTimeout(5_000);
+                    config.setLeakDetectionThreshold(30_000);
                     config.setPoolName("crop-knowledge-db");
                     pool = new HikariDataSource(config);
                 }

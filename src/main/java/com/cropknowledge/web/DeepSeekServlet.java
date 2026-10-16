@@ -9,9 +9,11 @@ import com.cropknowledge.service.DeepSeekAnswerService;
 import com.cropknowledge.service.DeepSeekFieldSuggestionService;
 import com.cropknowledge.service.DeepSeekService;
 import com.cropknowledge.service.WebSearchService;
+import com.cropknowledge.security.AiRateLimiter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.time.Duration;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,6 +22,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet({"/assistant", "/admin/ai-suggest"})
 public class DeepSeekServlet extends HttpServlet {
+    private static final AiRateLimiter USER_LIMITER = new AiRateLimiter(5, Duration.ofMinutes(10));
+    private static final AiRateLimiter IP_LIMITER = new AiRateLimiter(20, Duration.ofMinutes(10));
     private final CropDao crops = new CropDao();
     private final KnowledgeQuestionDao questions = new KnowledgeQuestionDao();
 
@@ -30,7 +34,11 @@ public class DeepSeekServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
+            enforceRateLimit(request);
             if ("/admin/ai-suggest".equals(request.getServletPath())) suggest(request); else answer(request);
+        } catch (RateLimitException ex) {
+            response.setStatus(429);
+            request.setAttribute("error", ex.getMessage());
         } catch (UserInputException ex) {
             request.setAttribute("error", ex.getMessage());
         } catch (DeepSeekService.MissingApiKeyException ex) {
@@ -64,6 +72,16 @@ public class DeepSeekServlet extends HttpServlet {
             request.setAttribute("error", "DeepSeek 服务调用失败，请检查 API 配置或网络连接");
         }
         doGet(request, response);
+    }
+
+    private static void enforceRateLimit(HttpServletRequest request) {
+        jakarta.servlet.http.HttpSession session = request.getSession(false);
+        Object userId = session == null ? null : session.getAttribute("userId");
+        String userKey = userId == null ? "anonymous" : "user:" + userId;
+        String ip = request.getRemoteAddr();
+        if (!USER_LIMITER.tryAcquire(userKey) || !IP_LIMITER.tryAcquire("ip:" + (ip == null ? "unknown" : ip))) {
+            throw new RateLimitException("AI 请求过于频繁，请稍后再试");
+        }
     }
 
     private void answer(HttpServletRequest request) throws SQLException {
@@ -103,5 +121,9 @@ public class DeepSeekServlet extends HttpServlet {
 
     private static final class UserInputException extends IllegalArgumentException {
         private UserInputException(String message) { super(message); }
+    }
+
+    private static final class RateLimitException extends IllegalArgumentException {
+        private RateLimitException(String message) { super(message); }
     }
 }

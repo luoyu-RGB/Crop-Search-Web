@@ -21,6 +21,7 @@
             <nav>
                 <a href="<%= root %>/admin/crops">返回列表</a>
                 <form action="<%= root %>/logout" method="post">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                     <button class="link-button" type="submit">退出</button>
                 </form>
             </nav>
@@ -41,6 +42,7 @@
             <section class="admin-card">
                 <h2>基本资料与审核</h2>
                 <form class="admin-form" method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                     <input type="hidden" name="action" value="save">
                     <input type="hidden" name="id" value="<%= existing?crop.id:"" %>">
                     <div class="form-grid">
@@ -99,6 +101,7 @@
                 </form>
                 <% if(existing){ %>
                     <form method="post" action="<%= root %>/admin/crops" class="form-actions">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                         <input type="hidden" name="action" value="delete">
                         <input type="hidden" name="cropId" value="<%= crop.id %>">
                         <button class="danger-button" type="submit" onclick="return confirm('确定删除该作物及其关联资料吗？')">删除作物</button>
@@ -112,6 +115,7 @@
                         <% for(String alias:crop.aliases){ %>
                             <span class="tag"><%= Html.escape(alias) %>
                             <form method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                 <input type="hidden" name="action" value="deleteAlias">
                                 <input type="hidden" name="cropId" value="<%= crop.id %>">
                                 <input type="hidden" name="alias" value="<%= Html.escape(alias) %>">
@@ -121,6 +125,7 @@
                         <% } %>
                     </div>
                     <form class="inline-form" method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                         <input type="hidden" name="action" value="addAlias">
                         <input type="hidden" name="cropId" value="<%= crop.id %>">
                         <input name="alias" maxlength="100" required placeholder="新增别名">
@@ -141,6 +146,7 @@
                             <details>
                                 <summary>编辑检测数据</summary>
                                 <form class="admin-form sample-edit-form" method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                     <input type="hidden" name="action" value="updateSample">
                                     <input type="hidden" name="cropId" value="<%= crop.id %>">
                                     <input type="hidden" name="sampleId" value="<%= sample.id %>">
@@ -204,6 +210,7 @@
                                 </form>
                             </details>
                             <form method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                 <input type="hidden" name="action" value="deleteSample">
                                 <input type="hidden" name="cropId" value="<%= crop.id %>">
                                 <input type="hidden" name="sampleId" value="<%= sample.id %>">
@@ -213,6 +220,7 @@
                     <% } %>
                     <h3>新增样品</h3>
                     <form class="admin-form" method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                         <input type="hidden" name="action" value="addSample">
                         <input type="hidden" name="cropId" value="<%= crop.id %>">
                         <div class="form-grid">
@@ -281,6 +289,7 @@
                                 <% } %>
                                 </figcaption>
                                 <form class="image-title-form" method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                     <input type="hidden" name="action" value="updateImage">
                                     <input type="hidden" name="cropId" value="<%= crop.id %>">
                                     <input type="hidden" name="imageId" value="<%= image.id %>">
@@ -290,6 +299,7 @@
                                 <div class="image-actions">
                                     <% if(!image.cover){ %>
                                         <form method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                             <input type="hidden" name="action" value="setCover">
                                             <input type="hidden" name="cropId" value="<%= crop.id %>">
                                             <input type="hidden" name="imageId" value="<%= image.id %>">
@@ -299,6 +309,7 @@
                                         <span class="current-cover">当前封面</span>
                                     <% } %>
                                     <form method="post" action="<%= root %>/admin/crops">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                                         <input type="hidden" name="action" value="deleteImage">
                                         <input type="hidden" name="cropId" value="<%= crop.id %>">
                                         <input type="hidden" name="imageId" value="<%= image.id %>">
@@ -309,6 +320,7 @@
                         <% } %>
                     </div>
                     <form class="image-upload-form" method="post" action="<%= root %>/admin/crops" enctype="multipart/form-data">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                         <input type="hidden" name="action" value="uploadImage">
                         <input type="hidden" name="cropId" value="<%= crop.id %>">
                         <label class="upload-field" for="image-file">选择图片

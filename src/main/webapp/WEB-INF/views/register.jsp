@@ -16,6 +16,7 @@
         </header>
         <main class="auth-page">
             <form class="auth-form" method="post" action="<%= request.getContextPath() %>/register" id="registerForm">
+<input type="hidden" name="_csrf" value="<%= com.cropknowledge.web.Html.escape(com.cropknowledge.web.Csrf.token(request)) %>">
                 <h1>创建账户</h1>
                 <p class="subtle">用户名可与他人重复，邮箱用于登录且必须唯一</p>
                 <% if (request.getAttribute("error") != null) { %>
