@@ -1,0 +1,11 @@
+.git
+.gitignore
+target
+work
+plan
+data/review
+data/extracted
+*.pdf
+*.xlsx
+*.class
+docker-compose*.yml

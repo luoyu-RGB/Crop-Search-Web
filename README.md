@@ -187,3 +187,7 @@ work/           PDF、OCR 与数据整理脚本
 - [PDF 提取规范](docs/pdf-extraction-spec.md)
 - [PDF 数据导入记录](docs/phase-6-record.md)
 - [DeepSeek 接入与配置](docs/phase-7-record.md)
+
+## Render 部署
+
+项目已提供 `Dockerfile` 和 `render.yaml`，可在 Render 通过 **New → Blueprint** 直接创建 Docker Web Service。部署步骤、外部 MySQL 配置、环境变量和免费方案限制见 [Render 部署说明](docs/render-deployment.md)。
