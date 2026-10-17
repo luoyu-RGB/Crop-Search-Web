@@ -62,7 +62,7 @@ UPDATE users SET role = 'ADMIN' WHERE email = 'YOUR_REGISTERED_EMAIL';
 
 ```bash
 docker build -t crop-knowledge-web .
-docker run --rm -p 8080:8080 \
+docker run --rm -p 7860:7860 \
   -e CROP_DB_URL="jdbc:mysql://host.docker.internal:3306/crop_knowledge?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai" \
   -e CROP_DB_USER="YOUR_DB_USER" \
   -e CROP_DB_PASSWORD="YOUR_DB_PASSWORD" \
@@ -70,4 +70,4 @@ docker run --rm -p 8080:8080 \
   crop-knowledge-web
 ```
 
-然后访问 `http://localhost:8080/health`。
+然后访问 `http://localhost:7860/health`。如果希望本地继续使用 8080，可以额外设置 `-e PORT=8080` 并将端口映射改为 `-p 8080:8080`。

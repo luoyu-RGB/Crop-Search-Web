@@ -1,3 +1,13 @@
+---
+title: Crop Search Web
+emoji: 🌱
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Crop Search Web · 作物知识库
 
 基于 Java Servlet、JSP 和 MySQL 的作物资料查询与管理平台。项目将扫描版 PDF 中的植物资料整理为结构化数据，支持名称与别名检索、组合筛选、油脂指标查询、图片管理，以及 DeepSeek 辅助问答。
@@ -191,3 +201,7 @@ work/           PDF、OCR 与数据整理脚本
 ## Render 部署
 
 项目已提供 `Dockerfile` 和 `render.yaml`，可在 Render 通过 **New → Blueprint** 直接创建 Docker Web Service。部署步骤、外部 MySQL 配置、环境变量和免费方案限制见 [Render 部署说明](docs/render-deployment.md)。
+
+## Hugging Face Spaces 部署
+
+本项目的 Docker 镜像默认监听 Hugging Face Spaces 所需的 `7860` 端口。创建 Docker Space 后，将仓库文件同步到 Space，并在 **Settings → Variables and secrets** 中配置数据库和 DeepSeek 变量。完整步骤见 [Hugging Face Spaces 部署说明](docs/huggingface-spaces-deployment.md)。
